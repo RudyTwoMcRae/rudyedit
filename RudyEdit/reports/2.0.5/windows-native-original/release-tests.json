@@ -1,0 +1,4213 @@
+{
+  "schema": 1,
+  "started_utc": "2026-10-22T11:25:24.072872+00:00",
+  "completed_utc": "2026-10-22T11:26:23.409002+00:00",
+  "version": "RudyEdit 2.0.5",
+  "rid": "win-x64",
+  "host": "Windows-2022Server-10.0.20348-SP0",
+  "executable": "rudyedit.exe",
+  "payload_sha256": "4a8f2e9952df92ea6f7d38bd30c1e30f8629e0445c0f4a265fe64a45520a1cfe",
+  "final_payload_sha256": "4a8f2e9952df92ea6f7d38bd30c1e30f8629e0445c0f4a265fe64a45520a1cfe",
+  "suites": [
+    "cli-version",
+    "cli-help",
+    "cli-doctor",
+    "cli-invalid",
+    "catalog",
+    "gate-self-tests",
+    "font-audit",
+    "native-windows",
+    "windows-icons"
+  ],
+  "command_catalog": [
+    "new",
+    "open",
+    "folder",
+    "save",
+    "save-all",
+    "save-as",
+    "close-tab",
+    "close-other-tabs",
+    "quit",
+    "keys-code",
+    "keys-vim",
+    "text-mode",
+    "dev-mode",
+    "toggle-keys",
+    "toggle-mode",
+    "bold",
+    "italic",
+    "underline",
+    "font",
+    "font-size",
+    "foreground",
+    "background",
+    "bullets",
+    "ordered",
+    "toggle-tag-bar",
+    "tag-entry",
+    "format-bar",
+    "tags",
+    "search-tags",
+    "spell",
+    "toggle-spell",
+    "preview",
+    "undo",
+    "redo",
+    "copy",
+    "cut",
+    "paste",
+    "select-all",
+    "find",
+    "find-next",
+    "replace",
+    "goto",
+    "complete",
+    "build",
+    "run",
+    "debug",
+    "step-over",
+    "step-in",
+    "step-out",
+    "breakpoint",
+    "variables",
+    "stop",
+    "diagnostics",
+    "lsp",
+    "terminal",
+    "console",
+    "files",
+    "vertical",
+    "horizontal",
+    "close-pane",
+    "close-other-panes",
+    "next-pane",
+    "previous-pane",
+    "next-tab",
+    "previous-tab",
+    "toggle-icons",
+    "font-icons",
+    "help",
+    "shortcuts",
+    "edit-keys",
+    "config-folder",
+    "error-log",
+    "edit-config",
+    "manual",
+    "palette",
+    "fm-open",
+    "fm-tab",
+    "fm-find",
+    "fm-new",
+    "fm-copy",
+    "fm-move",
+    "fm-paste",
+    "fm-folder"
+  ],
+  "command_coverage": [
+    "background",
+    "bold",
+    "breakpoint",
+    "build",
+    "bullets",
+    "close-other-panes",
+    "close-other-tabs",
+    "close-pane",
+    "close-tab",
+    "complete",
+    "config-folder",
+    "console",
+    "copy",
+    "cut",
+    "debug",
+    "dev-mode",
+    "diagnostics",
+    "edit-config",
+    "edit-keys",
+    "error-log",
+    "files",
+    "find",
+    "find-next",
+    "fm-copy",
+    "fm-find",
+    "fm-folder",
+    "fm-move",
+    "fm-new",
+    "fm-open",
+    "fm-paste",
+    "fm-tab",
+    "folder",
+    "font",
+    "font-icons",
+    "font-size",
+    "foreground",
+    "format-bar",
+    "goto",
+    "help",
+    "horizontal",
+    "italic",
+    "keys-code",
+    "keys-vim",
+    "lsp",
+    "manual",
+    "new",
+    "next-pane",
+    "next-tab",
+    "open",
+    "ordered",
+    "palette",
+    "paste",
+    "preview",
+    "previous-pane",
+    "previous-tab",
+    "quit",
+    "redo",
+    "replace",
+    "run",
+    "save",
+    "save-all",
+    "save-as",
+    "search-tags",
+    "select-all",
+    "shortcuts",
+    "spell",
+    "step-in",
+    "step-out",
+    "step-over",
+    "stop",
+    "tag-entry",
+    "tags",
+    "terminal",
+    "text-mode",
+    "toggle-icons",
+    "toggle-keys",
+    "toggle-mode",
+    "toggle-spell",
+    "toggle-tag-bar",
+    "underline",
+    "undo",
+    "variables",
+    "vertical"
+  ],
+  "summary": {
+    "performed": 612,
+    "passed": 610,
+    "errors": 2,
+    "blocked": 1
+  },
+  "passed": false,
+  "results": [
+    {
+      "name": "cli-version",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156
+    },
+    {
+      "name": "cli-help",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 63
+    },
+    {
+      "name": "cli-doctor",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109
+    },
+    {
+      "name": "cli-invalid",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "name": "catalog",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109
+    },
+    {
+      "name": "managed",
+      "status": "FAIL",
+      "error": "Traceback (most recent call last):\n  File \"D:\\a\\rudyedit\\rudyedit\\RudyEdit\\tests\\release_runner.py\", line 53, in run\n    if result.returncode!=0:raise RuntimeError(f'Exit code {result.returncode}\\n{output[-16000:]}')\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Exit code 1\n VIM=True, vertical=True, save=False\nPASS Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=True\nPASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=False\nPASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=True\nPASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=False\nPASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=True\nPASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=False\nPASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=True\nPASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=False\nPASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=True\nPASS Existing XML is migrated accurately and idempotently without changing custom bindings\nPASS Windows INPUT_RECORD raw binary layout matches Win32 offsets\nPASS Tag metadata deduplicates, sanitizes and preserves cursor/selection with undo\nPASS Text bars add/save/search/clear tags and format via keyboard and mouse Code\nPASS Text bars add/save/search/clear tags and format via keyboard and mouse VIM\nPASS Tag search matches all tags case insensitively with upper-case extensions\nPASS Every Nerd UI icon occupies one private-use cell\nPASS File icons classify languages, data, media and unknown extensions without reading files\nPASS Special filename and folder icons take precedence over extensions\nPASS Graphic icon settings default on and validate explicit boolean fallback\nPASS Graphic menu clicks, file icons, plain fallback and font help Code\nPASS Graphic menu clicks, file icons, plain fallback and font help VIM\nPASS Formatting icon keyboard access fits terminal width 20\nPASS Formatting icon keyboard access fits terminal width 40\nPASS Formatting icon keyboard access fits terminal width 80\nPASS Formatting icon keyboard access fits terminal width 120\nPASS Tag registry round trip: names only in XML, hidden id, UTF-8 CRLF BOM, editor text intact\nPASS Tag-only unsaved changes discard without changing Tags.xml\nPASS Legacy header migrates on save without stripping examples or body blank lines\nPASS Identifier survives external rename; Save As creates independent tags\nPASS Registry merges independent saves and refuses stale edits on the same id\nPASS Malformed registry is preserved and cannot partially save a tagged document\nPASS Failed document replacement rolls the XML transaction back\nPASS The registry cannot tag itself or be replaced by a tagged document\nPASS Tags.xml validation rejects duplicate IDs and DTDs; tag names are XML escaped\nPASS Error log records UTC time, context, stack and nested exception\nPASS Concurrent error records are complete without lost entries\nPASS Error log rotation keeps three backups and a bounded current file\nPASS Unwritable configuration path logs to the temporary fallback\nPASS Tool stderr, stdout diagnostics and nonzero exit are persisted\nFAIL Malformed asynchronous protocol messages are logged immediately: System.Exception: Timed out waiting for error logging\n   at ErrorLogTests.Until(Func`1 condition)\n   at ErrorLogTests.<>c.<Run>b__3_15(String folder)\n   at ErrorLogTests.InFolder(String root, String name, Action`1 action)\n   at ErrorLogTests.<>c__DisplayClass3_0.<Run>b__5()\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Test|1(String name, Action action)\nPASS Python debugger stderr and exception events are persisted\nPASS Configuration folder launcher preserves paths as a single non-shell argument\nPASS [command:new] verified outcome via keybinding / Code\nPASS [command:new] verified outcome via keybinding / VIM\nPASS [command:open] verified outcome via keybinding / Code\nPASS [command:open] verified outcome via keybinding / VIM\nPASS [command:folder] verified outcome via keybinding / Code\nPASS [command:folder] verified outcome via keybinding / VIM\nPASS [command:save] verified outcome via keybinding / Code\nPASS [command:save] verified outcome via keybinding / VIM\nPASS [command:save-all] verified outcome via keybinding / Code\nPASS [command:save-all] verified outcome via keybinding / VIM\nPASS [command:save-as] verified outcome via keybinding / Code\nPASS [command:save-as] verified outcome via keybinding / VIM\nPASS [command:close-tab] verified outcome via keybinding / Code\nPASS [command:close-tab] verified outcome via keybinding / VIM\nPASS [command:close-other-tabs] verified outcome via keybinding / Code\nPASS [command:close-other-tabs] verified outcome via keybinding / VIM\nPASS [command:quit] verified outcome via keybinding / Code\nPASS [command:quit] verified outcome via keybinding / VIM\nPASS [command:keys-code] verified outcome via keybinding / Code\nPASS [command:keys-code] verified outcome via keybinding / VIM\nPASS [command:keys-vim] verified outcome via keybinding / Code\nPASS [command:keys-vim] verified outcome via keybinding / VIM\nPASS [command:toggle-keys] verified outcome via keybinding / Code\nPASS [command:toggle-keys] verified outcome via keybinding / VIM\nPASS [command:text-mode] verified outcome via keybinding / Code\nPASS [command:text-mode] verified outcome via keybinding / VIM\nPASS [command:dev-mode] verified outcome via keybinding / Code\nPASS [command:dev-mode] verified outcome via keybinding / VIM\nPASS [command:toggle-mode] verified outcome via keybinding / Code\nPASS [command:toggle-mode] verified outcome via keybinding / VIM\nPASS [command:bold] verified outcome via keybinding / Code\nPASS [command:bold] verified outcome via keybinding / VIM\nPASS [command:italic] verified outcome via keybinding / Code\nPASS [command:italic] verified outcome via keybinding / VIM\nPASS [command:underline] verified outcome via keybinding / Code\nPASS [command:underline] verified outcome via keybinding / VIM\nPASS [command:font] verified outcome via keybinding / Code\nPASS [command:font] verified outcome via keybinding / VIM\nPASS [command:font-size] verified outcome via keybinding / Code\nPASS [command:font-size] verified outcome via keybinding / VIM\nPASS [command:foreground] verified outcome via keybinding / Code\nPASS [command:foreground] verified outcome via keybinding / VIM\nPASS [command:background] verified outcome via keybinding / Code\nPASS [command:background] verified outcome via keybinding / VIM\nPASS [command:bullets] verified outcome via keybinding / Code\nPASS [command:bullets] verified outcome via keybinding / VIM\nPASS [command:ordered] verified outcome via keybinding / Code\nPASS [command:ordered] verified outcome via keybinding / VIM\nPASS [command:toggle-tag-bar] verified outcome via keybinding / Code\nPASS [command:toggle-tag-bar] verified outcome via keybinding / VIM\nPASS [command:tag-entry] verified outcome via keybinding / Code\nPASS [command:tag-entry] verified outcome via keybinding / VIM\nPASS [command:format-bar] verified outcome via keybinding / Code\nPASS [command:format-bar] verified outcome via keybinding / VIM\nPASS [command:tags] verified outcome via keybinding / Code\nPASS [command:tags] verified outcome via keybinding / VIM\nPASS [command:search-tags] verified outcome via keybinding / Code\nPASS [command:search-tags] verified outcome via keybinding / VIM\nPASS [command:spell] verified outcome via keybinding / Code\nPASS [command:spell] verified outcome via keybinding / VIM\nPASS [command:toggle-spell] verified outcome via keybinding / Code\nPASS [command:toggle-spell] verified outcome via keybinding / VIM\nPASS [command:preview] verified outcome via keybinding / Code\nPASS [command:preview] verified outcome via keybinding / VIM\nPASS [command:undo] verified outcome via keybinding / Code\nPASS [command:undo] verified outcome via keybinding / VIM\nPASS [command:redo] verified outcome via keybinding / Code\nPASS [command:redo] verified outcome via keybinding / VIM\nPASS [command:copy] verified outcome via keybinding / Code\nPASS [command:copy] verified outcome via keybinding / VIM\nPASS [command:cut] verified outcome via keybinding / Code\nPASS [command:cut] verified outcome via keybinding / VIM\nPASS [command:paste] verified outcome via keybinding / Code\nPASS [command:paste] verified outcome via keybinding / VIM\nPASS [command:select-all] verified outcome via keybinding / Code\nPASS [command:select-all] verified outcome via keybinding / VIM\nPASS [command:find] verified outcome via keybinding / Code\nPASS [command:find] verified outcome via keybinding / VIM\nPASS [command:find-next] verified outcome via keybinding / Code\nPASS [command:find-next] verified outcome via keybinding / VIM\nPASS [command:replace] verified outcome via keybinding / Code\nPASS [command:replace] verified outcome via keybinding / VIM\nPASS [command:goto] verified outcome via keybinding / Code\nPASS [command:goto] verified outcome via keybinding / VIM\nPASS [command:complete] verified outcome via keybinding / Code\nPASS [command:complete] verified outcome via keybinding / VIM\nPASS [command:build] verified outcome via keybinding / Code\nPASS [command:build] verified outcome via keybinding / VIM\nPASS [command:run] verified outcome via keybinding / Code\nPASS [command:run] verified outcome via keybinding / VIM\nPASS [command:debug] verified outcome via keybinding / Code\nPASS [command:debug] verified outcome via keybinding / VIM\nPASS [command:step-over] verified outcome via keybinding / Code\nPASS [command:step-over] verified outcome via keybinding / VIM\nPASS [command:step-in] verified outcome via keybinding / Code\nPASS [command:step-in] verified outcome via keybinding / VIM\nPASS [command:step-out] verified outcome via keybinding / Code\nPASS [command:step-out] verified outcome via keybinding / VIM\nPASS [command:breakpoint] verified outcome via keybinding / Code\nPASS [command:breakpoint] verified outcome via keybinding / VIM\nPASS [command:variables] verified outcome via keybinding / Code\nPASS [command:variables] verified outcome via keybinding / VIM\nPASS [command:stop] verified outcome via keybinding / Code\nPASS [command:stop] verified outcome via keybinding / VIM\nPASS [command:diagnostics] verified outcome via keybinding / Code\nPASS [command:diagnostics] verified outcome via keybinding / VIM\nPASS [command:lsp] verified outcome via keybinding / Code\nPASS [command:lsp] verified outcome via keybinding / VIM\nPASS [command:terminal] verified outcome via keybinding / Code\nPASS [command:terminal] verified outcome via keybinding / VIM\nPASS [command:console] verified outcome via keybinding / Code\nPASS [command:console] verified outcome via keybinding / VIM\nPASS [command:files] verified outcome via keybinding / Code\nPASS [command:files] verified outcome via keybinding / VIM\nPASS [command:vertical] verified outcome via keybinding / Code\nPASS [command:vertical] verified outcome via keybinding / VIM\nPASS [command:horizontal] verified outcome via keybinding / Code\nPASS [command:horizontal] verified outcome via keybinding / VIM\nPASS [command:close-pane] verified outcome via keybinding / Code\nPASS [command:close-pane] verified outcome via keybinding / VIM\nPASS [command:close-other-panes] verified outcome via keybinding / Code\nPASS [command:close-other-panes] verified outcome via keybinding / VIM\nPASS [command:next-pane] verified outcome via keybinding / Code\nPASS [command:next-pane] verified outcome via keybinding / VIM\nPASS [command:previous-pane] verified outcome via keybinding / Code\nPASS [command:previous-pane] verified outcome via keybinding / VIM\nPASS [command:next-tab] verified outcome via keybinding / Code\nPASS [command:next-tab] verified outcome via keybinding / VIM\nPASS [command:previous-tab] verified outcome via keybinding / Code\nPASS [command:previous-tab] verified outcome via keybinding / VIM\nPASS [command:toggle-icons] verified outcome via keybinding / Code\nPASS [command:toggle-icons] verified outcome via keybinding / VIM\nPASS [command:font-icons] verified outcome via keybinding / Code\nPASS [command:font-icons] verified outcome via keybinding / VIM\nPASS [command:help] verified outcome via keybinding / Code\nPASS [command:help] verified outcome via keybinding / VIM\nPASS [command:shortcuts] verified outcome via keybinding / Code\nPASS [command:shortcuts] verified outcome via keybinding / VIM\nPASS [command:error-log] verified outcome via keybinding / Code\nPASS [command:error-log] verified outcome via keybinding / VIM\nPASS [command:manual] verified outcome via keybinding / Code\nPASS [command:manual] verified outcome via keybinding / VIM\nPASS [command:edit-config] verified outcome via keybinding / Code\nPASS [command:edit-config] verified outcome via keybinding / VIM\nPASS [command:edit-keys] verified outcome via keybinding / Code\nPASS [command:edit-keys] verified outcome via keybinding / VIM\nPASS [command:config-folder] verified outcome via keybinding / Code\nPASS [command:config-folder] verified outcome via keybinding / VIM\nPASS [command:palette] verified outcome via keybinding / Code\nPASS [command:palette] verified outcome via keybinding / VIM\nPASS [command:fm-open] verified outcome via keybinding / Code\nPASS [command:fm-open] verified outcome via keybinding / VIM\nPASS [command:fm-tab] verified outcome via keybinding / Code\nPASS [command:fm-tab] verified outcome via keybinding / VIM\nPASS [command:fm-find] verified outcome via keybinding / Code\nPASS [command:fm-find] verified outcome via keybinding / VIM\nPASS [command:fm-new] verified outcome via keybinding / Code\nPASS [command:fm-new] verified outcome via keybinding / VIM\nPASS [command:fm-folder] verified outcome via keybinding / Code\nPASS [command:fm-folder] verified outcome via keybinding / VIM\nPASS [command:fm-copy] verified outcome via keybinding / Code\nPASS [command:fm-copy] verified outcome via keybinding / VIM\nPASS [command:fm-move] verified outcome via keybinding / Code\nPASS [command:fm-move] verified outcome via keybinding / VIM\nPASS [command:fm-paste] verified outcome via keybinding / Code\nPASS [command:fm-paste] verified outcome via keybinding / VIM\nPASS Every command in the executable catalog has a verified outcome test\nPASS empty document coordinates\nPASS selection replacement and undo redo\nPASS UTF-8 CRLF BOM round trip and dirty state\nPASS surrogate and combining character deletion\nPASS line navigation preserves valid positions\nPASS Markdown wrappers place future text inside\nPASS ordered and bulleted lists\nPASS find wraps and selects\nPASS external edits cannot be silently overwritten\nPASS Save As protects existing destination\nPASS reject binary and invalid UTF8\nPASS settings defaults and branch parser\nPASS invalid settings are rejected\nPASS provided XML chords and scoped actions\nPASS XML unknown and duplicate commands rejected\nPASS language detection and keyword completion\nPASS English dictionary and suggestions\nPASS key decoding modifiers and enhanced ShiftSpace\nPASS Windows arrow events use the editor's canonical names with all modifiers\nPASS Windows quit and menu events match global shortcuts\nPASS Ghostty Kitty flag 1 menu and quit sequences including lock modifiers\nPASS function keys accept omitted Kitty parameters as well as legacy encodings\nPASS Close Tab default is explicit in XML and available to existing installations\nPASS render control text cannot inject escape sequences\nPASS SGR mouse coordinates, drag, release, shift and wheel\nPASS Windows input records preserve keys, mouse actions and viewport offsets\nPASS mouse hit testing maps terminal cells to complete graphemes and tabs\nPASS default tab bindings use Ctrl Alt arrows\nPASS pane splitting and removal\nPASS file copy, move, and overwrite guard\nPASS directory self-copy blocked\nPASS build plans and nearest project discovery\nPASS compiler diagnostic parsing\nPASS real process execution and standard input\nPASS real Python line debugging, breakpoints, locals\nPASS LSP framing, UTF-16 completion edits and live diagnostics\nPASS DAP request responses, asynchronous stop and stack frame\nPASS offline manuals and font included\n\n338 passed; 1 failed.\n\n\n",
+      "duration_ms": 57891
+    },
+    {
+      "name": "Published executable runs tests against its own loaded application assembly",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows stream regression: Ctrl+Q/S and F1 become single commands, not escape text",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 16,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows F1-F24 and Ctrl/Alt/Shift with both modifier sides and lock states",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 5,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows Ctrl A-Z, arrows, digits, punctuation and modified text suppression",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows records: repeats, key-up/modifiers ignored, UTF-16, fragmented escapes and paste",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Terminal setup keeps Windows in native mode, handles Ctrl+C/mouse, and restores output",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "CSI decoder rejects malformed numbers, release events and unsupported functional keys",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 57,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Failed build/run launch cannot poison Active, Stop or Quit",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 130,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows editor commands, save and quit through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 449,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit saves unsaved work through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 194,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in menu through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 159,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in help through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 123,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in files through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 149,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in console through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 249,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in chord through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 144,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in save-as through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 215,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in open through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 136,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in quit-save-as through native-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 164,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows editor commands, save and quit through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 313,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit saves unsaved work through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 254,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in menu through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 130,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in help through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 191,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in files through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 112,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in console through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 96,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in chord through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 162,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in save-as through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 84,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in open through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 69,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in quit-save-as through native-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 244,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows editor commands, save and quit through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 128,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit saves unsaved work through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 164,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in menu through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 104,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in help through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 152,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in files through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 61,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in console through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 165,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in chord through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 81,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in save-as through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 65,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in open through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 130,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in quit-save-as through csi-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 87,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows editor commands, save and quit through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 334,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit saves unsaved work through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 180,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in menu through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 147,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in help through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 114,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in files through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 176,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in console through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 66,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in chord through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in save-as through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 200,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in open through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 68,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in quit-save-as through csi-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 107,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows editor commands, save and quit through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 214,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit saves unsaved work through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 342,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in menu through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 99,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in help through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 155,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in files through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 78,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in console through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 78,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in chord through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 141,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in save-as through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 67,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in open through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 69,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in quit-save-as through legacy-code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 221,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows editor commands, save and quit through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 127,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit saves unsaved work through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 163,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in menu through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 106,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in help through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 145,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in files through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 67,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in console through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 164,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in chord through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 69,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in save-as through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 76,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in open through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 160,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows safe quit/cancel in quit-save-as through legacy-vim",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 97,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, native, VIM=False, vertical=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 343,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, native, VIM=False, vertical=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 210,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, native, VIM=True, vertical=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 230,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, native, VIM=True, vertical=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 212,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, csi, VIM=False, vertical=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 285,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, csi, VIM=False, vertical=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 244,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, csi, VIM=True, vertical=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 242,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Remove panel via ctrl+w, csi, VIM=True, vertical=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 170,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Open config folder shortcut: native, VIM=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 162,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Open config folder shortcut: native, VIM=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 95,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Open config folder shortcut: legacy, VIM=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 63,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Open config folder shortcut: legacy, VIM=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Open config folder shortcut: csi, VIM=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 91,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Open config folder shortcut: csi, VIM=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 95,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Editor command failures are recorded in the persistent error log",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 134,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Config fallback preserves the exception in the error log",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 67,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tab and panel defaults upgrade both legacy shortcuts",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 5,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 263,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 275,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 316,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 238,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 329,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 264,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 252,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 333,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 285,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 238,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 312,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 265,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 250,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 345,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=False",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 277,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=True",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 251,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Existing XML is migrated accurately and idempotently without changing custom bindings",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 3,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows INPUT_RECORD raw binary layout matches Win32 offsets",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tag metadata deduplicates, sanitizes and preserves cursor/selection with undo",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Text bars add/save/search/clear tags and format via keyboard and mouse Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 421,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Text bars add/save/search/clear tags and format via keyboard and mouse VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 460,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tag search matches all tags case insensitively with upper-case extensions",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Every Nerd UI icon occupies one private-use cell",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "File icons classify languages, data, media and unknown extensions without reading files",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Special filename and folder icons take precedence over extensions",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Graphic icon settings default on and validate explicit boolean fallback",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Graphic menu clicks, file icons, plain fallback and font help Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 277,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Graphic menu clicks, file icons, plain fallback and font help VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 311,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Formatting icon keyboard access fits terminal width 20",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 249,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Formatting icon keyboard access fits terminal width 40",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 328,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Formatting icon keyboard access fits terminal width 80",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 290,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Formatting icon keyboard access fits terminal width 120",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 250,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tag registry round trip: names only in XML, hidden id, UTF-8 CRLF BOM, editor text intact",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 5,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tag-only unsaved changes discard without changing Tags.xml",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Legacy header migrates on save without stripping examples or body blank lines",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Identifier survives external rename; Save As creates independent tags",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 11,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Registry merges independent saves and refuses stale edits on the same id",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 5,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Malformed registry is preserved and cannot partially save a tagged document",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Failed document replacement rolls the XML transaction back",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "The registry cannot tag itself or be replaced by a tagged document",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tags.xml validation rejects duplicate IDs and DTDs; tag names are XML escaped",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Error log records UTC time, context, stack and nested exception",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Concurrent error records are complete without lost entries",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 31,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Error log rotation keeps three backups and a bounded current file",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 45,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Unwritable configuration path logs to the temporary fallback",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 14,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Tool stderr, stdout diagnostics and nonzero exit are persisted",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 60,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Malformed asynchronous protocol messages are logged immediately",
+      "status": "FAIL",
+      "error": "System.Exception: Timed out waiting for error logging\r\n   at ErrorLogTests.Until(Func`1 condition)\r\n   at ErrorLogTests.<>c.<Run>b__3_15(String folder)\r\n   at ErrorLogTests.InFolder(String root, String name, Action`1 action)\r\n   at ErrorLogTests.<>c__DisplayClass3_0.<Run>b__5()\r\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Test|1(String name, Action action)",
+      "duration_ms": 7027,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Python debugger stderr and exception events are persisted",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Configuration folder launcher preserves paths as a single non-shell argument",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:new] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 152,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:new] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 131,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:open] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:open] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:folder] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:folder] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:save] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:save] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 218,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:save-all] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:save-all] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 172,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:save-as] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:save-as] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-tab] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 265,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-tab] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-other-tabs] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-other-tabs] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 281,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:quit] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 98,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:quit] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 95,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:keys-code] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 196,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:keys-code] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:keys-vim] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 160,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:keys-vim] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 219,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-keys] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-keys] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:text-mode] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 328,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:text-mode] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:dev-mode] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:dev-mode] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-mode] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-mode] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:bold] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:bold] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:italic] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 265,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:italic] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:underline] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:underline] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:font] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:font] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:font-size] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:font-size] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:foreground] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 172,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:foreground] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:background] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:background] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:bullets] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:bullets] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:ordered] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:ordered] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-tag-bar] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-tag-bar] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 265,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:tag-entry] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:tag-entry] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:format-bar] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 219,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:format-bar] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:tags] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:tags] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:search-tags] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:search-tags] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:spell] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:spell] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-spell] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-spell] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:preview] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:preview] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 280,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:undo] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:undo] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:redo] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:redo] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:copy] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:copy] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:cut] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:cut] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:paste] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 218,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:paste] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:select-all] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:select-all] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 297,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:find] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 157,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:find] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:find-next] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:find-next] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 172,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:replace] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:replace] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:goto] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 126,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:goto] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:complete] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 172,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:complete] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:build] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 286,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:build] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 219,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:run] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:run] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 250,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:debug] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 256,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:debug] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 340,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:step-over] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 297,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:step-over] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 312,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:step-in] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 580,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:step-in] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 358,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:step-out] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 374,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:step-out] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 453,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:breakpoint] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 121,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:breakpoint] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 265,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:variables] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 425,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:variables] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 344,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:stop] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 277,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:stop] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 296,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:diagnostics] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:diagnostics] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:lsp] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 253,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:lsp] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 202,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:terminal] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 199,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:terminal] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:console] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:console] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:files] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:files] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:vertical] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 250,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:vertical] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:horizontal] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:horizontal] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 312,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-pane] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 141,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-pane] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-other-panes] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:close-other-panes] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:next-pane] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 249,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:next-pane] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:previous-pane] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:previous-pane] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:next-tab] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:next-tab] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:previous-tab] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:previous-tab] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-icons] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 141,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:toggle-icons] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 202,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:font-icons] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:font-icons] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 282,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:help] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:help] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:shortcuts] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 125,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:shortcuts] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:error-log] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 171,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:error-log] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 158,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:manual] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 218,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:manual] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 124,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:edit-config] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 141,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:edit-config] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 172,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:edit-keys] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:edit-keys] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:config-folder] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 219,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:config-folder] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:palette] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:palette] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-open] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 312,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-open] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-tab] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 141,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-tab] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 234,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-find] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-find] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 204,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-new] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-new] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-folder] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 187,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-folder] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 109,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-copy] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-copy] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 203,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-move] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-move] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 140,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-paste] verified outcome via keybinding / Code",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 266,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "[command:fm-paste] verified outcome via keybinding / VIM",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 156,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Every command in the executable catalog has a verified outcome test",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "empty document coordinates",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "selection replacement and undo redo",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "UTF-8 CRLF BOM round trip and dirty state",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "surrogate and combining character deletion",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "line navigation preserves valid positions",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Markdown wrappers place future text inside",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "ordered and bulleted lists",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "find wraps and selects",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "external edits cannot be silently overwritten",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Save As protects existing destination",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "reject binary and invalid UTF8",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "settings defaults and branch parser",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "invalid settings are rejected",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "provided XML chords and scoped actions",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "XML unknown and duplicate commands rejected",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "language detection and keyword completion",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "English dictionary and suggestions",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 244,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "key decoding modifiers and enhanced ShiftSpace",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows arrow events use the editor's canonical names with all modifiers",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows quit and menu events match global shortcuts",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Ghostty Kitty flag 1 menu and quit sequences including lock modifiers",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "function keys accept omitted Kitty parameters as well as legacy encodings",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Close Tab default is explicit in XML and available to existing installations",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "render control text cannot inject escape sequences",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "SGR mouse coordinates, drag, release, shift and wheel",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 1,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "Windows input records preserve keys, mouse actions and viewport offsets",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "mouse hit testing maps terminal cells to complete graphemes and tabs",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "default tab bindings use Ctrl Alt arrows",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "pane splitting and removal",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "file copy, move, and overwrite guard",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "directory self-copy blocked",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "build plans and nearest project discovery",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 2,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "compiler diagnostic parsing",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "real process execution and standard input",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 43,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "real Python line debugging, breakpoints, locals",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 155,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "LSP framing, UTF-16 completion edits and live diagnostics",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 50,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "DAP request responses, asynchronous stop and stack frame",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 52,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "offline manuals and font included",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 0,
+      "layer": "managed/executable"
+    },
+    {
+      "name": "every-command-verified",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "name": "gate-self-tests",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 297
+    },
+    {
+      "name": "font-audit",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 62
+    },
+    {
+      "name": "Flush private test console input",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Native input mode",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f3",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f4",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f5",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f6",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f7",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f8",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f9",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f10",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f11",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "shift+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "alt+shift+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+shift+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "ctrl+alt+shift+f12",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+a",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+b",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+c",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+d",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+e",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+f",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+g",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+h",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+i",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+j",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+k",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+l",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+m",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+n",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+o",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+p",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+q",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+r",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+s",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+t",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+u",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+v",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+w",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+x",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+y",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Ctrl+z",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Encoded ctrl+q",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Encoded f1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Encoded shift+f2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Repeat 0",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Repeat 1",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Repeat 2",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "WriteConsoleInputW",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Native mouse",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Input mode restored",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Output mode restored",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "Output encoding restored",
+      "status": "PASS",
+      "error": "",
+      "layer": "native-windows"
+    },
+    {
+      "name": "native-windows",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "name": "windows-icons",
+      "status": "PASS",
+      "error": "",
+      "duration_ms": 47
+    },
+    {
+      "name": "tested-payload-unchanged",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "name": "required-release-suites",
+      "status": "BLOCKED",
+      "error": "Required suites did not pass: managed"
+    }
+  ]
+}

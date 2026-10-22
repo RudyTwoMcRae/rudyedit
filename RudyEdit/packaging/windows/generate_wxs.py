@@ -8,7 +8,7 @@ def node(parent,tag,**attrs):return E.SubElement(parent,'{'+ns+'}'+tag,{k:str(v)
 def ident(path,prefix='F'):return prefix+hashlib.sha256(path.encode()).hexdigest()[:24]
 def guid(path):return str(uuid.uuid5(uuid.UUID('d4984166-4052-47d1-90b0-8f5c320b086c'),path)).upper()
 wix=E.Element('{'+ns+'}Wix')
-product=node(wix,'Product',Id='*',Name='RudyEdit',Language='1033',Version='2.0.5',Manufacturer='RudyEdit',UpgradeCode='D4984166-4052-47D1-90B0-8F5C320B086C')
+product=node(wix,'Product',Id='*',Name='RudyEdit',Language='1033',Version='2.0.6',Manufacturer='RudyEdit',UpgradeCode='D4984166-4052-47D1-90B0-8F5C320B086C')
 node(product,'Package',InstallerVersion='500',Compressed='yes',InstallScope='perMachine')
 node(product,'Media',Id='1',Cabinet='rudyedit.cab',EmbedCab='yes')
 node(product,'Property',Id='DESKTOP_SHORTCUT',Value='0',Secure='yes')

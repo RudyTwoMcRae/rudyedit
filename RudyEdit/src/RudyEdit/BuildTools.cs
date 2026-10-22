@@ -15,7 +15,7 @@ public static class BuildTools
     }
     public static void Doctor()
     {
-        Console.WriteLine("RudyEdit 2.0.5 | "+System.Runtime.InteropServices.RuntimeInformation.OSDescription);
+        Console.WriteLine("RudyEdit 2.0.6 | "+System.Runtime.InteropServices.RuntimeInformation.OSDescription);
         Console.WriteLine("Error log: "+ErrorLog.FilePath);
         Console.WriteLine("Config: "+Settings.ConfigDirectory+"\nToolchains are used only when you request build/run/debug:");
         foreach(var tool in new[]{"dotnet","gcc","python3","python","cargo","rustc","gdb","netcoredbg","clangd","rust-analyzer","pylsp","csharp-ls"})Console.WriteLine($"{tool,-16} {Which(tool)??"not on PATH"}");

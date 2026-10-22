@@ -1,6 +1,6 @@
 # Packaging and upgrades
 
-Application version: 2.0.5. The source targets .NET 10 and release binaries bundle the .NET 10.0.13 runtime. Keep runtime servicing current when producing later releases.
+Application version: 2.0.6. The source targets .NET 10 and release binaries bundle the .NET 10.0.13 runtime. Keep runtime servicing current when producing later releases.
 
 ## Publish
 
@@ -26,7 +26,7 @@ makensis packaging/windows/setup.nsi
 
 **Windows revision 3 (keyboard fixes):** Both Windows installers include canonical arrow-key handling, Alt menu accelerators, and global Ctrl+Q with unsaved-change protection and terminal restoration. The revision 2 MSI correction is retained. The source ZIP includes the Windows key-decoding and terminal interaction regression tests.
 
-The build script uses wixl and then imports the font, PATH, and optional Desktop condition tables with msitools, because wixl does not support all corresponding WiX elements. Keep this postprocessing step when rebuilding; the generated .wxs alone omits these features. The MSI installs under Program Files, appends the install folder to system PATH, installs the font into FontsFolder, and creates a Start Menu entry. The NSIS wrapper invokes that same MSI, offers an optional Desktop shortcut, and writes a verbose log to `%TEMP%\RudyEdit-install.log`. The only public Windows artifact is `RudyEdit-2.0.5-Windows-Setup.exe`, which embeds all installation files and requires no companion download. The MSI is a build intermediate at `dist/windows-internal/RudyEdit.msi` and is consumed by Setup; do not publish it as a second installer.
+The build script uses wixl and then imports the font, PATH, and optional Desktop condition tables with msitools, because wixl does not support all corresponding WiX elements. Keep this postprocessing step when rebuilding; the generated .wxs alone omits these features. The MSI installs under Program Files, appends the install folder to system PATH, installs the font into FontsFolder, and creates a Start Menu entry. The NSIS wrapper invokes that same MSI, offers an optional Desktop shortcut, and writes a verbose log to `%TEMP%\RudyEdit-install.log`. The only public Windows artifact is `RudyEdit-2.0.6-Windows-Setup.exe`, which embeds all installation files and requires no companion download. The MSI is a build intermediate at `dist/windows-internal/RudyEdit.msi` and is consumed by Setup; do not publish it as a second installer.
 
 The MSI UpgradeCode is permanently `D4984166-4052-47D1-90B0-8F5C320B086C`. File component GUIDs are deterministic by relative path. For a later release, increment the version in the csproj, generator, setup script, package generator, build scripts, and output names; retain UpgradeCode. MajorUpgrade removes earlier products. Same-version reinstall is allowed; lower-version installers are blocked. Per-user config is outside the MSI and survives upgrades/uninstall.
 
@@ -97,7 +97,7 @@ Ctrl+Alt+C (Open Config Folder in Help) shows the configuration directory in Rud
 
 RudyEdit-errors.log is created beside Config.cs, KeyboardShortcuts.xml, Tags.xml and languages.json. It records UTC timestamps, process IDs, context, exceptions/stacks and nested errors, startup/configuration/save/command failures, tool stderr and nonzero exits, compiler/LSP diagnostics, and debugger/protocol/background failures. Help → Error Log displays a searchable snapshot. The log rotates at 5 MiB with three backups; very long entries are marked/truncated at 65,536 characters. If the config folder is unwritable, the active log falls back to RudyEdit-<user>/RudyEdit-errors.log under the system temp directory. Fatal errors report the active path. Normal cancellations and cleanup races are excluded.
 
-Windows users install with the single self-contained RudyEdit-2.0.5-Windows-Setup.exe. No separate MSI or .NET runtime download is needed. It preserves the binder-and-pen icon, optional Desktop shortcut, Start Menu entry, PATH update, bundled runtime/font, and existing upgrade identity. Windows Installer's verbose installation log remains at %TEMP%\RudyEdit-install.log. The internal MSI is a build intermediate, not an additional user installer.
+Windows users install with the single self-contained RudyEdit-2.0.6-Windows-Setup.exe. No separate MSI or .NET runtime download is needed. It preserves the binder-and-pen icon, optional Desktop shortcut, Start Menu entry, PATH update, bundled runtime/font, and existing upgrade identity. Windows Installer's verbose installation log remains at %TEMP%\RudyEdit-install.log. The internal MSI is a build intermediate, not an additional user installer.
 
 ## Version 2.0.4 — Nerd Font UI
 

@@ -1,4 +1,4 @@
-# RudyEdit 2.0.5
+# RudyEdit 2.0.6
 
 A C#/.NET terminal editor for Windows x64 and Manjaro Linux x86_64, built from the four supplied specification files in `specification/`.
 
@@ -11,7 +11,7 @@ RudyEdit provides version 2.0 of the requested editor. It has Text and Developme
 **Manjaro:** Open a terminal in the download folder:
 
 ```sh
-sudo pacman -U ./rudyedit-2.0.5-1-x86_64.pkg.tar.zst
+sudo pacman -U ./rudyedit-2.0.6-1-x86_64.pkg.tar.zst
 ```
 
 Dependencies are declared in the package. Install or upgrade using `pacman -U`; remove using `sudo pacman -R rudyedit`. The package includes its runtime, font, launcher, and application-menu entry. Select **FiraCode Nerd Font Mono** in your terminal's preferences for the intended glyphs. Use View → Toggle Graphic Icons for plain labels with ordinary monospace fonts.
@@ -155,7 +155,7 @@ Each tagged file stores only an opaque <!-- rudyedit-id: UUID --> comment. RudyE
 
 Legacy leading <!-- tags: ... --> headers are staged for migration when opened: the editor displays the document body and its tags, and the next save moves names to XML and replaces the old header with the identifier. No unopened documents are rewritten. Back up Tags.xml with the documents; a file identifier by itself cannot reconstruct tag names on another machine. Corrupt XML and conflicting tag edits cause a save error instead of overwriting the registry. The registry uses <Tags Version="1"><File Id="UUID" Path="..."><Tag>name</Tag></File></Tags>; UUID is a real GUID and tag text is XML escaped. Tags.xml is validated before saving from RudyEdit.
 
-## Packaged executable tests — version 2.0.5
+## Packaged executable tests — version 2.0.6
 
 The application includes `tests/release_runner.py`, a managed test DLL launched by `rudyedit --self-test`, protocol fixtures, terminal scripts, gate regression tests, font/icon audits, and `tests/README.md`. `tests/Run-Tests.cmd` on Windows and `tests/Run-Tests.sh` on Linux write a report to the current user's configuration folder. Python 3 is required for these diagnostics; Linux terminal tests additionally use `tests/requirements.txt`. A test run uses temporary settings/documents and does not overwrite your work.
 

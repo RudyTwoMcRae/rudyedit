@@ -1,0 +1,2 @@
+PASS 78 Nerd Font icons: present, BMP private use, 1200-unit monospace advance
+

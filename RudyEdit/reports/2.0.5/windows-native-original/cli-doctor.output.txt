@@ -1,0 +1,17 @@
+RudyEdit 2.0.5 | Microsoft Windows 10.0.20348
+Error log: C:\Users\RUNNER~1\AppData\Local\Temp\rudyedit-release-4yjduonh\config\RudyEdit-errors.log
+Config: C:\Users\RUNNER~1\AppData\Local\Temp\rudyedit-release-4yjduonh\config
+Toolchains are used only when you request build/run/debug:
+dotnet           C:\Program Files\dotnet\dotnet.exe
+gcc              C:\mingw64\bin\gcc.exe
+python3          C:\hostedtoolcache\windows\Python\3.12.10\x64\python3.exe
+python           C:\hostedtoolcache\windows\Python\3.12.10\x64\python.exe
+cargo            C:\Users\runneradmin\.cargo\bin\cargo.exe
+rustc            C:\Users\runneradmin\.cargo\bin\rustc.exe
+gdb              C:\mingw64\bin\gdb.exe
+netcoredbg       not on PATH
+clangd           C:\Program Files\LLVM\bin\clangd.exe
+rust-analyzer    C:\Users\runneradmin\.cargo\bin\rust-analyzer.exe
+pylsp            not on PATH
+csharp-ls        not on PATH
+

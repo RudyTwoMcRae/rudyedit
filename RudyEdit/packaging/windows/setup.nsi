@@ -4,8 +4,8 @@ Unicode true
 !endif
 !system '${PYTHON} "../../tests/release_gate.py" "../../dist/win-x64" --allow-test-failures' = 0
 !include "MUI2.nsh"
-Name "RudyEdit 2.0.5"
-OutFile "../../dist/RudyEdit-2.0.5-Windows-Setup.exe"
+Name "RudyEdit 2.0.6"
+OutFile "../../dist/RudyEdit-2.0.6-Windows-Setup.exe"
 RequestExecutionLevel admin
 SetCompressor /SOLID lzma
 Var DesktopArg
@@ -25,7 +25,7 @@ Function .onInstFailed
   ClearErrors
   FileOpen $1 "$TEMP\RudyEdit-install.log" a
   ${IfNot} ${Errors}
-    FileWrite $1 "RudyEdit Setup 2.0.5 failed. Review the installer details and any preceding Windows Installer entries.$\r$\n"
+    FileWrite $1 "RudyEdit Setup 2.0.6 failed. Review the installer details and any preceding Windows Installer entries.$\r$\n"
     FileClose $1
   ${EndIf}
 FunctionEnd

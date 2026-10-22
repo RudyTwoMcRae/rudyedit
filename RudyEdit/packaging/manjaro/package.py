@@ -2,7 +2,7 @@
 from pathlib import Path
 import io, os, shutil, subprocess, tarfile, time, sys
 root=Path(__file__).resolve().parents[2]
-version='2.0.5'
+version='2.0.6'
 release=1
 published=root/'dist/linux-x64'
 subprocess.run([sys.executable,str(root/'tests/release_gate.py'),str(published)],check=True)

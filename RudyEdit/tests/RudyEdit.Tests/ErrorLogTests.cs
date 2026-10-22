@@ -50,7 +50,8 @@ static class ErrorLogTests
         }));
         test("Malformed asynchronous protocol messages are logged immediately",()=>InFolder(root,"log-protocol",folder=>
         {
-            using var rpc=new JsonRpcProcess(BuildTools.Python,["-u","-c","import sys,time; sys.stdout.write('Invalid-Header: 1\\r\\n\\r\\n'); sys.stdout.flush(); time.sleep(2)"],folder);
+            // Protocol framing is bytes: Python text stdout expands LF to CRLF on Windows.
+            using var rpc=new JsonRpcProcess(BuildTools.Python,["-u","-c","import sys,time; sys.stdout.buffer.write(b'Invalid-Header: 1\\r\\n\\r\\n'); sys.stdout.buffer.flush(); time.sleep(2)"],folder);
             Until(()=>ErrorLog.Read().Contains("No Content-Length header."));
         }));
         test("Python debugger stderr and exception events are persisted",()=>InFolder(root,"log-python-debugger",folder=>

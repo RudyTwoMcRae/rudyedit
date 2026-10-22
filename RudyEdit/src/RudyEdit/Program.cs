@@ -5,10 +5,10 @@ ErrorLog.InstallGlobalHandlers();
 if (args.Contains("--test-catalog")) { ReleaseDiagnostics.Catalog(); return 0; }
 if (args.Contains("--self-test")) return ReleaseDiagnostics.Run(args);
 
-if (args.Contains("--version")) { Console.WriteLine("RudyEdit 2.0.5"); return 0; }
+if (args.Contains("--version")) { Console.WriteLine("RudyEdit 2.0.6"); return 0; }
 if (args.Contains("--help") || args.Contains("-h"))
 {
-    Console.WriteLine("RudyEdit 2.0.5 — terminal text and code editor\nUsage: rudyedit [-f FILE] [-p FOLDER]\n       rudyedit [FILE]\n       rudyedit --doctor\n       rudyedit --self-test [--report FILE]\n\nAlt+F/E/M/T/V/B/H menus • F10 menu • F1 help • F2 Code/VIM • F3 Text/Development\nCtrl+S save • Ctrl+Shift+W close tab • Ctrl+W close panel • Ctrl+Q quit • Ctrl+Space commands\nCtrl+Alt+C opens the configuration folder\nConfiguration: " + Settings.ConfigDirectory + "\nError log: " + ErrorLog.FilePath);
+    Console.WriteLine("RudyEdit 2.0.6 — terminal text and code editor\nUsage: rudyedit [-f FILE] [-p FOLDER]\n       rudyedit [FILE]\n       rudyedit --doctor\n       rudyedit --self-test [--report FILE]\n\nAlt+F/E/M/T/V/B/H menus • F10 menu • F1 help • F2 Code/VIM • F3 Text/Development\nCtrl+S save • Ctrl+Shift+W close tab • Ctrl+W close panel • Ctrl+Q quit • Ctrl+Space commands\nCtrl+Alt+C opens the configuration folder\nConfiguration: " + Settings.ConfigDirectory + "\nError log: " + ErrorLog.FilePath);
     return 0;
 }
 try

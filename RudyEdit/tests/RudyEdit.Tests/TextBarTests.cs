@@ -36,7 +36,7 @@ static class TextBarTests
             string path=Path.Combine(folder,"note.MD");File.WriteAllText(path,"hello world");
             File.WriteAllText(Path.Combine(folder,"other.txt"),"<!-- tags: Other -->\nother");
             var t=new Terminal();if(vim)t.Key("f2");
-            t.Expect("Add tags:");t.Key("ctrl+shift+t");t.Do(()=>{if(t.Screen.Contains("Add tags:"))throw new Exception("Tag bar did not hide");});t.Key("ctrl+shift+t");t.Expect("Add tags:");t.Key("ctrl+alt+t");t.Key("ctrl+shift+t");t.Key("ctrl+alt+t");t.Key("f1");t.Expect("RudyEdit 2.0.5");t.Key("esc");t.Key("ctrl+alt+t");t.Key("text","Work, project, WORK");t.Key("enter");t.Expect("Tags: Work, project");
+            t.Expect("Add tags:");t.Key("ctrl+shift+t");t.Do(()=>{if(t.Screen.Contains("Add tags:"))throw new Exception("Tag bar did not hide");});t.Key("ctrl+shift+t");t.Expect("Add tags:");t.Key("ctrl+alt+t");t.Key("ctrl+shift+t");t.Key("ctrl+alt+t");t.Key("f1");t.Expect("RudyEdit 2.0.6");t.Key("esc");t.Key("ctrl+alt+t");t.Key("text","Work, project, WORK");t.Key("enter");t.Expect("Tags: Work, project");
             t.Key("esc");t.Key("ctrl+s");t.Do(()=>{if(!DocumentTags.Read(Document.Open(path)).SequenceEqual(new[]{"Work","project"}))throw new Exception("Tags not saved");});
             t.Key("ctrl+alt+t");t.Key("text","unfinished");t.Key("esc");t.Key("ctrl+n");t.Key("ctrl+alt+t");t.Do(()=>{if(t.Screen.Contains("unfinished"))throw new Exception("Draft leaked across tabs");});t.Key("esc");t.Key("ctrl+alt+left");t.Expect("unfinished");
             t.Key("ctrl+alt+g");t.Key("text","WORK, project");t.Key("enter");t.Expect("1 files match all tags");t.Expect("note.MD");

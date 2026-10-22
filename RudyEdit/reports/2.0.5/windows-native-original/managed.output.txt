@@ -1,0 +1,347 @@
+PASS Published executable runs tests against its own loaded application assembly
+PASS Windows stream regression: Ctrl+Q/S and F1 become single commands, not escape text
+PASS Windows F1-F24 and Ctrl/Alt/Shift with both modifier sides and lock states
+PASS Windows Ctrl A-Z, arrows, digits, punctuation and modified text suppression
+PASS Windows records: repeats, key-up/modifiers ignored, UTF-16, fragmented escapes and paste
+PASS Terminal setup keeps Windows in native mode, handles Ctrl+C/mouse, and restores output
+PASS CSI decoder rejects malformed numbers, release events and unsupported functional keys
+PASS Failed build/run launch cannot poison Active, Stop or Quit
+PASS Windows editor commands, save and quit through native-code
+PASS Windows quit saves unsaved work through native-code
+PASS Windows safe quit/cancel in menu through native-code
+PASS Windows safe quit/cancel in help through native-code
+PASS Windows safe quit/cancel in files through native-code
+PASS Windows safe quit/cancel in console through native-code
+PASS Windows safe quit/cancel in chord through native-code
+PASS Windows safe quit/cancel in save-as through native-code
+PASS Windows safe quit/cancel in open through native-code
+PASS Windows safe quit/cancel in quit-save-as through native-code
+PASS Windows editor commands, save and quit through native-vim
+PASS Windows quit saves unsaved work through native-vim
+PASS Windows safe quit/cancel in menu through native-vim
+PASS Windows safe quit/cancel in help through native-vim
+PASS Windows safe quit/cancel in files through native-vim
+PASS Windows safe quit/cancel in console through native-vim
+PASS Windows safe quit/cancel in chord through native-vim
+PASS Windows safe quit/cancel in save-as through native-vim
+PASS Windows safe quit/cancel in open through native-vim
+PASS Windows safe quit/cancel in quit-save-as through native-vim
+PASS Windows editor commands, save and quit through csi-code
+PASS Windows quit saves unsaved work through csi-code
+PASS Windows safe quit/cancel in menu through csi-code
+PASS Windows safe quit/cancel in help through csi-code
+PASS Windows safe quit/cancel in files through csi-code
+PASS Windows safe quit/cancel in console through csi-code
+PASS Windows safe quit/cancel in chord through csi-code
+PASS Windows safe quit/cancel in save-as through csi-code
+PASS Windows safe quit/cancel in open through csi-code
+PASS Windows safe quit/cancel in quit-save-as through csi-code
+PASS Windows editor commands, save and quit through csi-vim
+PASS Windows quit saves unsaved work through csi-vim
+PASS Windows safe quit/cancel in menu through csi-vim
+PASS Windows safe quit/cancel in help through csi-vim
+PASS Windows safe quit/cancel in files through csi-vim
+PASS Windows safe quit/cancel in console through csi-vim
+PASS Windows safe quit/cancel in chord through csi-vim
+PASS Windows safe quit/cancel in save-as through csi-vim
+PASS Windows safe quit/cancel in open through csi-vim
+PASS Windows safe quit/cancel in quit-save-as through csi-vim
+PASS Windows editor commands, save and quit through legacy-code
+PASS Windows quit saves unsaved work through legacy-code
+PASS Windows safe quit/cancel in menu through legacy-code
+PASS Windows safe quit/cancel in help through legacy-code
+PASS Windows safe quit/cancel in files through legacy-code
+PASS Windows safe quit/cancel in console through legacy-code
+PASS Windows safe quit/cancel in chord through legacy-code
+PASS Windows safe quit/cancel in save-as through legacy-code
+PASS Windows safe quit/cancel in open through legacy-code
+PASS Windows safe quit/cancel in quit-save-as through legacy-code
+PASS Windows editor commands, save and quit through legacy-vim
+PASS Windows quit saves unsaved work through legacy-vim
+PASS Windows safe quit/cancel in menu through legacy-vim
+PASS Windows safe quit/cancel in help through legacy-vim
+PASS Windows safe quit/cancel in files through legacy-vim
+PASS Windows safe quit/cancel in console through legacy-vim
+PASS Windows safe quit/cancel in chord through legacy-vim
+PASS Windows safe quit/cancel in save-as through legacy-vim
+PASS Windows safe quit/cancel in open through legacy-vim
+PASS Windows safe quit/cancel in quit-save-as through legacy-vim
+PASS Remove panel via ctrl+w, native, VIM=False, vertical=False
+PASS Remove panel via ctrl+w, native, VIM=False, vertical=True
+PASS Remove panel via ctrl+w, native, VIM=True, vertical=False
+PASS Remove panel via ctrl+w, native, VIM=True, vertical=True
+PASS Remove panel via ctrl+w, csi, VIM=False, vertical=False
+PASS Remove panel via ctrl+w, csi, VIM=False, vertical=True
+PASS Remove panel via ctrl+w, csi, VIM=True, vertical=False
+PASS Remove panel via ctrl+w, csi, VIM=True, vertical=True
+PASS Open config folder shortcut: native, VIM=False
+PASS Open config folder shortcut: native, VIM=True
+PASS Open config folder shortcut: legacy, VIM=False
+PASS Open config folder shortcut: legacy, VIM=True
+PASS Open config folder shortcut: csi, VIM=False
+PASS Open config folder shortcut: csi, VIM=True
+PASS Editor command failures are recorded in the persistent error log
+PASS Config fallback preserves the exception in the error log
+PASS Tab and panel defaults upgrade both legacy shortcuts
+PASS Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=False
+PASS Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=True
+PASS Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=False
+PASS Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=True
+PASS Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=False
+PASS Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=True
+PASS Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=False
+PASS Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=True
+PASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=False
+PASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=True
+PASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=False
+PASS Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=True
+PASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=False
+PASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=True
+PASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=False
+PASS Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=True
+PASS Existing XML is migrated accurately and idempotently without changing custom bindings
+PASS Windows INPUT_RECORD raw binary layout matches Win32 offsets
+PASS Tag metadata deduplicates, sanitizes and preserves cursor/selection with undo
+PASS Text bars add/save/search/clear tags and format via keyboard and mouse Code
+PASS Text bars add/save/search/clear tags and format via keyboard and mouse VIM
+PASS Tag search matches all tags case insensitively with upper-case extensions
+PASS Every Nerd UI icon occupies one private-use cell
+PASS File icons classify languages, data, media and unknown extensions without reading files
+PASS Special filename and folder icons take precedence over extensions
+PASS Graphic icon settings default on and validate explicit boolean fallback
+PASS Graphic menu clicks, file icons, plain fallback and font help Code
+PASS Graphic menu clicks, file icons, plain fallback and font help VIM
+PASS Formatting icon keyboard access fits terminal width 20
+PASS Formatting icon keyboard access fits terminal width 40
+PASS Formatting icon keyboard access fits terminal width 80
+PASS Formatting icon keyboard access fits terminal width 120
+PASS Tag registry round trip: names only in XML, hidden id, UTF-8 CRLF BOM, editor text intact
+PASS Tag-only unsaved changes discard without changing Tags.xml
+PASS Legacy header migrates on save without stripping examples or body blank lines
+PASS Identifier survives external rename; Save As creates independent tags
+PASS Registry merges independent saves and refuses stale edits on the same id
+PASS Malformed registry is preserved and cannot partially save a tagged document
+PASS Failed document replacement rolls the XML transaction back
+PASS The registry cannot tag itself or be replaced by a tagged document
+PASS Tags.xml validation rejects duplicate IDs and DTDs; tag names are XML escaped
+PASS Error log records UTC time, context, stack and nested exception
+PASS Concurrent error records are complete without lost entries
+PASS Error log rotation keeps three backups and a bounded current file
+PASS Unwritable configuration path logs to the temporary fallback
+PASS Tool stderr, stdout diagnostics and nonzero exit are persisted
+FAIL Malformed asynchronous protocol messages are logged immediately: System.Exception: Timed out waiting for error logging
+   at ErrorLogTests.Until(Func`1 condition)
+   at ErrorLogTests.<>c.<Run>b__3_15(String folder)
+   at ErrorLogTests.InFolder(String root, String name, Action`1 action)
+   at ErrorLogTests.<>c__DisplayClass3_0.<Run>b__5()
+   at Program.<>c__DisplayClass0_0.<<Main>$>g__Test|1(String name, Action action)
+PASS Python debugger stderr and exception events are persisted
+PASS Configuration folder launcher preserves paths as a single non-shell argument
+PASS [command:new] verified outcome via keybinding / Code
+PASS [command:new] verified outcome via keybinding / VIM
+PASS [command:open] verified outcome via keybinding / Code
+PASS [command:open] verified outcome via keybinding / VIM
+PASS [command:folder] verified outcome via keybinding / Code
+PASS [command:folder] verified outcome via keybinding / VIM
+PASS [command:save] verified outcome via keybinding / Code
+PASS [command:save] verified outcome via keybinding / VIM
+PASS [command:save-all] verified outcome via keybinding / Code
+PASS [command:save-all] verified outcome via keybinding / VIM
+PASS [command:save-as] verified outcome via keybinding / Code
+PASS [command:save-as] verified outcome via keybinding / VIM
+PASS [command:close-tab] verified outcome via keybinding / Code
+PASS [command:close-tab] verified outcome via keybinding / VIM
+PASS [command:close-other-tabs] verified outcome via keybinding / Code
+PASS [command:close-other-tabs] verified outcome via keybinding / VIM
+PASS [command:quit] verified outcome via keybinding / Code
+PASS [command:quit] verified outcome via keybinding / VIM
+PASS [command:keys-code] verified outcome via keybinding / Code
+PASS [command:keys-code] verified outcome via keybinding / VIM
+PASS [command:keys-vim] verified outcome via keybinding / Code
+PASS [command:keys-vim] verified outcome via keybinding / VIM
+PASS [command:toggle-keys] verified outcome via keybinding / Code
+PASS [command:toggle-keys] verified outcome via keybinding / VIM
+PASS [command:text-mode] verified outcome via keybinding / Code
+PASS [command:text-mode] verified outcome via keybinding / VIM
+PASS [command:dev-mode] verified outcome via keybinding / Code
+PASS [command:dev-mode] verified outcome via keybinding / VIM
+PASS [command:toggle-mode] verified outcome via keybinding / Code
+PASS [command:toggle-mode] verified outcome via keybinding / VIM
+PASS [command:bold] verified outcome via keybinding / Code
+PASS [command:bold] verified outcome via keybinding / VIM
+PASS [command:italic] verified outcome via keybinding / Code
+PASS [command:italic] verified outcome via keybinding / VIM
+PASS [command:underline] verified outcome via keybinding / Code
+PASS [command:underline] verified outcome via keybinding / VIM
+PASS [command:font] verified outcome via keybinding / Code
+PASS [command:font] verified outcome via keybinding / VIM
+PASS [command:font-size] verified outcome via keybinding / Code
+PASS [command:font-size] verified outcome via keybinding / VIM
+PASS [command:foreground] verified outcome via keybinding / Code
+PASS [command:foreground] verified outcome via keybinding / VIM
+PASS [command:background] verified outcome via keybinding / Code
+PASS [command:background] verified outcome via keybinding / VIM
+PASS [command:bullets] verified outcome via keybinding / Code
+PASS [command:bullets] verified outcome via keybinding / VIM
+PASS [command:ordered] verified outcome via keybinding / Code
+PASS [command:ordered] verified outcome via keybinding / VIM
+PASS [command:toggle-tag-bar] verified outcome via keybinding / Code
+PASS [command:toggle-tag-bar] verified outcome via keybinding / VIM
+PASS [command:tag-entry] verified outcome via keybinding / Code
+PASS [command:tag-entry] verified outcome via keybinding / VIM
+PASS [command:format-bar] verified outcome via keybinding / Code
+PASS [command:format-bar] verified outcome via keybinding / VIM
+PASS [command:tags] verified outcome via keybinding / Code
+PASS [command:tags] verified outcome via keybinding / VIM
+PASS [command:search-tags] verified outcome via keybinding / Code
+PASS [command:search-tags] verified outcome via keybinding / VIM
+PASS [command:spell] verified outcome via keybinding / Code
+PASS [command:spell] verified outcome via keybinding / VIM
+PASS [command:toggle-spell] verified outcome via keybinding / Code
+PASS [command:toggle-spell] verified outcome via keybinding / VIM
+PASS [command:preview] verified outcome via keybinding / Code
+PASS [command:preview] verified outcome via keybinding / VIM
+PASS [command:undo] verified outcome via keybinding / Code
+PASS [command:undo] verified outcome via keybinding / VIM
+PASS [command:redo] verified outcome via keybinding / Code
+PASS [command:redo] verified outcome via keybinding / VIM
+PASS [command:copy] verified outcome via keybinding / Code
+PASS [command:copy] verified outcome via keybinding / VIM
+PASS [command:cut] verified outcome via keybinding / Code
+PASS [command:cut] verified outcome via keybinding / VIM
+PASS [command:paste] verified outcome via keybinding / Code
+PASS [command:paste] verified outcome via keybinding / VIM
+PASS [command:select-all] verified outcome via keybinding / Code
+PASS [command:select-all] verified outcome via keybinding / VIM
+PASS [command:find] verified outcome via keybinding / Code
+PASS [command:find] verified outcome via keybinding / VIM
+PASS [command:find-next] verified outcome via keybinding / Code
+PASS [command:find-next] verified outcome via keybinding / VIM
+PASS [command:replace] verified outcome via keybinding / Code
+PASS [command:replace] verified outcome via keybinding / VIM
+PASS [command:goto] verified outcome via keybinding / Code
+PASS [command:goto] verified outcome via keybinding / VIM
+PASS [command:complete] verified outcome via keybinding / Code
+PASS [command:complete] verified outcome via keybinding / VIM
+PASS [command:build] verified outcome via keybinding / Code
+PASS [command:build] verified outcome via keybinding / VIM
+PASS [command:run] verified outcome via keybinding / Code
+PASS [command:run] verified outcome via keybinding / VIM
+PASS [command:debug] verified outcome via keybinding / Code
+PASS [command:debug] verified outcome via keybinding / VIM
+PASS [command:step-over] verified outcome via keybinding / Code
+PASS [command:step-over] verified outcome via keybinding / VIM
+PASS [command:step-in] verified outcome via keybinding / Code
+PASS [command:step-in] verified outcome via keybinding / VIM
+PASS [command:step-out] verified outcome via keybinding / Code
+PASS [command:step-out] verified outcome via keybinding / VIM
+PASS [command:breakpoint] verified outcome via keybinding / Code
+PASS [command:breakpoint] verified outcome via keybinding / VIM
+PASS [command:variables] verified outcome via keybinding / Code
+PASS [command:variables] verified outcome via keybinding / VIM
+PASS [command:stop] verified outcome via keybinding / Code
+PASS [command:stop] verified outcome via keybinding / VIM
+PASS [command:diagnostics] verified outcome via keybinding / Code
+PASS [command:diagnostics] verified outcome via keybinding / VIM
+PASS [command:lsp] verified outcome via keybinding / Code
+PASS [command:lsp] verified outcome via keybinding / VIM
+PASS [command:terminal] verified outcome via keybinding / Code
+PASS [command:terminal] verified outcome via keybinding / VIM
+PASS [command:console] verified outcome via keybinding / Code
+PASS [command:console] verified outcome via keybinding / VIM
+PASS [command:files] verified outcome via keybinding / Code
+PASS [command:files] verified outcome via keybinding / VIM
+PASS [command:vertical] verified outcome via keybinding / Code
+PASS [command:vertical] verified outcome via keybinding / VIM
+PASS [command:horizontal] verified outcome via keybinding / Code
+PASS [command:horizontal] verified outcome via keybinding / VIM
+PASS [command:close-pane] verified outcome via keybinding / Code
+PASS [command:close-pane] verified outcome via keybinding / VIM
+PASS [command:close-other-panes] verified outcome via keybinding / Code
+PASS [command:close-other-panes] verified outcome via keybinding / VIM
+PASS [command:next-pane] verified outcome via keybinding / Code
+PASS [command:next-pane] verified outcome via keybinding / VIM
+PASS [command:previous-pane] verified outcome via keybinding / Code
+PASS [command:previous-pane] verified outcome via keybinding / VIM
+PASS [command:next-tab] verified outcome via keybinding / Code
+PASS [command:next-tab] verified outcome via keybinding / VIM
+PASS [command:previous-tab] verified outcome via keybinding / Code
+PASS [command:previous-tab] verified outcome via keybinding / VIM
+PASS [command:toggle-icons] verified outcome via keybinding / Code
+PASS [command:toggle-icons] verified outcome via keybinding / VIM
+PASS [command:font-icons] verified outcome via keybinding / Code
+PASS [command:font-icons] verified outcome via keybinding / VIM
+PASS [command:help] verified outcome via keybinding / Code
+PASS [command:help] verified outcome via keybinding / VIM
+PASS [command:shortcuts] verified outcome via keybinding / Code
+PASS [command:shortcuts] verified outcome via keybinding / VIM
+PASS [command:error-log] verified outcome via keybinding / Code
+PASS [command:error-log] verified outcome via keybinding / VIM
+PASS [command:manual] verified outcome via keybinding / Code
+PASS [command:manual] verified outcome via keybinding / VIM
+PASS [command:edit-config] verified outcome via keybinding / Code
+PASS [command:edit-config] verified outcome via keybinding / VIM
+PASS [command:edit-keys] verified outcome via keybinding / Code
+PASS [command:edit-keys] verified outcome via keybinding / VIM
+PASS [command:config-folder] verified outcome via keybinding / Code
+PASS [command:config-folder] verified outcome via keybinding / VIM
+PASS [command:palette] verified outcome via keybinding / Code
+PASS [command:palette] verified outcome via keybinding / VIM
+PASS [command:fm-open] verified outcome via keybinding / Code
+PASS [command:fm-open] verified outcome via keybinding / VIM
+PASS [command:fm-tab] verified outcome via keybinding / Code
+PASS [command:fm-tab] verified outcome via keybinding / VIM
+PASS [command:fm-find] verified outcome via keybinding / Code
+PASS [command:fm-find] verified outcome via keybinding / VIM
+PASS [command:fm-new] verified outcome via keybinding / Code
+PASS [command:fm-new] verified outcome via keybinding / VIM
+PASS [command:fm-folder] verified outcome via keybinding / Code
+PASS [command:fm-folder] verified outcome via keybinding / VIM
+PASS [command:fm-copy] verified outcome via keybinding / Code
+PASS [command:fm-copy] verified outcome via keybinding / VIM
+PASS [command:fm-move] verified outcome via keybinding / Code
+PASS [command:fm-move] verified outcome via keybinding / VIM
+PASS [command:fm-paste] verified outcome via keybinding / Code
+PASS [command:fm-paste] verified outcome via keybinding / VIM
+PASS Every command in the executable catalog has a verified outcome test
+PASS empty document coordinates
+PASS selection replacement and undo redo
+PASS UTF-8 CRLF BOM round trip and dirty state
+PASS surrogate and combining character deletion
+PASS line navigation preserves valid positions
+PASS Markdown wrappers place future text inside
+PASS ordered and bulleted lists
+PASS find wraps and selects
+PASS external edits cannot be silently overwritten
+PASS Save As protects existing destination
+PASS reject binary and invalid UTF8
+PASS settings defaults and branch parser
+PASS invalid settings are rejected
+PASS provided XML chords and scoped actions
+PASS XML unknown and duplicate commands rejected
+PASS language detection and keyword completion
+PASS English dictionary and suggestions
+PASS key decoding modifiers and enhanced ShiftSpace
+PASS Windows arrow events use the editor's canonical names with all modifiers
+PASS Windows quit and menu events match global shortcuts
+PASS Ghostty Kitty flag 1 menu and quit sequences including lock modifiers
+PASS function keys accept omitted Kitty parameters as well as legacy encodings
+PASS Close Tab default is explicit in XML and available to existing installations
+PASS render control text cannot inject escape sequences
+PASS SGR mouse coordinates, drag, release, shift and wheel
+PASS Windows input records preserve keys, mouse actions and viewport offsets
+PASS mouse hit testing maps terminal cells to complete graphemes and tabs
+PASS default tab bindings use Ctrl Alt arrows
+PASS pane splitting and removal
+PASS file copy, move, and overwrite guard
+PASS directory self-copy blocked
+PASS build plans and nearest project discovery
+PASS compiler diagnostic parsing
+PASS real process execution and standard input
+PASS real Python line debugging, breakpoints, locals
+PASS LSP framing, UTF-16 completion edits and live diagnostics
+PASS DAP request responses, asynchronous stop and stack frame
+PASS offline manuals and font included
+
+338 passed; 1 failed.
+
