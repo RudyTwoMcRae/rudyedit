@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">RudyEdit — binder and fountain pen</title>
+  <desc id="description">A midnight blue binder with three silver rings, ivory page edges, gold cover detailing, a large ornamental gold letter R, and a vintage black fountain pen with gold fittings and an exposed gold nib. All shapes, including the letter and pen, are vector paths.</desc>
+  <defs>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2b4263"/>
+      <stop offset="0.55" stop-color="#192d4a"/>
+      <stop offset="1" stop-color="#101e34"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#111d30"/>
+      <stop offset="0.5" stop-color="#304966"/>
+      <stop offset="1" stop-color="#182940"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.55" y2="1">
+      <stop stop-color="#fff5d4"/>
+      <stop offset="0.43" stop-color="#f0d390"/>
+      <stop offset="1" stop-color="#c49448"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.15" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset="0.32" stop-color="#dce6ed"/>
+      <stop offset="0.62" stop-color="#8295a7"/>
+      <stop offset="0.84" stop-color="#f4f8fc"/>
+      <stop offset="1" stop-color="#8c9caa"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#e6ddc9"/>
+      <stop offset="0.6" stop-color="#fff9ec"/>
+      <stop offset="1" stop-color="#cfc6b4"/>
+    </linearGradient>
+    <linearGradient id="pen-lacquer" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#080f1c"/>
+      <stop offset="0.28" stop-color="#314457"/>
+      <stop offset="0.43" stop-color="#172735"/>
+      <stop offset="0.77" stop-color="#090f18"/>
+      <stop offset="1" stop-color="#233443"/>
+    </linearGradient>
+    <linearGradient id="pen-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#9f6c2c"/>
+      <stop offset="0.3" stop-color="#ffe9a9"/>
+      <stop offset="0.52" stop-color="#d6ad59"/>
+      <stop offset="0.76" stop-color="#fff0b9"/>
+      <stop offset="1" stop-color="#a17436"/>
+    </linearGradient>
+  </defs>
+  <g id="binder" transform="translate(-2 28) scale(0.84)">
+    <rect x="92" y="66" width="359" height="400" rx="29" fill="#0a1424" opacity="0.04"/>
+    <rect x="97" y="71" width="349" height="390" rx="26" fill="#0a1424" opacity="0.07"/>
+    <!-- Lower cover and a small, clearly visible fore-edge of paper. -->
+    <rect x="105" y="68" width="343" height="390" rx="24" fill="#0d192b"/>
+    <path d="M148 82H426Q441 82 441 98V430Q441 445 425 445H148Z" fill="url(#pages)"/>
+    <path d="M428 101V425M433 106V420" fill="none" stroke="#c4bba9" stroke-width="2" opacity="0.8"/>
+    <!-- Book cloth spine and rounded front cover. -->
+    <rect x="95" y="55" width="338" height="390" rx="25" fill="url(#cover)"/>
+    <path d="M121 55H150V445H121Q95 445 95 419V81Q95 55 121 55Z" fill="url(#spine)"/>
+    <path d="M148 72V428" fill="none" stroke="#0c192c" stroke-width="4" opacity="0.7"/>
+    <path d="M153 73V427" fill="none" stroke="#6c83a2" stroke-width="1.5" opacity="0.32"/>
+    <!-- Inset gold rule and understated cover ornaments. -->
+    <rect x="172" y="78" width="239" height="344" rx="14" fill="none" stroke="#caa05c" stroke-width="2" opacity="0.7"/>
+    <rect x="178" y="84" width="227" height="332" rx="10" fill="none" stroke="#d8b779" stroke-width="0.8" opacity="0.23"/>
+    <path d="M258 119H279M296 119H317" stroke="#dcc08b" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+    <path d="M287.5 114L292.5 119L287.5 124L282.5 119Z" fill="url(#gold)"/>
+    <path d="M268 389H282M295 389H309" stroke="#dcc08b" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M288.5 385L292.5 389L288.5 393L284.5 389Z" fill="url(#gold)"/>
+    <!-- Exactly three metal rings, each seated in a dark reinforced eyelet. -->
+    <g id="ring-top">
+      <circle cx="145" cy="144" r="13" fill="#0a1526" stroke="#60738a" stroke-width="2"/>
+      <path d="M145 133C125 117 75 118 74 143C73 167 117 176 145 151" fill="none" stroke="#081322" stroke-width="13" stroke-linecap="round" opacity="0.5"/>
+      <path d="M145 131C125 115 75 116 74 141C73 165 117 174 145 149" fill="none" stroke="url(#silver)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M140 130C119 119 88 121 81 133" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    </g>
+    <g id="ring-middle">
+      <circle cx="145" cy="256" r="13" fill="#0a1526" stroke="#60738a" stroke-width="2"/>
+      <path d="M145 245C125 229 75 230 74 255C73 279 117 288 145 263" fill="none" stroke="#081322" stroke-width="13" stroke-linecap="round" opacity="0.5"/>
+      <path d="M145 243C125 227 75 228 74 253C73 277 117 286 145 261" fill="none" stroke="url(#silver)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M140 242C119 231 88 233 81 245" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    </g>
+    <g id="ring-bottom">
+      <circle cx="145" cy="368" r="13" fill="#0a1526" stroke="#60738a" stroke-width="2"/>
+      <path d="M145 357C125 341 75 342 74 367C73 391 117 400 145 375" fill="none" stroke="#081322" stroke-width="13" stroke-linecap="round" opacity="0.5"/>
+      <path d="M145 355C125 339 75 340 74 365C73 389 117 398 145 373" fill="none" stroke="url(#silver)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M140 354C119 343 88 345 81 357" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    </g>
+    <!-- Custom outlined R: slanted serif stem, open bowl and sweeping leg. -->
+    <g transform="translate(0 -4)">
+      <path fill="url(#gold)" fill-rule="evenodd" d="M190 185C211 174 239 166 273 166C328 166 354 186 349 218C345 246 324 263 292 269C306 279 315 296 328 319C340 342 353 353 374 343L378 350C354 372 326 363 309 337L281 290C274 278 266 273 248 273L233 341C231 351 238 354 255 354L253 364H178L180 355C196 354 202 350 205 336L235 195C238 182 222 181 192 192ZM264 184L249 257C291 260 318 243 324 216C330 189 306 176 264 184Z"/>
+      <path d="M235 185C222 167 199 162 183 173C168 184 174 199 187 200" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M180 355C168 355 163 366 173 372C182 378 199 374 211 366" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M318 338C335 365 368 369 386 349C395 339 390 328 381 329" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="fountain-pen" transform="rotate(12 413 256)">
+    <!-- Posted cap, lacquer barrel and gold pocket clip. -->
+    <path d="M402 98Q402 81 417 81Q433 81 433 98V257L428 344L417 443L402 386L406 344Z" fill="#091323" opacity="0.10" transform="translate(4 5)"/>
+    <path d="M400 233H426L425 332Q425 345 421 353H405Q401 345 401 332Z" fill="url(#pen-lacquer)" stroke="#081321" stroke-width="1.5"/>
+    <path d="M397 97Q397 79 413 79Q429 79 429 97V250Q429 261 413 261Q397 261 397 250Z" fill="url(#pen-lacquer)" stroke="#0a1421" stroke-width="1.5"/>
+    <path d="M402 99V238" stroke="#91a4b1" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+    <path d="M398 96Q413 88 428 96V102Q413 96 398 102Z" fill="url(#pen-gold)"/>
+    <path d="M425 101V216Q425 226 419 228" fill="none" stroke="#151f2a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M424 101V214Q424 222 420 224" fill="none" stroke="url(#pen-gold)" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="420" cy="224" rx="3.5" ry="4.5" fill="url(#pen-gold)"/>
+    <path d="M397 244Q413 249 429 244V252Q413 257 397 252Z" fill="url(#pen-gold)"/>
+    <path d="M399 260H427" stroke="#ae8547" stroke-width="2"/>
+    <!-- Tapered grip and the characteristic split, pierced fountain-pen nib. -->
+    <path d="M402 324H424L426 351Q414 358 400 351Z" fill="url(#pen-lacquer)" stroke="#081321" stroke-width="1.5"/>
+    <path d="M402 326H424" stroke="#b49154" stroke-width="3"/>
+    <path d="M402 350H424L437 383Q423 405 413 439Q403 405 389 383Z" fill="url(#pen-gold)" stroke="#9c7136" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M406 357H420M399 375Q413 362 427 375M399 385Q407 397 409 409M427 385Q419 397 417 409" fill="none" stroke="#936a32" stroke-width="1.4" opacity="0.85"/>
+    <path d="M413 380V437" stroke="#493723" stroke-width="1.7" stroke-linecap="round"/>
+    <circle cx="413" cy="377" r="3.1" fill="#493723"/>
+    <path d="M402 356L395 381L405 400" fill="none" stroke="#fff3c7" stroke-width="1.4" stroke-linecap="round" opacity="0.9"/>
+  </g>
+</svg>

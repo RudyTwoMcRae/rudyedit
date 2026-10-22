@@ -1,0 +1,2 @@
+PASS 9 config-folder/log PTY checks plus fatal-startup logging (kitty)
+

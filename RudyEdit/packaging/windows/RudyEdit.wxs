@@ -1,0 +1,1103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="RudyEdit" Language="1033" Version="2.0.5" Manufacturer="RudyEdit" UpgradeCode="D4984166-4052-47D1-90B0-8F5C320B086C">
+    <Package InstallerVersion="500" Compressed="yes" InstallScope="perMachine" />
+    <Media Id="1" Cabinet="rudyedit.cab" EmbedCab="yes" />
+    <Property Id="DESKTOP_SHORTCUT" Value="0" Secure="yes" />
+    <Icon Id="RudyEditIcon.ico" SourceFile="../../assets/rudyedit.ico" />
+    <Property Id="ARPPRODUCTICON" Value="RudyEditIcon.ico" />
+    <Property Id="ARPCOMMENTS" Value="Terminal Markdown and development editor" />
+    <MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of RudyEdit is already installed." />
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="INSTALLDIR" Name="RudyEdit">
+          <Component Id="C0e40b74646edbfb06db3f219" Guid="3B01C001-7432-5010-A85B-5A88665C9674" Win64="yes">
+            <File Id="F0e40b74646edbfb06db3f219" Source="../../dist/win-x64/FEATURES.md" Name="FEATURES.md" KeyPath="yes" />
+          </Component>
+          <Component Id="C27555128fe51002d69847396" Guid="3DBA7C44-E7FA-542F-8979-BE6D494C2F3F" Win64="yes">
+            <File Id="F27555128fe51002d69847396" Source="../../dist/win-x64/Microsoft.CSharp.dll" Name="Microsoft.CSharp.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cac3fd9ef422ee213e819b749" Guid="E1F3ECB0-FD40-5F12-87D8-E1E699E6D041" Win64="yes">
+            <File Id="Fac3fd9ef422ee213e819b749" Source="../../dist/win-x64/Microsoft.DiaSymReader.Native.amd64.dll" Name="Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ce479bc079fc8c21ec8b55419" Guid="528000B2-1E9D-53AE-8999-9C7BD5D5E146" Win64="yes">
+            <File Id="Fe479bc079fc8c21ec8b55419" Source="../../dist/win-x64/Microsoft.VisualBasic.Core.dll" Name="Microsoft.VisualBasic.Core.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C187de234d339217a1fed87cf" Guid="C8E0C625-C9DE-5FEE-AC06-2AACE52E8272" Win64="yes">
+            <File Id="F187de234d339217a1fed87cf" Source="../../dist/win-x64/Microsoft.VisualBasic.dll" Name="Microsoft.VisualBasic.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cbc4dfabc8aa0b6a167c5e53a" Guid="A39C81F3-F67D-5D88-91EB-B48223F47321" Win64="yes">
+            <File Id="Fbc4dfabc8aa0b6a167c5e53a" Source="../../dist/win-x64/Microsoft.Win32.Primitives.dll" Name="Microsoft.Win32.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2353e68bca991cee0a9534c6" Guid="91AC62B6-44B1-5BAF-B219-37CA70B96636" Win64="yes">
+            <File Id="F2353e68bca991cee0a9534c6" Source="../../dist/win-x64/Microsoft.Win32.Registry.dll" Name="Microsoft.Win32.Registry.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb335630551682c19a781afeb" Guid="8D84B9F7-F3B4-5825-9FAA-A62B4F45C647" Win64="yes">
+            <File Id="Fb335630551682c19a781afeb" Source="../../dist/win-x64/README.md" Name="README.md" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb02f3d94d503bb3564f7a434" Guid="E1E4F35F-4FD6-5AF2-86C2-FB08E5CD727B" Win64="yes">
+            <File Id="Fb02f3d94d503bb3564f7a434" Source="../../dist/win-x64/System.AppContext.dll" Name="System.AppContext.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9f6277c79a365171f9c3fde8" Guid="39FACDB2-0F4F-5BDD-97F3-EF1497F1D0D9" Win64="yes">
+            <File Id="F9f6277c79a365171f9c3fde8" Source="../../dist/win-x64/System.Buffers.dll" Name="System.Buffers.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C1c7750ff84a42cb4290c5060" Guid="EC3FD339-DFF2-51E7-AA0F-1A3088624135" Win64="yes">
+            <File Id="F1c7750ff84a42cb4290c5060" Source="../../dist/win-x64/System.Collections.Concurrent.dll" Name="System.Collections.Concurrent.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cfcf15524aeadd6bbe9f6bbfb" Guid="8414EBB0-038C-57CB-B139-DBD628F566E7" Win64="yes">
+            <File Id="Ffcf15524aeadd6bbe9f6bbfb" Source="../../dist/win-x64/System.Collections.Immutable.dll" Name="System.Collections.Immutable.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cbd7952c21dd4ce80a2733213" Guid="6F5FB313-7A43-55ED-B700-D1C763913814" Win64="yes">
+            <File Id="Fbd7952c21dd4ce80a2733213" Source="../../dist/win-x64/System.Collections.NonGeneric.dll" Name="System.Collections.NonGeneric.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc3477efcc885fea43addb3ad" Guid="3D6EF84A-84F4-5FB4-A101-DCB3986EE020" Win64="yes">
+            <File Id="Fc3477efcc885fea43addb3ad" Source="../../dist/win-x64/System.Collections.Specialized.dll" Name="System.Collections.Specialized.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4db77f36cf01c9b0efa91b7e" Guid="CC1B5961-BB50-5D8F-905B-EB6C714266DA" Win64="yes">
+            <File Id="F4db77f36cf01c9b0efa91b7e" Source="../../dist/win-x64/System.Collections.dll" Name="System.Collections.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C47ef5eeecbba5c15008edf82" Guid="C2E4CC3D-DE57-5597-8027-4F4A0890B000" Win64="yes">
+            <File Id="F47ef5eeecbba5c15008edf82" Source="../../dist/win-x64/System.ComponentModel.Annotations.dll" Name="System.ComponentModel.Annotations.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C60a73e5e6ce4f40fa84f8447" Guid="1D0AAE67-1EC1-51F9-ACA3-36CD23344C47" Win64="yes">
+            <File Id="F60a73e5e6ce4f40fa84f8447" Source="../../dist/win-x64/System.ComponentModel.DataAnnotations.dll" Name="System.ComponentModel.DataAnnotations.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cfd10d1349061260bf6d61380" Guid="3A259804-0DBB-55DA-9FD8-41126B490F6A" Win64="yes">
+            <File Id="Ffd10d1349061260bf6d61380" Source="../../dist/win-x64/System.ComponentModel.EventBasedAsync.dll" Name="System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cd585bc374d16bc05512942f1" Guid="0C59AE96-237C-5C92-8A3B-F68D8B1D93AC" Win64="yes">
+            <File Id="Fd585bc374d16bc05512942f1" Source="../../dist/win-x64/System.ComponentModel.Primitives.dll" Name="System.ComponentModel.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C915da2f13b60e1e875f10fd4" Guid="D493729F-959C-575B-82A4-3DCDBDCB494B" Win64="yes">
+            <File Id="F915da2f13b60e1e875f10fd4" Source="../../dist/win-x64/System.ComponentModel.TypeConverter.dll" Name="System.ComponentModel.TypeConverter.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2b229f72ef121cd022900f29" Guid="34C3AFF9-BD75-5F56-9A17-5174A2FAFDA5" Win64="yes">
+            <File Id="F2b229f72ef121cd022900f29" Source="../../dist/win-x64/System.ComponentModel.dll" Name="System.ComponentModel.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc8c426243acb1a0698160467" Guid="754D6B6F-9974-5189-92AE-27FAD7135452" Win64="yes">
+            <File Id="Fc8c426243acb1a0698160467" Source="../../dist/win-x64/System.Configuration.dll" Name="System.Configuration.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4cb32f5aa2fb6011467d476e" Guid="F91D0267-2213-565F-AFBB-CAC404F98816" Win64="yes">
+            <File Id="F4cb32f5aa2fb6011467d476e" Source="../../dist/win-x64/System.Console.dll" Name="System.Console.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C263026640d716e7ae004ba6d" Guid="69312666-6DAE-57CF-A812-E27FFE69DA93" Win64="yes">
+            <File Id="F263026640d716e7ae004ba6d" Source="../../dist/win-x64/System.Core.dll" Name="System.Core.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C061634ce166ca2197b7aaa21" Guid="66E1D9BB-404A-51A8-96BD-5BD03CE11255" Win64="yes">
+            <File Id="F061634ce166ca2197b7aaa21" Source="../../dist/win-x64/System.Data.Common.dll" Name="System.Data.Common.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C268a6ec6ccf48d915f5dd8ff" Guid="8AD41A2E-8BE1-5779-A5B6-321BFBE2E584" Win64="yes">
+            <File Id="F268a6ec6ccf48d915f5dd8ff" Source="../../dist/win-x64/System.Data.DataSetExtensions.dll" Name="System.Data.DataSetExtensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C5da7deb43f742991075c8111" Guid="42DFC21E-50A3-54F3-9054-EAC507835273" Win64="yes">
+            <File Id="F5da7deb43f742991075c8111" Source="../../dist/win-x64/System.Data.dll" Name="System.Data.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cf3dbbecfdef645d58b5fe0c2" Guid="993D04B3-0CD2-5227-A2D9-D8AF1E82D338" Win64="yes">
+            <File Id="Ff3dbbecfdef645d58b5fe0c2" Source="../../dist/win-x64/System.Diagnostics.Contracts.dll" Name="System.Diagnostics.Contracts.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2ee5e382592d74d4ca3ce8fa" Guid="EE7E6508-6131-5450-850E-E1884A649EB1" Win64="yes">
+            <File Id="F2ee5e382592d74d4ca3ce8fa" Source="../../dist/win-x64/System.Diagnostics.Debug.dll" Name="System.Diagnostics.Debug.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2da9076bc738830edd187486" Guid="30998A83-6DC1-5AB6-A220-310567E3E120" Win64="yes">
+            <File Id="F2da9076bc738830edd187486" Source="../../dist/win-x64/System.Diagnostics.DiagnosticSource.dll" Name="System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C20db08ddde21a48e341c9d77" Guid="AFB14257-9BCC-57D2-B380-7261CE3AB3B9" Win64="yes">
+            <File Id="F20db08ddde21a48e341c9d77" Source="../../dist/win-x64/System.Diagnostics.FileVersionInfo.dll" Name="System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ca8c26c0a1af9b27fc5f9f81f" Guid="6BE31008-5299-5037-8D0A-719EC1FB2C7A" Win64="yes">
+            <File Id="Fa8c26c0a1af9b27fc5f9f81f" Source="../../dist/win-x64/System.Diagnostics.Process.dll" Name="System.Diagnostics.Process.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C75e430e2b136d8c38a28c527" Guid="286BAD96-E392-517B-9B92-286A7F63E09E" Win64="yes">
+            <File Id="F75e430e2b136d8c38a28c527" Source="../../dist/win-x64/System.Diagnostics.StackTrace.dll" Name="System.Diagnostics.StackTrace.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2bdd178253b461d4bdf8b0a0" Guid="C401DC1D-B4C4-5035-B170-C549FE125101" Win64="yes">
+            <File Id="F2bdd178253b461d4bdf8b0a0" Source="../../dist/win-x64/System.Diagnostics.TextWriterTraceListener.dll" Name="System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C492f5e09b249b29ed6c7b9aa" Guid="C1E4C96F-4767-555B-B3CF-4503775B1C9B" Win64="yes">
+            <File Id="F492f5e09b249b29ed6c7b9aa" Source="../../dist/win-x64/System.Diagnostics.Tools.dll" Name="System.Diagnostics.Tools.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C53fb49f2ed988ec5d5f6c515" Guid="746188D5-3199-5894-8514-C4A161906CF6" Win64="yes">
+            <File Id="F53fb49f2ed988ec5d5f6c515" Source="../../dist/win-x64/System.Diagnostics.TraceSource.dll" Name="System.Diagnostics.TraceSource.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cab37bc9dd5309706f2411a74" Guid="D030A90B-2085-526D-9078-9192BFC6E8B5" Win64="yes">
+            <File Id="Fab37bc9dd5309706f2411a74" Source="../../dist/win-x64/System.Diagnostics.Tracing.dll" Name="System.Diagnostics.Tracing.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cf57a9a391dd61e1cb25cc0dc" Guid="404AB32E-5AB5-54AD-9A42-8DE9FD822826" Win64="yes">
+            <File Id="Ff57a9a391dd61e1cb25cc0dc" Source="../../dist/win-x64/System.Drawing.Primitives.dll" Name="System.Drawing.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C7659bbb29d0543a3683ddd66" Guid="B734FC7A-322D-5EC6-9278-8C75FF1138FB" Win64="yes">
+            <File Id="F7659bbb29d0543a3683ddd66" Source="../../dist/win-x64/System.Drawing.dll" Name="System.Drawing.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C87e6cda150ef7ac41f8c2c4b" Guid="A1248D11-9F55-5E71-812D-D6F6A32E9F4A" Win64="yes">
+            <File Id="F87e6cda150ef7ac41f8c2c4b" Source="../../dist/win-x64/System.Dynamic.Runtime.dll" Name="System.Dynamic.Runtime.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ce8562947d039a146247b2ee9" Guid="E7AEBF2B-6A73-5B6E-AE5C-7A6465DC4FA6" Win64="yes">
+            <File Id="Fe8562947d039a146247b2ee9" Source="../../dist/win-x64/System.Formats.Asn1.dll" Name="System.Formats.Asn1.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9a4c171e383d33020b2541e0" Guid="DEA8C691-DB40-5E07-B48C-184D0D3ED429" Win64="yes">
+            <File Id="F9a4c171e383d33020b2541e0" Source="../../dist/win-x64/System.Formats.Tar.dll" Name="System.Formats.Tar.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3d16373316536e8b1db2e4db" Guid="4C69F268-1F9A-5931-9C46-8A0E099EDA2C" Win64="yes">
+            <File Id="F3d16373316536e8b1db2e4db" Source="../../dist/win-x64/System.Globalization.Calendars.dll" Name="System.Globalization.Calendars.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C235b09624b6f65a1cf7e79d7" Guid="C6E01C71-FC84-59E6-B0E5-499C5D377510" Win64="yes">
+            <File Id="F235b09624b6f65a1cf7e79d7" Source="../../dist/win-x64/System.Globalization.Extensions.dll" Name="System.Globalization.Extensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4ec0b34648569249fde6cf83" Guid="7DCE6260-F99F-5F25-8B42-EBC503D065A8" Win64="yes">
+            <File Id="F4ec0b34648569249fde6cf83" Source="../../dist/win-x64/System.Globalization.dll" Name="System.Globalization.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3fa844d718841058d14d5f9b" Guid="34411ABA-5EB8-506F-94EE-F928F77EDF9E" Win64="yes">
+            <File Id="F3fa844d718841058d14d5f9b" Source="../../dist/win-x64/System.IO.Compression.Brotli.dll" Name="System.IO.Compression.Brotli.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C378ec86f3943aca936294b9c" Guid="0B88DDCE-B8F1-5F4C-8F3B-48EB3C3FB15D" Win64="yes">
+            <File Id="F378ec86f3943aca936294b9c" Source="../../dist/win-x64/System.IO.Compression.FileSystem.dll" Name="System.IO.Compression.FileSystem.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C7ea38e8844c69012ab428353" Guid="A9FBCFD4-301C-5DCE-93D8-0807A66CBAFC" Win64="yes">
+            <File Id="F7ea38e8844c69012ab428353" Source="../../dist/win-x64/System.IO.Compression.Native.dll" Name="System.IO.Compression.Native.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cea08eaeb9f0a4ed12081b7a0" Guid="F4EBC6AC-276F-528F-849D-DC3A95682ED9" Win64="yes">
+            <File Id="Fea08eaeb9f0a4ed12081b7a0" Source="../../dist/win-x64/System.IO.Compression.ZipFile.dll" Name="System.IO.Compression.ZipFile.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cbfce40334ad7c25439608a5b" Guid="F7EF8BB9-1191-5AC3-B6D0-02CB1675FDA2" Win64="yes">
+            <File Id="Fbfce40334ad7c25439608a5b" Source="../../dist/win-x64/System.IO.Compression.dll" Name="System.IO.Compression.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C936f028c392216d868c003a7" Guid="3331539A-2340-53FA-9320-48E52799913E" Win64="yes">
+            <File Id="F936f028c392216d868c003a7" Source="../../dist/win-x64/System.IO.FileSystem.AccessControl.dll" Name="System.IO.FileSystem.AccessControl.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb020e0effb08920ed93cd1df" Guid="69C5A34E-3FB4-5A0B-B855-C7747D32607A" Win64="yes">
+            <File Id="Fb020e0effb08920ed93cd1df" Source="../../dist/win-x64/System.IO.FileSystem.DriveInfo.dll" Name="System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2e8ce6948cdaac7821a3f866" Guid="5552CB09-8DF5-5BAB-9C0F-78A3C17450A5" Win64="yes">
+            <File Id="F2e8ce6948cdaac7821a3f866" Source="../../dist/win-x64/System.IO.FileSystem.Primitives.dll" Name="System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb8df83ebf67e0b8547c4ab4c" Guid="2804402F-BE54-5651-9434-5AD2B38BB07B" Win64="yes">
+            <File Id="Fb8df83ebf67e0b8547c4ab4c" Source="../../dist/win-x64/System.IO.FileSystem.Watcher.dll" Name="System.IO.FileSystem.Watcher.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C08a338aa44d3adfe748d5c50" Guid="86F3D428-84DA-5646-B43A-AFE1952B79B1" Win64="yes">
+            <File Id="F08a338aa44d3adfe748d5c50" Source="../../dist/win-x64/System.IO.FileSystem.dll" Name="System.IO.FileSystem.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C742f6478d939e4df692a1231" Guid="6B7BA399-1796-5A11-BD94-FD3C53EF01B1" Win64="yes">
+            <File Id="F742f6478d939e4df692a1231" Source="../../dist/win-x64/System.IO.IsolatedStorage.dll" Name="System.IO.IsolatedStorage.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C5f3e262b6877eda066457e24" Guid="468BDEE0-572A-5995-8E6D-7258354DC227" Win64="yes">
+            <File Id="F5f3e262b6877eda066457e24" Source="../../dist/win-x64/System.IO.MemoryMappedFiles.dll" Name="System.IO.MemoryMappedFiles.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C1608cb077f6aeef30bd2d091" Guid="B5F2E5F9-E684-50CF-A885-429C31446014" Win64="yes">
+            <File Id="F1608cb077f6aeef30bd2d091" Source="../../dist/win-x64/System.IO.Pipelines.dll" Name="System.IO.Pipelines.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9ef9b7de92b735dcf05a9c11" Guid="647FA2EA-F486-5BEC-8292-BF8F2EFBFB08" Win64="yes">
+            <File Id="F9ef9b7de92b735dcf05a9c11" Source="../../dist/win-x64/System.IO.Pipes.AccessControl.dll" Name="System.IO.Pipes.AccessControl.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc22fef806ba47f6137be0b94" Guid="2019C566-4EFC-5AE6-A976-C9D52EA37FEB" Win64="yes">
+            <File Id="Fc22fef806ba47f6137be0b94" Source="../../dist/win-x64/System.IO.Pipes.dll" Name="System.IO.Pipes.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C7701a8d32e34bc6dce147fe8" Guid="1954F022-420A-5194-84DF-2877C99C20B5" Win64="yes">
+            <File Id="F7701a8d32e34bc6dce147fe8" Source="../../dist/win-x64/System.IO.UnmanagedMemoryStream.dll" Name="System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C32deedc44bb5882b7a52a3cf" Guid="E0E1F36B-7ACA-50E3-ABE6-74941720196F" Win64="yes">
+            <File Id="F32deedc44bb5882b7a52a3cf" Source="../../dist/win-x64/System.IO.dll" Name="System.IO.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9f5c99c4c0437ddc224a4daa" Guid="5E043EEB-5106-5400-AFC1-3E4FB46C3416" Win64="yes">
+            <File Id="F9f5c99c4c0437ddc224a4daa" Source="../../dist/win-x64/System.Linq.AsyncEnumerable.dll" Name="System.Linq.AsyncEnumerable.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C826a628b3eaf671a106e27e0" Guid="B044F501-B86A-559B-BDDD-C083C8382944" Win64="yes">
+            <File Id="F826a628b3eaf671a106e27e0" Source="../../dist/win-x64/System.Linq.Expressions.dll" Name="System.Linq.Expressions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cf46f8d42e01ff3165873cea0" Guid="599EBFF5-C16B-5282-BB05-038630008ACA" Win64="yes">
+            <File Id="Ff46f8d42e01ff3165873cea0" Source="../../dist/win-x64/System.Linq.Parallel.dll" Name="System.Linq.Parallel.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C034b1532730a824dcc49cf02" Guid="E61F1174-1EC0-5E5F-899D-5721AA74FDFB" Win64="yes">
+            <File Id="F034b1532730a824dcc49cf02" Source="../../dist/win-x64/System.Linq.Queryable.dll" Name="System.Linq.Queryable.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C46fab460b8e71914c3ddfc9c" Guid="5B680558-3C6F-5CAC-BD65-77D50BC4609A" Win64="yes">
+            <File Id="F46fab460b8e71914c3ddfc9c" Source="../../dist/win-x64/System.Linq.dll" Name="System.Linq.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C777f3785b9e04b61ee8995af" Guid="0C2C7047-1CB1-54CC-A2DD-CD8FB3BBE5FB" Win64="yes">
+            <File Id="F777f3785b9e04b61ee8995af" Source="../../dist/win-x64/System.Memory.dll" Name="System.Memory.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C0d6020323eb475d72b3b04eb" Guid="2F125E0D-7A93-5738-92C3-69AC22CD2183" Win64="yes">
+            <File Id="F0d6020323eb475d72b3b04eb" Source="../../dist/win-x64/System.Net.Http.Json.dll" Name="System.Net.Http.Json.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cf54746558c893280eb4f4313" Guid="543C2DA2-D3A5-5AC0-9FC1-2D69173E0F60" Win64="yes">
+            <File Id="Ff54746558c893280eb4f4313" Source="../../dist/win-x64/System.Net.Http.dll" Name="System.Net.Http.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb399768039b2a904e9d4192c" Guid="1826ABBE-95CE-5197-92E6-7944FA00D0D1" Win64="yes">
+            <File Id="Fb399768039b2a904e9d4192c" Source="../../dist/win-x64/System.Net.HttpListener.dll" Name="System.Net.HttpListener.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ccd9f7d40dec26ca0da16c577" Guid="502FAB77-68AF-56A0-964E-77A5052031A6" Win64="yes">
+            <File Id="Fcd9f7d40dec26ca0da16c577" Source="../../dist/win-x64/System.Net.Mail.dll" Name="System.Net.Mail.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc34ba8bd9dcd19fd51819bfc" Guid="679C44E6-5DD3-53F3-9BB6-49B892ED64B4" Win64="yes">
+            <File Id="Fc34ba8bd9dcd19fd51819bfc" Source="../../dist/win-x64/System.Net.NameResolution.dll" Name="System.Net.NameResolution.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C34e0e0f91a8b843bf24c1648" Guid="7C3ED22B-5B6F-5415-85A0-30130667CA87" Win64="yes">
+            <File Id="F34e0e0f91a8b843bf24c1648" Source="../../dist/win-x64/System.Net.NetworkInformation.dll" Name="System.Net.NetworkInformation.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cde862f5901b23a1c592f77dd" Guid="34080AEE-5059-5793-8E26-A83FACC40E4A" Win64="yes">
+            <File Id="Fde862f5901b23a1c592f77dd" Source="../../dist/win-x64/System.Net.Ping.dll" Name="System.Net.Ping.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cd225dedb651e92b6febb3864" Guid="81560D4F-37BF-5F0C-8858-CB4D565E6EC7" Win64="yes">
+            <File Id="Fd225dedb651e92b6febb3864" Source="../../dist/win-x64/System.Net.Primitives.dll" Name="System.Net.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3b83e9ad9ec45d1508e25efd" Guid="ADDD0FE6-7567-5B96-AA36-C35F9B5983C2" Win64="yes">
+            <File Id="F3b83e9ad9ec45d1508e25efd" Source="../../dist/win-x64/System.Net.Quic.dll" Name="System.Net.Quic.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C8619deae3c84fd07d524e8c5" Guid="39C612A5-E75A-513D-A47F-9D1D7370DB55" Win64="yes">
+            <File Id="F8619deae3c84fd07d524e8c5" Source="../../dist/win-x64/System.Net.Requests.dll" Name="System.Net.Requests.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C7599359241c303fbb14f151f" Guid="FCD35B02-83C3-5170-ADF6-81650F5A7026" Win64="yes">
+            <File Id="F7599359241c303fbb14f151f" Source="../../dist/win-x64/System.Net.Security.dll" Name="System.Net.Security.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C1631e03083fbd34dd6d941a7" Guid="85A0A24A-58B3-52F5-B8DF-E15304B1C847" Win64="yes">
+            <File Id="F1631e03083fbd34dd6d941a7" Source="../../dist/win-x64/System.Net.ServerSentEvents.dll" Name="System.Net.ServerSentEvents.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ce899c23d687aa8c9a97106e7" Guid="EDCAE414-0B20-5861-956A-FAF2622A9921" Win64="yes">
+            <File Id="Fe899c23d687aa8c9a97106e7" Source="../../dist/win-x64/System.Net.ServicePoint.dll" Name="System.Net.ServicePoint.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C00b891b0992a9fcbbe7001fc" Guid="B35DA7AB-AD04-5126-AAC4-777C2C53E027" Win64="yes">
+            <File Id="F00b891b0992a9fcbbe7001fc" Source="../../dist/win-x64/System.Net.Sockets.dll" Name="System.Net.Sockets.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C62dafbdc5db4e6f4b9cfcf5d" Guid="F55AFD8E-6A98-5D02-817F-D96C0C749636" Win64="yes">
+            <File Id="F62dafbdc5db4e6f4b9cfcf5d" Source="../../dist/win-x64/System.Net.WebClient.dll" Name="System.Net.WebClient.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C6e121b5392b96140f13824de" Guid="DC637DC4-3465-5DF4-B3F4-6857FD70F030" Win64="yes">
+            <File Id="F6e121b5392b96140f13824de" Source="../../dist/win-x64/System.Net.WebHeaderCollection.dll" Name="System.Net.WebHeaderCollection.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C58d827bea77f20aaf0e10d9e" Guid="2C51B177-F2AA-56F0-BA2C-DB6379F7DD2D" Win64="yes">
+            <File Id="F58d827bea77f20aaf0e10d9e" Source="../../dist/win-x64/System.Net.WebProxy.dll" Name="System.Net.WebProxy.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C6582959c1f3084b7b93ad29c" Guid="1AD22ACE-C9F8-5D9E-A5E4-B429A41E952F" Win64="yes">
+            <File Id="F6582959c1f3084b7b93ad29c" Source="../../dist/win-x64/System.Net.WebSockets.Client.dll" Name="System.Net.WebSockets.Client.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb8e37c2393ef075b4b908981" Guid="20D21C0F-B608-5B1D-9E76-D90604807741" Win64="yes">
+            <File Id="Fb8e37c2393ef075b4b908981" Source="../../dist/win-x64/System.Net.WebSockets.dll" Name="System.Net.WebSockets.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C353a1f2bd5fd3cfcca0248f2" Guid="00C48D13-B747-5816-93F5-B9C7BFC94256" Win64="yes">
+            <File Id="F353a1f2bd5fd3cfcca0248f2" Source="../../dist/win-x64/System.Net.dll" Name="System.Net.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C93fb3a32595dc92288157c2f" Guid="4211BF73-E469-5ED7-B58A-AB77A0E6AF3F" Win64="yes">
+            <File Id="F93fb3a32595dc92288157c2f" Source="../../dist/win-x64/System.Numerics.Vectors.dll" Name="System.Numerics.Vectors.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ce3728ec7b186f3e2446bc63d" Guid="E70A7EFF-3B94-5410-965F-070FE3D9C7B0" Win64="yes">
+            <File Id="Fe3728ec7b186f3e2446bc63d" Source="../../dist/win-x64/System.Numerics.dll" Name="System.Numerics.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C110d5c4c87e67c376cc77d15" Guid="7BEFC9F6-3BBF-5A2A-941D-568BBD3F3DBD" Win64="yes">
+            <File Id="F110d5c4c87e67c376cc77d15" Source="../../dist/win-x64/System.ObjectModel.dll" Name="System.ObjectModel.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cd5ffd8db42bc94db7b16db4e" Guid="F3F48349-4F65-583B-A8DA-73FA44EDFD68" Win64="yes">
+            <File Id="Fd5ffd8db42bc94db7b16db4e" Source="../../dist/win-x64/System.Private.CoreLib.dll" Name="System.Private.CoreLib.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3bdd069d0269c4a6c8c89179" Guid="99A823EC-DBB4-57F4-A347-AC8CDB141195" Win64="yes">
+            <File Id="F3bdd069d0269c4a6c8c89179" Source="../../dist/win-x64/System.Private.DataContractSerialization.dll" Name="System.Private.DataContractSerialization.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ce2d27cdd342324bdc71b733b" Guid="43CD5633-19AE-50FF-8EF2-D850DCDD2D39" Win64="yes">
+            <File Id="Fe2d27cdd342324bdc71b733b" Source="../../dist/win-x64/System.Private.Uri.dll" Name="System.Private.Uri.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C234c0711918fef65bcdcc92c" Guid="06C333E3-A4C8-5830-90EC-5E9EDD857710" Win64="yes">
+            <File Id="F234c0711918fef65bcdcc92c" Source="../../dist/win-x64/System.Private.Xml.Linq.dll" Name="System.Private.Xml.Linq.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3f0cd01c0062c7a89f091b62" Guid="01878F1C-FA67-5064-8E42-8EB10625D501" Win64="yes">
+            <File Id="F3f0cd01c0062c7a89f091b62" Source="../../dist/win-x64/System.Private.Xml.dll" Name="System.Private.Xml.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cda8d1ada70b55950901fb630" Guid="31AD625E-BF2C-58A5-9C4F-0F7EDEBF141D" Win64="yes">
+            <File Id="Fda8d1ada70b55950901fb630" Source="../../dist/win-x64/System.Reflection.DispatchProxy.dll" Name="System.Reflection.DispatchProxy.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3b049f1a354bf522c1f3e0c7" Guid="BB5D9D19-1748-5F83-8D9A-484EB81540BA" Win64="yes">
+            <File Id="F3b049f1a354bf522c1f3e0c7" Source="../../dist/win-x64/System.Reflection.Emit.ILGeneration.dll" Name="System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9fb0016401f91d192218370b" Guid="B60092D4-9997-5635-85C7-7FCB66B45C88" Win64="yes">
+            <File Id="F9fb0016401f91d192218370b" Source="../../dist/win-x64/System.Reflection.Emit.Lightweight.dll" Name="System.Reflection.Emit.Lightweight.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4bfa9dacb0e0c803548494f3" Guid="D6E4E2D4-950F-58F0-99F7-E4088FD6DB1C" Win64="yes">
+            <File Id="F4bfa9dacb0e0c803548494f3" Source="../../dist/win-x64/System.Reflection.Emit.dll" Name="System.Reflection.Emit.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cbe1895666fcbc771ff79300f" Guid="697630A0-D32D-568F-B056-218E4F7B65D0" Win64="yes">
+            <File Id="Fbe1895666fcbc771ff79300f" Source="../../dist/win-x64/System.Reflection.Extensions.dll" Name="System.Reflection.Extensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C45d7f331ebcd0d7e9c1c9e31" Guid="48BE8C1B-09D8-5E2E-96E0-AD78F215E917" Win64="yes">
+            <File Id="F45d7f331ebcd0d7e9c1c9e31" Source="../../dist/win-x64/System.Reflection.Metadata.dll" Name="System.Reflection.Metadata.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C5fc2e9c7f514d43aa46246cf" Guid="217C817F-594A-572B-B9D4-D86A26C8DD33" Win64="yes">
+            <File Id="F5fc2e9c7f514d43aa46246cf" Source="../../dist/win-x64/System.Reflection.Primitives.dll" Name="System.Reflection.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc6366ce287f19af2daad1509" Guid="36DBEAEB-9DD3-521F-9095-E440FB3B2A90" Win64="yes">
+            <File Id="Fc6366ce287f19af2daad1509" Source="../../dist/win-x64/System.Reflection.TypeExtensions.dll" Name="System.Reflection.TypeExtensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9e43433628817cb8b580ce59" Guid="450E55FA-BE8E-53F7-BFAB-AEBF82855B79" Win64="yes">
+            <File Id="F9e43433628817cb8b580ce59" Source="../../dist/win-x64/System.Reflection.dll" Name="System.Reflection.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cdb73f0861a5ac62d50297edd" Guid="FE5C9F04-2A26-5254-9019-0456BC2DCB81" Win64="yes">
+            <File Id="Fdb73f0861a5ac62d50297edd" Source="../../dist/win-x64/System.Resources.Reader.dll" Name="System.Resources.Reader.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ca9881976dee52b3136d98aaf" Guid="82141E57-C774-5117-B412-4327EBD353DE" Win64="yes">
+            <File Id="Fa9881976dee52b3136d98aaf" Source="../../dist/win-x64/System.Resources.ResourceManager.dll" Name="System.Resources.ResourceManager.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cae6a67868ff667183eceb2a6" Guid="77BE7930-C1FE-592D-BEBF-80D82362AA75" Win64="yes">
+            <File Id="Fae6a67868ff667183eceb2a6" Source="../../dist/win-x64/System.Resources.Writer.dll" Name="System.Resources.Writer.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ce2838bca8c49687f2f7ceb68" Guid="4D198A5C-F90B-5920-89D8-EBBDA79768ED" Win64="yes">
+            <File Id="Fe2838bca8c49687f2f7ceb68" Source="../../dist/win-x64/System.Runtime.CompilerServices.Unsafe.dll" Name="System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C79a11997bdf572a77f281936" Guid="764E7DCB-9951-5985-ADED-8B2A4F7343BC" Win64="yes">
+            <File Id="F79a11997bdf572a77f281936" Source="../../dist/win-x64/System.Runtime.CompilerServices.VisualC.dll" Name="System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ca6913a1e4a35732a0a00ff5e" Guid="0B699EC4-8EFE-574C-9BD1-7BB559C6A514" Win64="yes">
+            <File Id="Fa6913a1e4a35732a0a00ff5e" Source="../../dist/win-x64/System.Runtime.Extensions.dll" Name="System.Runtime.Extensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C5d45e337802de6358a6c994f" Guid="D3BB0438-0591-5EB5-962F-6386900CDA0E" Win64="yes">
+            <File Id="F5d45e337802de6358a6c994f" Source="../../dist/win-x64/System.Runtime.Handles.dll" Name="System.Runtime.Handles.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C8eceb64e266ab5613c60003e" Guid="BF2817EB-DBB9-5BC7-8EF7-A9165BB76A32" Win64="yes">
+            <File Id="F8eceb64e266ab5613c60003e" Source="../../dist/win-x64/System.Runtime.InteropServices.JavaScript.dll" Name="System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cda092a56320e948be1824708" Guid="C397A962-5263-5533-8DF4-DF0DCC556EB8" Win64="yes">
+            <File Id="Fda092a56320e948be1824708" Source="../../dist/win-x64/System.Runtime.InteropServices.RuntimeInformation.dll" Name="System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb1fcfd2e083524c54d70f41f" Guid="962F1CDD-0C83-552E-9031-AAD64559F978" Win64="yes">
+            <File Id="Fb1fcfd2e083524c54d70f41f" Source="../../dist/win-x64/System.Runtime.InteropServices.dll" Name="System.Runtime.InteropServices.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cab5cbf6aede7689cf4aa7b81" Guid="0DC264D6-3C89-50E2-AF8D-8663FA2612F9" Win64="yes">
+            <File Id="Fab5cbf6aede7689cf4aa7b81" Source="../../dist/win-x64/System.Runtime.Intrinsics.dll" Name="System.Runtime.Intrinsics.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4ac2f3d229f7388bb8d53917" Guid="7EA4B2ED-8A24-5979-A976-36CDE7251207" Win64="yes">
+            <File Id="F4ac2f3d229f7388bb8d53917" Source="../../dist/win-x64/System.Runtime.Loader.dll" Name="System.Runtime.Loader.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9d16cce941da9f665413a43a" Guid="5AE54A9C-7DD9-5485-9D89-419D526BE990" Win64="yes">
+            <File Id="F9d16cce941da9f665413a43a" Source="../../dist/win-x64/System.Runtime.Numerics.dll" Name="System.Runtime.Numerics.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb248c4b713f48b0bec5bcf69" Guid="2232D587-4B5C-514B-BE85-0EE1F9327D81" Win64="yes">
+            <File Id="Fb248c4b713f48b0bec5bcf69" Source="../../dist/win-x64/System.Runtime.Serialization.Formatters.dll" Name="System.Runtime.Serialization.Formatters.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cd40d77b3d4322bb6264d05a5" Guid="FE57058C-4A66-586D-B84E-4A9FE5D37D25" Win64="yes">
+            <File Id="Fd40d77b3d4322bb6264d05a5" Source="../../dist/win-x64/System.Runtime.Serialization.Json.dll" Name="System.Runtime.Serialization.Json.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C5f25c7d2fec65cdd764a9666" Guid="3BD989FD-CD69-5E6F-ADE3-FED8A1DD2F8B" Win64="yes">
+            <File Id="F5f25c7d2fec65cdd764a9666" Source="../../dist/win-x64/System.Runtime.Serialization.Primitives.dll" Name="System.Runtime.Serialization.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb79fb89b49394a693d83cdea" Guid="28E857C8-6C54-50A5-ABB5-DBD5955C0D5E" Win64="yes">
+            <File Id="Fb79fb89b49394a693d83cdea" Source="../../dist/win-x64/System.Runtime.Serialization.Xml.dll" Name="System.Runtime.Serialization.Xml.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C830953e3847e05eeda1bad65" Guid="AFD3C82A-D819-53B8-BD66-1C1BE8522A68" Win64="yes">
+            <File Id="F830953e3847e05eeda1bad65" Source="../../dist/win-x64/System.Runtime.Serialization.dll" Name="System.Runtime.Serialization.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2841bdccf7f3f4311f25ea59" Guid="DF65C9EA-7A04-5A62-833B-19D5F3EE79C8" Win64="yes">
+            <File Id="F2841bdccf7f3f4311f25ea59" Source="../../dist/win-x64/System.Runtime.dll" Name="System.Runtime.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C81aa6bd5d4da8fc84bdf878a" Guid="0BAEB0F2-4D32-50A5-A26D-4F69FE8AEF07" Win64="yes">
+            <File Id="F81aa6bd5d4da8fc84bdf878a" Source="../../dist/win-x64/System.Security.AccessControl.dll" Name="System.Security.AccessControl.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cacc5469555814bce31c42808" Guid="4AC7259D-D9A9-5E30-95D1-E0C94BA43ECC" Win64="yes">
+            <File Id="Facc5469555814bce31c42808" Source="../../dist/win-x64/System.Security.Claims.dll" Name="System.Security.Claims.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cdcd159eaddc9ab5cf3b608b3" Guid="9BF02E67-8821-54F3-A6E7-E66B6039A6BA" Win64="yes">
+            <File Id="Fdcd159eaddc9ab5cf3b608b3" Source="../../dist/win-x64/System.Security.Cryptography.Algorithms.dll" Name="System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C69685c84f96c645dfaa36159" Guid="0C572016-28E4-5878-B34B-ABEAC292AC7E" Win64="yes">
+            <File Id="F69685c84f96c645dfaa36159" Source="../../dist/win-x64/System.Security.Cryptography.Cng.dll" Name="System.Security.Cryptography.Cng.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cd79316b4fec82239654e94db" Guid="9565A820-1B68-5BA0-8345-77E0DB8520B5" Win64="yes">
+            <File Id="Fd79316b4fec82239654e94db" Source="../../dist/win-x64/System.Security.Cryptography.Csp.dll" Name="System.Security.Cryptography.Csp.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C961d6c15d2c3b644839ffb93" Guid="C2B62183-B11F-56B2-AD7D-67F705EE079B" Win64="yes">
+            <File Id="F961d6c15d2c3b644839ffb93" Source="../../dist/win-x64/System.Security.Cryptography.Encoding.dll" Name="System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4335ed908842cebdb7aeb7e0" Guid="D0BC3641-6843-51A9-A267-14C193F7900D" Win64="yes">
+            <File Id="F4335ed908842cebdb7aeb7e0" Source="../../dist/win-x64/System.Security.Cryptography.OpenSsl.dll" Name="System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C3b62311f785493d1e942b753" Guid="CC93288E-AC4A-5B0B-8F0B-510335F06B4D" Win64="yes">
+            <File Id="F3b62311f785493d1e942b753" Source="../../dist/win-x64/System.Security.Cryptography.Primitives.dll" Name="System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C282c7b501332fdc4ff0a6778" Guid="D80C7281-3FC5-56EA-9EB5-DAC887E1A6AD" Win64="yes">
+            <File Id="F282c7b501332fdc4ff0a6778" Source="../../dist/win-x64/System.Security.Cryptography.X509Certificates.dll" Name="System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9ad58849b214741ad3d4e019" Guid="DE109DF6-AE6B-5A78-864E-EDA73474E8C7" Win64="yes">
+            <File Id="F9ad58849b214741ad3d4e019" Source="../../dist/win-x64/System.Security.Cryptography.dll" Name="System.Security.Cryptography.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2c8b045d6b80e8f197b6e1c5" Guid="AD99CE7D-3EAE-54CC-A2B7-2B591E02D75A" Win64="yes">
+            <File Id="F2c8b045d6b80e8f197b6e1c5" Source="../../dist/win-x64/System.Security.Principal.Windows.dll" Name="System.Security.Principal.Windows.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C456a64637cd26536226834d0" Guid="14FCACBB-A6E7-5358-8245-81CE2A3F3CD1" Win64="yes">
+            <File Id="F456a64637cd26536226834d0" Source="../../dist/win-x64/System.Security.Principal.dll" Name="System.Security.Principal.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cb8edce13063659cbb5555f26" Guid="3D793C3C-D0E5-5D9A-AE33-A1A007EAD4B1" Win64="yes">
+            <File Id="Fb8edce13063659cbb5555f26" Source="../../dist/win-x64/System.Security.SecureString.dll" Name="System.Security.SecureString.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C4c66d29a2943f5c364771f7f" Guid="70935F3B-1E07-5E25-941A-BF6D0F6C9A11" Win64="yes">
+            <File Id="F4c66d29a2943f5c364771f7f" Source="../../dist/win-x64/System.Security.dll" Name="System.Security.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ca826f90e349623a0033ef1aa" Guid="533E53F6-81A0-5C99-9284-A5D67E904DFD" Win64="yes">
+            <File Id="Fa826f90e349623a0033ef1aa" Source="../../dist/win-x64/System.ServiceModel.Web.dll" Name="System.ServiceModel.Web.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C6fd0689dd807c4ccc0545efd" Guid="B0F0E6FF-CDC2-5244-9746-E53FDD99B0B7" Win64="yes">
+            <File Id="F6fd0689dd807c4ccc0545efd" Source="../../dist/win-x64/System.ServiceProcess.dll" Name="System.ServiceProcess.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C718103b9f63fdbdff8a481ba" Guid="0438F423-DAEE-5A92-948B-22F4F30E08F8" Win64="yes">
+            <File Id="F718103b9f63fdbdff8a481ba" Source="../../dist/win-x64/System.Text.Encoding.CodePages.dll" Name="System.Text.Encoding.CodePages.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C598919f34c82c14c7a459f30" Guid="58B7F97E-AE64-5FB4-BD77-0CB748B95611" Win64="yes">
+            <File Id="F598919f34c82c14c7a459f30" Source="../../dist/win-x64/System.Text.Encoding.Extensions.dll" Name="System.Text.Encoding.Extensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C225c94f7f0e2e78c1f728303" Guid="25BCC67B-5E55-5BE3-AE82-360F53D20D1E" Win64="yes">
+            <File Id="F225c94f7f0e2e78c1f728303" Source="../../dist/win-x64/System.Text.Encoding.dll" Name="System.Text.Encoding.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc6e1320651f6ae26cee1317a" Guid="707693B7-42CE-5B41-9893-86E9D94FC4BA" Win64="yes">
+            <File Id="Fc6e1320651f6ae26cee1317a" Source="../../dist/win-x64/System.Text.Encodings.Web.dll" Name="System.Text.Encodings.Web.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C9d580202769d8d8ae5d2a503" Guid="A5B1A9C7-11C4-5E67-877C-79819D1EFE06" Win64="yes">
+            <File Id="F9d580202769d8d8ae5d2a503" Source="../../dist/win-x64/System.Text.Json.dll" Name="System.Text.Json.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C1db269521edcffbf68a8d329" Guid="EFF1D1D0-688E-5A3B-BC15-21DD144FEAE2" Win64="yes">
+            <File Id="F1db269521edcffbf68a8d329" Source="../../dist/win-x64/System.Text.RegularExpressions.dll" Name="System.Text.RegularExpressions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C8425e53aa7e0ca481abf0dd1" Guid="770EDF07-AAE6-5F48-9BB2-3835A4EA24D2" Win64="yes">
+            <File Id="F8425e53aa7e0ca481abf0dd1" Source="../../dist/win-x64/System.Threading.AccessControl.dll" Name="System.Threading.AccessControl.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C300b9d34786a408900436a66" Guid="651D8021-881A-509A-B86B-B27D6159F7BA" Win64="yes">
+            <File Id="F300b9d34786a408900436a66" Source="../../dist/win-x64/System.Threading.Channels.dll" Name="System.Threading.Channels.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C03068c1ee8b432c503393aee" Guid="B97063D2-794B-564E-AC27-C86D285D7523" Win64="yes">
+            <File Id="F03068c1ee8b432c503393aee" Source="../../dist/win-x64/System.Threading.Overlapped.dll" Name="System.Threading.Overlapped.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C8584370571b10155bfd7cdb1" Guid="B4C676DF-2CE7-5A20-A4BA-87A8870EB7D0" Win64="yes">
+            <File Id="F8584370571b10155bfd7cdb1" Source="../../dist/win-x64/System.Threading.Tasks.Dataflow.dll" Name="System.Threading.Tasks.Dataflow.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2722433c33ff58fbe77f97b5" Guid="9A5F98DE-C434-504A-9258-CD1CA576DDEC" Win64="yes">
+            <File Id="F2722433c33ff58fbe77f97b5" Source="../../dist/win-x64/System.Threading.Tasks.Extensions.dll" Name="System.Threading.Tasks.Extensions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ccce8594242a77103b285d920" Guid="11072A99-47D1-50B3-951A-385BE7FB7779" Win64="yes">
+            <File Id="Fcce8594242a77103b285d920" Source="../../dist/win-x64/System.Threading.Tasks.Parallel.dll" Name="System.Threading.Tasks.Parallel.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2ba78ffa6c094efb4e8556c8" Guid="498D8A95-12AF-591C-B517-60DFA955EEE8" Win64="yes">
+            <File Id="F2ba78ffa6c094efb4e8556c8" Source="../../dist/win-x64/System.Threading.Tasks.dll" Name="System.Threading.Tasks.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C34a383a925ac44e6527b71ca" Guid="C9205EDB-F968-5475-9439-44A14B3AB494" Win64="yes">
+            <File Id="F34a383a925ac44e6527b71ca" Source="../../dist/win-x64/System.Threading.Thread.dll" Name="System.Threading.Thread.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C7cb6ad8f5bd095f1e5f4cdc8" Guid="2A4C57A0-E60A-520E-8338-DE98724DE320" Win64="yes">
+            <File Id="F7cb6ad8f5bd095f1e5f4cdc8" Source="../../dist/win-x64/System.Threading.ThreadPool.dll" Name="System.Threading.ThreadPool.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C065d9181251c8c6e07e54031" Guid="D0629391-474B-5C5E-9CA6-12AE0A8AB243" Win64="yes">
+            <File Id="F065d9181251c8c6e07e54031" Source="../../dist/win-x64/System.Threading.Timer.dll" Name="System.Threading.Timer.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2e00fd67756c9c9cb6fac927" Guid="EFD4367B-D94D-5B01-BABC-D19F40ADB0FA" Win64="yes">
+            <File Id="F2e00fd67756c9c9cb6fac927" Source="../../dist/win-x64/System.Threading.dll" Name="System.Threading.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C8edc9a9f237fcd039a723e16" Guid="AB59C88D-0547-50CB-B6FC-7C32ECA50DFF" Win64="yes">
+            <File Id="F8edc9a9f237fcd039a723e16" Source="../../dist/win-x64/System.Transactions.Local.dll" Name="System.Transactions.Local.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C6e6a039b1f2fda99bef9ff97" Guid="0F669585-C7F0-58B3-AC99-45F780C094ED" Win64="yes">
+            <File Id="F6e6a039b1f2fda99bef9ff97" Source="../../dist/win-x64/System.Transactions.dll" Name="System.Transactions.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C064ac5b625a19a83071177b8" Guid="94614795-7EFD-5D9D-8C28-DE557065BD40" Win64="yes">
+            <File Id="F064ac5b625a19a83071177b8" Source="../../dist/win-x64/System.ValueTuple.dll" Name="System.ValueTuple.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C318b4a32217d9dacd4b62ef1" Guid="493F9CC7-CB26-5FC9-BBF2-7AC468D89E84" Win64="yes">
+            <File Id="F318b4a32217d9dacd4b62ef1" Source="../../dist/win-x64/System.Web.HttpUtility.dll" Name="System.Web.HttpUtility.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cac35a2df890b4281603f0a9b" Guid="BE050E7B-31B9-564D-86EB-F7BE59C930DB" Win64="yes">
+            <File Id="Fac35a2df890b4281603f0a9b" Source="../../dist/win-x64/System.Web.dll" Name="System.Web.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C1f0cdf4cec17502e0b3a45ab" Guid="27975BFE-B32D-52D2-BD79-E53BAFCBEF97" Win64="yes">
+            <File Id="F1f0cdf4cec17502e0b3a45ab" Source="../../dist/win-x64/System.Windows.dll" Name="System.Windows.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C6f0e0d750c196a83454a662a" Guid="DA19F175-C267-5F46-9FA0-492CE3C0AE4D" Win64="yes">
+            <File Id="F6f0e0d750c196a83454a662a" Source="../../dist/win-x64/System.Xml.Linq.dll" Name="System.Xml.Linq.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C17504da79a29633c0ed51b4c" Guid="4C521639-7EA5-59C4-81C8-1FEC54091027" Win64="yes">
+            <File Id="F17504da79a29633c0ed51b4c" Source="../../dist/win-x64/System.Xml.ReaderWriter.dll" Name="System.Xml.ReaderWriter.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cc6198a74d2e35a4b8067ddbf" Guid="0D39FF43-2D98-5E44-84EA-618519AD54CE" Win64="yes">
+            <File Id="Fc6198a74d2e35a4b8067ddbf" Source="../../dist/win-x64/System.Xml.Serialization.dll" Name="System.Xml.Serialization.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C519bd371300cda2dfc2e0d63" Guid="3403DFE1-E365-5C1F-A5E3-EB6633EE409C" Win64="yes">
+            <File Id="F519bd371300cda2dfc2e0d63" Source="../../dist/win-x64/System.Xml.XDocument.dll" Name="System.Xml.XDocument.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C2c6e07ed10d0087264915fe1" Guid="3A90D205-7DAE-5102-A780-867850255BB2" Win64="yes">
+            <File Id="F2c6e07ed10d0087264915fe1" Source="../../dist/win-x64/System.Xml.XPath.XDocument.dll" Name="System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ccc2e50b1bdfedce29a846c62" Guid="F0D64841-B456-5D3A-BF70-B4CE05A40DC8" Win64="yes">
+            <File Id="Fcc2e50b1bdfedce29a846c62" Source="../../dist/win-x64/System.Xml.XPath.dll" Name="System.Xml.XPath.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C97d2cf3ac1a84c02b0fad226" Guid="0894AC55-81F2-523B-8991-9111F5F60AA5" Win64="yes">
+            <File Id="F97d2cf3ac1a84c02b0fad226" Source="../../dist/win-x64/System.Xml.XmlDocument.dll" Name="System.Xml.XmlDocument.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C0d9a00a9ee0809ed1f76c62a" Guid="DC663E49-2FC7-56DD-9113-63EC05FBD0EB" Win64="yes">
+            <File Id="F0d9a00a9ee0809ed1f76c62a" Source="../../dist/win-x64/System.Xml.XmlSerializer.dll" Name="System.Xml.XmlSerializer.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cf1c3e47c864ea68411a26483" Guid="875B2023-BCCC-5FD0-B440-1A49B9DA13E7" Win64="yes">
+            <File Id="Ff1c3e47c864ea68411a26483" Source="../../dist/win-x64/System.Xml.dll" Name="System.Xml.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C6233293e12a949bcb21f78a4" Guid="41480D67-1D4C-5A2E-9093-6D80FB122096" Win64="yes">
+            <File Id="F6233293e12a949bcb21f78a4" Source="../../dist/win-x64/System.dll" Name="System.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C848e3833d746260a6c71d5b3" Guid="9F69EAF4-FE3A-5A3C-BD31-A6CC04E393D5" Win64="yes">
+            <File Id="F848e3833d746260a6c71d5b3" Source="../../dist/win-x64/WindowsBase.dll" Name="WindowsBase.dll" KeyPath="yes" />
+          </Component>
+          <Directory Id="D8bf729ffe074caee622c0292" Name="assets">
+            <Component Id="C5ef51e0cb64c7968f436ff37" Guid="2565CD25-5CEB-58FA-89B9-5914B357023F" Win64="yes">
+              <File Id="F5ef51e0cb64c7968f436ff37" Source="../../dist/win-x64/assets/APP-LICENSE.txt" Name="APP-LICENSE.txt" KeyPath="yes" />
+            </Component>
+            <Component Id="C21742a9e719060792de8cba4" Guid="F01FA889-469A-5A55-8A4D-36C529DC9B65" Win64="yes">
+              <File Id="F21742a9e719060792de8cba4" Source="../../dist/win-x64/assets/Config.cs" Name="Config.cs" KeyPath="yes" />
+            </Component>
+            <Component Id="Ca67a6a0496860202f19a8ef7" Guid="6A0D056F-1827-5F32-A789-0590871E6261" Win64="yes">
+              <File Id="Fa67a6a0496860202f19a8ef7" Source="../../dist/win-x64/assets/KeyboardShortcuts.xml" Name="KeyboardShortcuts.xml" KeyPath="yes" />
+            </Component>
+            <Component Id="C351d5afeccb02ed72de8077e" Guid="D21248EB-1DCA-5A9B-8F01-7C7366C59710" Win64="yes">
+              <File Id="F351d5afeccb02ed72de8077e" Source="../../dist/win-x64/assets/THIRD-PARTY.md" Name="THIRD-PARTY.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C6f171bd3a17f67cb50d0c655" Guid="1BF4E1A0-3628-578F-9209-B3E6A7A88442" Win64="yes">
+              <File Id="F6f171bd3a17f67cb50d0c655" Source="../../dist/win-x64/assets/Tags.xml" Name="Tags.xml" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd3b304dc6a1a96be496e24e8" Guid="D0FFAD9C-388F-5E0E-B562-74B1E756A5B6" Win64="yes">
+              <File Id="Fd3b304dc6a1a96be496e24e8" Source="../../dist/win-x64/assets/WORDS-LICENSE.md" Name="WORDS-LICENSE.md" KeyPath="yes" />
+            </Component>
+            <Component Id="Cc6694757af51f64625b4b690" Guid="54F25CB4-162C-56BE-9A8F-ABE8F9923C2F" Win64="yes">
+              <File Id="Fc6694757af51f64625b4b690" Source="../../dist/win-x64/assets/config-help.md" Name="config-help.md" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd3309b8579a1dceac85e8122" Guid="E2753301-3635-59F1-B319-E32AB0909C42" Win64="yes">
+              <File Id="Fd3309b8579a1dceac85e8122" Source="../../dist/win-x64/assets/font-icons-help.md" Name="font-icons-help.md" KeyPath="yes" />
+            </Component>
+            <Directory Id="De5f86eb623b930a3e92592b5" Name="fonts">
+              <Component Id="C5d9e2b9c0e2adfc8130cc216" Guid="B471F5FC-AFAC-5796-81D8-72DBCE2326CB" Win64="yes">
+                <File Id="F5d9e2b9c0e2adfc8130cc216" Source="../../dist/win-x64/assets/fonts/FiraCodeNerdFontMono-Regular.ttf" Name="FiraCodeNerdFontMono-Regular.ttf" KeyPath="yes" />
+              </Component>
+              <Component Id="C03f7cc2c46251d7fe76dc801" Guid="C277484A-150C-5ECA-86FB-8C8E09890B38" Win64="yes">
+                <File Id="F03f7cc2c46251d7fe76dc801" Source="../../dist/win-x64/assets/fonts/NERD-FONTS-LICENSE.txt" Name="NERD-FONTS-LICENSE.txt" KeyPath="yes" />
+              </Component>
+              <Component Id="C52b2e8fb634f9f57be098eb9" Guid="C7A44E68-8647-5267-9646-28C63E7B3E7B" Win64="yes">
+                <File Id="F52b2e8fb634f9f57be098eb9" Source="../../dist/win-x64/assets/fonts/OFL.txt" Name="OFL.txt" KeyPath="yes" />
+              </Component>
+            </Directory>
+            <Component Id="C5117f0eb2fcb0790c03496be" Guid="A17B78C0-5EAB-585A-964D-640D5F8B7AA0" Win64="yes">
+              <File Id="F5117f0eb2fcb0790c03496be" Source="../../dist/win-x64/assets/languages.json" Name="languages.json" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd80ffc25ef8a64de07e3acd7" Guid="20937EF2-D30D-563A-BAD0-D38A892ECF22" Win64="yes">
+              <File Id="Fd80ffc25ef8a64de07e3acd7" Source="../../dist/win-x64/assets/rudyedit.ico" Name="rudyedit.ico" KeyPath="yes" />
+            </Component>
+            <Component Id="Cbd20d9ae398d9bd1f4312a69" Guid="407E1FB1-5C56-5A9C-948B-A0042104EB2B" Win64="yes">
+              <File Id="Fbd20d9ae398d9bd1f4312a69" Source="../../dist/win-x64/assets/rudyedit.png" Name="rudyedit.png" KeyPath="yes" />
+            </Component>
+            <Component Id="Cab25ac2545301ffe0a0987ba" Guid="3468ADFF-C91A-5ACA-8165-247C8BCA82C7" Win64="yes">
+              <File Id="Fab25ac2545301ffe0a0987ba" Source="../../dist/win-x64/assets/rudyedit.svg" Name="rudyedit.svg" KeyPath="yes" />
+            </Component>
+            <Component Id="C0d134d57439ecabd389c0603" Guid="8DD44D3D-21CE-5E89-A573-8A8F157A8EF9" Win64="yes">
+              <File Id="F0d134d57439ecabd389c0603" Source="../../dist/win-x64/assets/tags-help.md" Name="tags-help.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C268f92dd1ab0253822ba361d" Guid="57B00494-BD56-5D64-AF8F-EB3344326B3B" Win64="yes">
+              <File Id="F268f92dd1ab0253822ba361d" Source="../../dist/win-x64/assets/words.txt" Name="words.txt" KeyPath="yes" />
+            </Component>
+          </Directory>
+          <Component Id="C49e2267f20469c059ff7a493" Guid="3DB33A18-EED1-5652-BAE4-D3111F55FFB1" Win64="yes">
+            <File Id="F49e2267f20469c059ff7a493" Source="../../dist/win-x64/clretwrc.dll" Name="clretwrc.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cd3ba62f8dea0f642867f67e7" Guid="2C9A7A4C-6B22-56BE-83EE-B4B2C8EBB691" Win64="yes">
+            <File Id="Fd3ba62f8dea0f642867f67e7" Source="../../dist/win-x64/clrgc.dll" Name="clrgc.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C88b26a109926040bbfc10970" Guid="4A6A7225-45CC-5D36-AC97-2410F9C212D0" Win64="yes">
+            <File Id="F88b26a109926040bbfc10970" Source="../../dist/win-x64/clrgcexp.dll" Name="clrgcexp.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C5434fa05cf1bc52ea83e6602" Guid="72623324-0D95-5583-BCA5-0FF6D67F747C" Win64="yes">
+            <File Id="F5434fa05cf1bc52ea83e6602" Source="../../dist/win-x64/clrjit.dll" Name="clrjit.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C21167760da04f3b58ab4744b" Guid="B12194AF-FE47-5D52-BFEC-29706A1E06B0" Win64="yes">
+            <File Id="F21167760da04f3b58ab4744b" Source="../../dist/win-x64/coreclr.dll" Name="coreclr.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cfc3d6c9793ee210f2d60dc0d" Guid="C358E286-DC0E-5C80-91A9-B716E5A2DBE9" Win64="yes">
+            <File Id="Ffc3d6c9793ee210f2d60dc0d" Source="../../dist/win-x64/createdump.exe" Name="createdump.exe" KeyPath="yes" />
+          </Component>
+          <Component Id="C09b5cec08546ca163e824ff4" Guid="0AC8BC15-0AE1-5D67-BAF6-284D1A33A979" Win64="yes">
+            <File Id="F09b5cec08546ca163e824ff4" Source="../../dist/win-x64/hostfxr.dll" Name="hostfxr.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ca177d83f583a83ac39ba7ab5" Guid="4D96D5A0-EB93-5444-9605-843DDE27383C" Win64="yes">
+            <File Id="Fa177d83f583a83ac39ba7ab5" Source="../../dist/win-x64/hostpolicy.dll" Name="hostpolicy.dll" KeyPath="yes" />
+          </Component>
+          <Directory Id="De67cc60b59931c66bc94283c" Name="manuals">
+            <Component Id="Cfe570ee75d8a4ba318b51019" Guid="272C6AAD-4ED5-523A-8AC4-A70F3D8C50E1" Win64="yes">
+              <File Id="Ffe570ee75d8a4ba318b51019" Source="../../dist/win-x64/manuals/c.md" Name="c.md" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd9168eb436af4396dcc35bbe" Guid="F0023667-4A3B-5AF4-A6DE-E5AF5D1E35FD" Win64="yes">
+              <File Id="Fd9168eb436af4396dcc35bbe" Source="../../dist/win-x64/manuals/codeigniter.md" Name="codeigniter.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C4d7f077a1f433989de425041" Guid="4B707BCD-2FA3-5027-B45F-0BBFBECDC56E" Win64="yes">
+              <File Id="F4d7f077a1f433989de425041" Source="../../dist/win-x64/manuals/csharp.md" Name="csharp.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C99332c06aaed387d03bb9fa0" Guid="82BDFB05-4CC7-50BC-9B84-9823EC544020" Win64="yes">
+              <File Id="F99332c06aaed387d03bb9fa0" Source="../../dist/win-x64/manuals/css.md" Name="css.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C4cf2229ac6be5dd09d5a52ce" Guid="9FBCE9C9-6ADD-5DEF-8577-136A14F884CF" Win64="yes">
+              <File Id="F4cf2229ac6be5dd09d5a52ce" Source="../../dist/win-x64/manuals/html.md" Name="html.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C7f384a4e2855b0076cbfd062" Guid="94963901-7CB5-5370-AD16-434796443CD7" Win64="yes">
+              <File Id="F7f384a4e2855b0076cbfd062" Source="../../dist/win-x64/manuals/javascript.md" Name="javascript.md" KeyPath="yes" />
+            </Component>
+            <Component Id="Cb27926938e0ac41f758a07d5" Guid="F263AD23-D29C-5814-A8E2-1772450CD1C9" Win64="yes">
+              <File Id="Fb27926938e0ac41f758a07d5" Source="../../dist/win-x64/manuals/json.md" Name="json.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C149f34ae3456614686f545b1" Guid="95FBE216-C236-55A3-8724-9EFC7D5226F9" Win64="yes">
+              <File Id="F149f34ae3456614686f545b1" Source="../../dist/win-x64/manuals/markdown.md" Name="markdown.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C4e9e419289e1e4746379164a" Guid="704D52F9-2095-58B9-B733-4AD0A54B4C73" Win64="yes">
+              <File Id="F4e9e419289e1e4746379164a" Source="../../dist/win-x64/manuals/next.md" Name="next.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C444483f13e69747de01295c9" Guid="D3373E9C-38D1-5201-81E5-6E7804213E8C" Win64="yes">
+              <File Id="F444483f13e69747de01295c9" Source="../../dist/win-x64/manuals/nuxt.md" Name="nuxt.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C65e02c9d12371a09357e60e4" Guid="B8675146-4F14-5172-B2FB-D8FB469F14A9" Win64="yes">
+              <File Id="F65e02c9d12371a09357e60e4" Source="../../dist/win-x64/manuals/php.md" Name="php.md" KeyPath="yes" />
+            </Component>
+            <Component Id="Ca4a2680c9cd5817b361b1404" Guid="CDAB4CB7-93F5-5C7C-B214-76D4626A47CC" Win64="yes">
+              <File Id="Fa4a2680c9cd5817b361b1404" Source="../../dist/win-x64/manuals/prisma.md" Name="prisma.md" KeyPath="yes" />
+            </Component>
+            <Component Id="Cb93ab8d6494daefc1871863a" Guid="5B86E06A-2CA0-5136-9AA1-84D72177FF29" Win64="yes">
+              <File Id="Fb93ab8d6494daefc1871863a" Source="../../dist/win-x64/manuals/python.md" Name="python.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C2af1cb4fbde7c89b19261c19" Guid="44224189-B694-574F-956F-8F94F217468C" Win64="yes">
+              <File Id="F2af1cb4fbde7c89b19261c19" Source="../../dist/win-x64/manuals/react.md" Name="react.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C21b20b9bb2e2011fe21a2658" Guid="516B927F-CF3D-54EB-A41A-7B914C9A0EC7" Win64="yes">
+              <File Id="F21b20b9bb2e2011fe21a2658" Source="../../dist/win-x64/manuals/rust.md" Name="rust.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C309c5b525b5e91c473ac71f2" Guid="BFA3BAA2-029E-566B-9E91-36D37B905F1A" Win64="yes">
+              <File Id="F309c5b525b5e91c473ac71f2" Source="../../dist/win-x64/manuals/tailwind.md" Name="tailwind.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C83dd239fd90877b7dfbabdca" Guid="104C05D6-4403-5F50-8F91-CF317FEA47D9" Win64="yes">
+              <File Id="F83dd239fd90877b7dfbabdca" Source="../../dist/win-x64/manuals/vue.md" Name="vue.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C332495dc4b40d99ab3890296" Guid="B132E09E-B012-5215-98BE-04AFC6B790C3" Win64="yes">
+              <File Id="F332495dc4b40d99ab3890296" Source="../../dist/win-x64/manuals/xml.md" Name="xml.md" KeyPath="yes" />
+            </Component>
+          </Directory>
+          <Component Id="C8c66df24863bb9736c4250c9" Guid="394CAE45-28B2-5B38-B629-571E39CFC858" Win64="yes">
+            <File Id="F8c66df24863bb9736c4250c9" Source="../../dist/win-x64/mscordaccore.dll" Name="mscordaccore.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cdefbb5ba5fdf2e5a68c6d916" Guid="E0345C60-F9F6-5C9C-8E25-292DB8FE49F8" Win64="yes">
+            <File Id="Fdefbb5ba5fdf2e5a68c6d916" Source="../../dist/win-x64/mscordaccore_amd64_amd64_10.0.1326.50504.dll" Name="mscordaccore_amd64_amd64_10.0.1326.50504.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Cbc5f2af83838747aa55c1b8e" Guid="7EF2B6DE-80A2-521F-93C1-A1449DEF5784" Win64="yes">
+            <File Id="Fbc5f2af83838747aa55c1b8e" Source="../../dist/win-x64/mscordbi.dll" Name="mscordbi.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C137265d3f5fce293dd2856f8" Guid="25036A7A-ADB7-5FAC-8374-466A5FD2CF79" Win64="yes">
+            <File Id="F137265d3f5fce293dd2856f8" Source="../../dist/win-x64/mscorlib.dll" Name="mscorlib.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C40c15684035b909a22ed6d61" Guid="50858AA9-2CE1-5405-A5E2-00FE93AA00A9" Win64="yes">
+            <File Id="F40c15684035b909a22ed6d61" Source="../../dist/win-x64/mscorrc.dll" Name="mscorrc.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C0bd7b8e834d81aee2e99d5cc" Guid="756E3896-7DCD-529E-B7DB-EC064D9A215F" Win64="yes">
+            <File Id="F0bd7b8e834d81aee2e99d5cc" Source="../../dist/win-x64/msquic.dll" Name="msquic.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Ca98b9c025b3ea75b6b3e88f9" Guid="3D06CBCD-4719-5E65-A599-4198D0AF88DF" Win64="yes">
+            <File Id="Fa98b9c025b3ea75b6b3e88f9" Source="../../dist/win-x64/netstandard.dll" Name="netstandard.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="Caf0e820130f1989e108dcd3c" Guid="0B5B731B-99F8-5B6F-ADAD-693978BA58CF" Win64="yes">
+            <File Id="Faf0e820130f1989e108dcd3c" Source="../../dist/win-x64/rudyedit.deps.json" Name="rudyedit.deps.json" KeyPath="yes" />
+          </Component>
+          <Component Id="C942cbb6b53de3758d29de394" Guid="980F3646-8FB1-55B9-A72B-EFDDA4576639" Win64="yes">
+            <File Id="F942cbb6b53de3758d29de394" Source="../../dist/win-x64/rudyedit.dll" Name="rudyedit.dll" KeyPath="yes" />
+          </Component>
+          <Component Id="C8fe93240fd0c40ccdab2b3d2" Guid="A928D630-5153-5F72-81B7-A4EE2C1809A6" Win64="yes">
+            <File Id="F8fe93240fd0c40ccdab2b3d2" Source="../../dist/win-x64/rudyedit.exe" Name="rudyedit.exe" KeyPath="yes" />
+          </Component>
+          <Component Id="C244b09cefa9b49cf5113d4ac" Guid="162624C7-2834-5019-9D67-CEE17F4BC966" Win64="yes">
+            <File Id="F244b09cefa9b49cf5113d4ac" Source="../../dist/win-x64/rudyedit.pdb" Name="rudyedit.pdb" KeyPath="yes" />
+          </Component>
+          <Component Id="C9ed31bdb672c667dfb1a76a1" Guid="58524CD9-6F8B-54C5-AAAA-B3858E562653" Win64="yes">
+            <File Id="F9ed31bdb672c667dfb1a76a1" Source="../../dist/win-x64/rudyedit.runtimeconfig.json" Name="rudyedit.runtimeconfig.json" KeyPath="yes" />
+          </Component>
+          <Directory Id="D59830ebc3a4184110566bf1a" Name="tests">
+            <Component Id="Cdacac2ebf9792f0d23c0f922" Guid="8CB16460-4F10-5AB5-BEBD-33D944D5B8F2" Win64="yes">
+              <File Id="Fdacac2ebf9792f0d23c0f922" Source="../../dist/win-x64/tests/README.md" Name="README.md" KeyPath="yes" />
+            </Component>
+            <Component Id="C17c9bae10464e32c9ed330c8" Guid="A651D8D0-973B-5129-9851-0EC7F51F4936" Win64="yes">
+              <File Id="F17c9bae10464e32c9ed330c8" Source="../../dist/win-x64/tests/Run-Tests.cmd" Name="Run-Tests.cmd" KeyPath="yes" />
+            </Component>
+            <Component Id="Cccdd67d23a15d25a403572ab" Guid="C5663D2B-AC54-5857-AEC5-4099B5FC33C4" Win64="yes">
+              <File Id="Fccdd67d23a15d25a403572ab" Source="../../dist/win-x64/tests/Run-Tests.sh" Name="Run-Tests.sh" KeyPath="yes" />
+            </Component>
+            <Component Id="C0fd35565e2a25e89819380ce" Guid="D9972410-EBAB-5FCA-90D6-F2039E0AA635" Win64="yes">
+              <File Id="F0fd35565e2a25e89819380ce" Source="../../dist/win-x64/tests/config_folder_smoke.py" Name="config_folder_smoke.py" KeyPath="yes" />
+            </Component>
+            <Component Id="C4e74ca04636b582d01a30c8d" Guid="A610A74B-0DDB-5140-B0F6-225F37F01278" Win64="yes">
+              <File Id="F4e74ca04636b582d01a30c8d" Source="../../dist/win-x64/tests/function_panel_smoke.py" Name="function_panel_smoke.py" KeyPath="yes" />
+            </Component>
+            <Component Id="Cb5b43615ec68114eb7cdb3e1" Guid="9C626614-70DA-5064-95F2-48A1BC513152" Win64="yes">
+              <File Id="Fb5b43615ec68114eb7cdb3e1" Source="../../dist/win-x64/tests/icons_smoke.py" Name="icons_smoke.py" KeyPath="yes" />
+            </Component>
+            <Component Id="Ce5d7c78a7126e69c7394aab7" Guid="228A9C9F-F31F-5A4E-A8BB-06C7B8809FEF" Win64="yes">
+              <File Id="Fe5d7c78a7126e69c7394aab7" Source="../../dist/win-x64/tests/keyboard_smoke.py" Name="keyboard_smoke.py" KeyPath="yes" />
+            </Component>
+            <Directory Id="Dcb8890961ffd59c0ca629961" Name="managed">
+              <Component Id="C0cf2517a86df71ca706cdd7a" Guid="BCDC542A-F9F5-539E-A56C-F6F544749E7F" Win64="yes">
+                <File Id="F0cf2517a86df71ca706cdd7a" Source="../../dist/win-x64/tests/managed/RudyEdit.Tests.dll" Name="RudyEdit.Tests.dll" KeyPath="yes" />
+              </Component>
+            </Directory>
+            <Component Id="Cec7662a7e2cc5e83a8df9b37" Guid="3BA8A4F8-7904-5225-841D-3F8878EF1DA0" Win64="yes">
+              <File Id="Fec7662a7e2cc5e83a8df9b37" Source="../../dist/win-x64/tests/mock_dap.py" Name="mock_dap.py" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd355737e7ec14d542ea20fe0" Guid="5ED1C97E-6129-5D88-8A40-972BD878A0CF" Win64="yes">
+              <File Id="Fd355737e7ec14d542ea20fe0" Source="../../dist/win-x64/tests/mock_lsp.py" Name="mock_lsp.py" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd60f4b29439af653cd8f9526" Guid="9888A572-7961-5A3E-8331-49F9F7588CFD" Win64="yes">
+              <File Id="Fd60f4b29439af653cd8f9526" Source="../../dist/win-x64/tests/mouse_smoke.py" Name="mouse_smoke.py" KeyPath="yes" />
+            </Component>
+            <Component Id="C732ce7a0a95b1a8fc5e029a7" Guid="A88D0162-E4D7-5B5A-A704-2204C56C1CF9" Win64="yes">
+              <File Id="F732ce7a0a95b1a8fc5e029a7" Source="../../dist/win-x64/tests/nerd-icons.json" Name="nerd-icons.json" KeyPath="yes" />
+            </Component>
+            <Component Id="C91b68497fd643d3ccdd7e034" Guid="069DE606-D98A-5560-A2E6-E4C780FC6377" Win64="yes">
+              <File Id="F91b68497fd643d3ccdd7e034" Source="../../dist/win-x64/tests/release_gate.py" Name="release_gate.py" KeyPath="yes" />
+            </Component>
+            <Component Id="C76d7a834ee067f83f4426574" Guid="F60845DC-3214-5456-A1C8-09EE313AE03B" Win64="yes">
+              <File Id="F76d7a834ee067f83f4426574" Source="../../dist/win-x64/tests/release_runner.py" Name="release_runner.py" KeyPath="yes" />
+            </Component>
+            <Component Id="C27c5febcc9ce93e8e5341f26" Guid="6B1E61C5-2E35-530E-A45C-752310E92284" Win64="yes">
+              <File Id="F27c5febcc9ce93e8e5341f26" Source="../../dist/win-x64/tests/requirements.txt" Name="requirements.txt" KeyPath="yes" />
+            </Component>
+            <Directory Id="Da3b8101d01cb674c4d766952" Name="results">
+              <Component Id="Ca22ff8a4090d3fe72bebdf3a" Guid="3A67AFFF-3C38-54E7-A7BB-AB212D9C1452" Win64="yes">
+                <File Id="Fa22ff8a4090d3fe72bebdf3a" Source="../../dist/win-x64/tests/results/release-tests.json" Name="release-tests.json" KeyPath="yes" />
+              </Component>
+              <Component Id="C2e35ab8ed8268d27b746bd8a" Guid="6E4C9B94-B359-5472-8D26-AEADE9A45080" Win64="yes">
+                <File Id="F2e35ab8ed8268d27b746bd8a" Source="../../dist/win-x64/tests/results/release-tests.log" Name="release-tests.log" KeyPath="yes" />
+              </Component>
+            </Directory>
+            <Directory Id="D00e6fe7486446279b3ec0242" Name="source">
+              <Component Id="C3070a43a491456da11b25066" Guid="613D90F2-BF3E-5C2C-9199-BEFA279EF5D1" Win64="yes">
+                <File Id="F3070a43a491456da11b25066" Source="../../dist/win-x64/tests/source/CommandTests.cs" Name="CommandTests.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="C0e6368bb36ffa10c28c75126" Guid="E831D061-AD08-598A-92E5-29EA2DA080AC" Win64="yes">
+                <File Id="F0e6368bb36ffa10c28c75126" Source="../../dist/win-x64/tests/source/ErrorLogTests.cs" Name="ErrorLogTests.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="C482f00dbeadc4d2586cc54bc" Guid="C9C5F0D3-4C58-5DF2-ABE1-70606C64343B" Win64="yes">
+                <File Id="F482f00dbeadc4d2586cc54bc" Source="../../dist/win-x64/tests/source/Program.cs" Name="Program.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="C1434237c2bcf1b4ffd1500ab" Guid="E687D175-177D-5D4C-83E0-F29AC0F817B9" Win64="yes">
+                <File Id="F1434237c2bcf1b4ffd1500ab" Source="../../dist/win-x64/tests/source/TagStoreTests.cs" Name="TagStoreTests.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="C6a46191a3c2371efeecdc2d9" Guid="CB4EB620-0A64-55A1-AA2C-2A2D2BE04512" Win64="yes">
+                <File Id="F6a46191a3c2371efeecdc2d9" Source="../../dist/win-x64/tests/source/TextBarTests.cs" Name="TextBarTests.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="Cd12f15c57e6c4c92d1ab0db8" Guid="0CB2DD4A-1DFB-5ABF-AFEF-004D5AD40403" Win64="yes">
+                <File Id="Fd12f15c57e6c4c92d1ab0db8" Source="../../dist/win-x64/tests/source/UiIconTests.cs" Name="UiIconTests.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="C8268dde06f12915be3fb33ff" Guid="A6AAB5B7-9F1F-5DCB-8E76-63E73DE9EA11" Win64="yes">
+                <File Id="F8268dde06f12915be3fb33ff" Source="../../dist/win-x64/tests/source/WindowsInputTests.cs" Name="WindowsInputTests.cs" KeyPath="yes" />
+              </Component>
+              <Component Id="C017fd6ace944fdf4697f299a" Guid="882548D5-38CF-51E7-B42B-3AA472298308" Win64="yes">
+                <File Id="F017fd6ace944fdf4697f299a" Source="../../dist/win-x64/tests/source/WindowsNativeTests.cs" Name="WindowsNativeTests.cs" KeyPath="yes" />
+              </Component>
+            </Directory>
+            <Component Id="Ca562861605bf904f54fd3af0" Guid="406084B2-FD53-5503-8A34-BA98D5AA5190" Win64="yes">
+              <File Id="Fa562861605bf904f54fd3af0" Source="../../dist/win-x64/tests/terminal_smoke.py" Name="terminal_smoke.py" KeyPath="yes" />
+            </Component>
+            <Component Id="Cd5296e31e0a2504071e23ef4" Guid="516DDA6E-5EF6-57F7-9A64-729D79F16BCD" Win64="yes">
+              <File Id="Fd5296e31e0a2504071e23ef4" Source="../../dist/win-x64/tests/test_release_gate.py" Name="test_release_gate.py" KeyPath="yes" />
+            </Component>
+            <Component Id="C925d489f3d8528cd73b66bfd" Guid="BF9B64E4-A434-585B-A08A-037483C48749" Win64="yes">
+              <File Id="F925d489f3d8528cd73b66bfd" Source="../../dist/win-x64/tests/text_bars_smoke.py" Name="text_bars_smoke.py" KeyPath="yes" />
+            </Component>
+            <Component Id="Cc11505cbe0ebfdb5dfe8a427" Guid="9275D271-0AB2-536A-838E-EC19FF7039F2" Win64="yes">
+              <File Id="Fc11505cbe0ebfdb5dfe8a427" Source="../../dist/win-x64/tests/verify_icons.py" Name="verify_icons.py" KeyPath="yes" />
+            </Component>
+            <Component Id="C0a1dd7ef3a8d2f2479003a46" Guid="67652A32-7578-5EF3-BDFC-281810EC4CB6" Win64="yes">
+              <File Id="F0a1dd7ef3a8d2f2479003a46" Source="../../dist/win-x64/tests/verify_nerd_font.py" Name="verify_nerd_font.py" KeyPath="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="Df9d35d43770d39092a663e66" Name="tools">
+            <Component Id="C4953220abeecc6d6f39a7b25" Guid="CFD89A82-813E-53B8-A87B-AFAF0AE4F06F" Win64="yes">
+              <File Id="F4953220abeecc6d6f39a7b25" Source="../../dist/win-x64/tools/python_debugger.py" Name="python_debugger.py" KeyPath="yes" />
+            </Component>
+          </Directory>
+          <Component Id="PathComponent" Guid="5D556F58-B754-5E9D-8407-45F90562A450" Win64="yes">
+            <RegistryValue Root="HKLM" Key="Software\RudyEdit" Name="Installed" Type="integer" Value="1" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ProgramMenuDir" Name="RudyEdit">
+          <Component Id="StartMenuComponent" Guid="FFE7BEC6-6381-599B-BDD0-FD0094FD86E7" Win64="yes">
+            <Shortcut Id="StartMenuShortcut" Name="RudyEdit" Target="[#F8fe93240fd0c40ccdab2b3d2]" WorkingDirectory="INSTALLDIR" Icon="RudyEditIcon.ico" IconIndex="0" />
+            <RemoveFolder Id="RemoveStartMenu" On="uninstall" />
+            <RegistryValue Root="HKLM" Key="Software\RudyEdit" Name="StartMenu" Type="integer" Value="1" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="DesktopFolder">
+        <Component Id="DesktopComponent" Guid="45A43627-07C1-5742-A327-EB9FB349B76B" Win64="yes">
+          <Shortcut Id="DesktopShortcut" Name="RudyEdit" Target="[#F8fe93240fd0c40ccdab2b3d2]" WorkingDirectory="INSTALLDIR" Icon="RudyEditIcon.ico" IconIndex="0" />
+          <RegistryValue Root="HKLM" Key="Software\RudyEdit" Name="Desktop" Type="integer" Value="1" KeyPath="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="FontsFolder">
+        <Component Id="FontComponent" Guid="461F0BC3-9990-5A21-84ED-1BED157481B3" Win64="yes">
+          <File Id="FiraCodeFont" Name="RudyEdit-FiraCodeNerdFontMono-Regular.ttf" Source="../../assets/fonts/FiraCodeNerdFontMono-Regular.ttf" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </Directory>
+    <Feature Id="Complete" Title="RudyEdit" Level="1">
+      <ComponentRef Id="C0e40b74646edbfb06db3f219" />
+      <ComponentRef Id="C27555128fe51002d69847396" />
+      <ComponentRef Id="Cac3fd9ef422ee213e819b749" />
+      <ComponentRef Id="Ce479bc079fc8c21ec8b55419" />
+      <ComponentRef Id="C187de234d339217a1fed87cf" />
+      <ComponentRef Id="Cbc4dfabc8aa0b6a167c5e53a" />
+      <ComponentRef Id="C2353e68bca991cee0a9534c6" />
+      <ComponentRef Id="Cb335630551682c19a781afeb" />
+      <ComponentRef Id="Cb02f3d94d503bb3564f7a434" />
+      <ComponentRef Id="C9f6277c79a365171f9c3fde8" />
+      <ComponentRef Id="C1c7750ff84a42cb4290c5060" />
+      <ComponentRef Id="Cfcf15524aeadd6bbe9f6bbfb" />
+      <ComponentRef Id="Cbd7952c21dd4ce80a2733213" />
+      <ComponentRef Id="Cc3477efcc885fea43addb3ad" />
+      <ComponentRef Id="C4db77f36cf01c9b0efa91b7e" />
+      <ComponentRef Id="C47ef5eeecbba5c15008edf82" />
+      <ComponentRef Id="C60a73e5e6ce4f40fa84f8447" />
+      <ComponentRef Id="Cfd10d1349061260bf6d61380" />
+      <ComponentRef Id="Cd585bc374d16bc05512942f1" />
+      <ComponentRef Id="C915da2f13b60e1e875f10fd4" />
+      <ComponentRef Id="C2b229f72ef121cd022900f29" />
+      <ComponentRef Id="Cc8c426243acb1a0698160467" />
+      <ComponentRef Id="C4cb32f5aa2fb6011467d476e" />
+      <ComponentRef Id="C263026640d716e7ae004ba6d" />
+      <ComponentRef Id="C061634ce166ca2197b7aaa21" />
+      <ComponentRef Id="C268a6ec6ccf48d915f5dd8ff" />
+      <ComponentRef Id="C5da7deb43f742991075c8111" />
+      <ComponentRef Id="Cf3dbbecfdef645d58b5fe0c2" />
+      <ComponentRef Id="C2ee5e382592d74d4ca3ce8fa" />
+      <ComponentRef Id="C2da9076bc738830edd187486" />
+      <ComponentRef Id="C20db08ddde21a48e341c9d77" />
+      <ComponentRef Id="Ca8c26c0a1af9b27fc5f9f81f" />
+      <ComponentRef Id="C75e430e2b136d8c38a28c527" />
+      <ComponentRef Id="C2bdd178253b461d4bdf8b0a0" />
+      <ComponentRef Id="C492f5e09b249b29ed6c7b9aa" />
+      <ComponentRef Id="C53fb49f2ed988ec5d5f6c515" />
+      <ComponentRef Id="Cab37bc9dd5309706f2411a74" />
+      <ComponentRef Id="Cf57a9a391dd61e1cb25cc0dc" />
+      <ComponentRef Id="C7659bbb29d0543a3683ddd66" />
+      <ComponentRef Id="C87e6cda150ef7ac41f8c2c4b" />
+      <ComponentRef Id="Ce8562947d039a146247b2ee9" />
+      <ComponentRef Id="C9a4c171e383d33020b2541e0" />
+      <ComponentRef Id="C3d16373316536e8b1db2e4db" />
+      <ComponentRef Id="C235b09624b6f65a1cf7e79d7" />
+      <ComponentRef Id="C4ec0b34648569249fde6cf83" />
+      <ComponentRef Id="C3fa844d718841058d14d5f9b" />
+      <ComponentRef Id="C378ec86f3943aca936294b9c" />
+      <ComponentRef Id="C7ea38e8844c69012ab428353" />
+      <ComponentRef Id="Cea08eaeb9f0a4ed12081b7a0" />
+      <ComponentRef Id="Cbfce40334ad7c25439608a5b" />
+      <ComponentRef Id="C936f028c392216d868c003a7" />
+      <ComponentRef Id="Cb020e0effb08920ed93cd1df" />
+      <ComponentRef Id="C2e8ce6948cdaac7821a3f866" />
+      <ComponentRef Id="Cb8df83ebf67e0b8547c4ab4c" />
+      <ComponentRef Id="C08a338aa44d3adfe748d5c50" />
+      <ComponentRef Id="C742f6478d939e4df692a1231" />
+      <ComponentRef Id="C5f3e262b6877eda066457e24" />
+      <ComponentRef Id="C1608cb077f6aeef30bd2d091" />
+      <ComponentRef Id="C9ef9b7de92b735dcf05a9c11" />
+      <ComponentRef Id="Cc22fef806ba47f6137be0b94" />
+      <ComponentRef Id="C7701a8d32e34bc6dce147fe8" />
+      <ComponentRef Id="C32deedc44bb5882b7a52a3cf" />
+      <ComponentRef Id="C9f5c99c4c0437ddc224a4daa" />
+      <ComponentRef Id="C826a628b3eaf671a106e27e0" />
+      <ComponentRef Id="Cf46f8d42e01ff3165873cea0" />
+      <ComponentRef Id="C034b1532730a824dcc49cf02" />
+      <ComponentRef Id="C46fab460b8e71914c3ddfc9c" />
+      <ComponentRef Id="C777f3785b9e04b61ee8995af" />
+      <ComponentRef Id="C0d6020323eb475d72b3b04eb" />
+      <ComponentRef Id="Cf54746558c893280eb4f4313" />
+      <ComponentRef Id="Cb399768039b2a904e9d4192c" />
+      <ComponentRef Id="Ccd9f7d40dec26ca0da16c577" />
+      <ComponentRef Id="Cc34ba8bd9dcd19fd51819bfc" />
+      <ComponentRef Id="C34e0e0f91a8b843bf24c1648" />
+      <ComponentRef Id="Cde862f5901b23a1c592f77dd" />
+      <ComponentRef Id="Cd225dedb651e92b6febb3864" />
+      <ComponentRef Id="C3b83e9ad9ec45d1508e25efd" />
+      <ComponentRef Id="C8619deae3c84fd07d524e8c5" />
+      <ComponentRef Id="C7599359241c303fbb14f151f" />
+      <ComponentRef Id="C1631e03083fbd34dd6d941a7" />
+      <ComponentRef Id="Ce899c23d687aa8c9a97106e7" />
+      <ComponentRef Id="C00b891b0992a9fcbbe7001fc" />
+      <ComponentRef Id="C62dafbdc5db4e6f4b9cfcf5d" />
+      <ComponentRef Id="C6e121b5392b96140f13824de" />
+      <ComponentRef Id="C58d827bea77f20aaf0e10d9e" />
+      <ComponentRef Id="C6582959c1f3084b7b93ad29c" />
+      <ComponentRef Id="Cb8e37c2393ef075b4b908981" />
+      <ComponentRef Id="C353a1f2bd5fd3cfcca0248f2" />
+      <ComponentRef Id="C93fb3a32595dc92288157c2f" />
+      <ComponentRef Id="Ce3728ec7b186f3e2446bc63d" />
+      <ComponentRef Id="C110d5c4c87e67c376cc77d15" />
+      <ComponentRef Id="Cd5ffd8db42bc94db7b16db4e" />
+      <ComponentRef Id="C3bdd069d0269c4a6c8c89179" />
+      <ComponentRef Id="Ce2d27cdd342324bdc71b733b" />
+      <ComponentRef Id="C234c0711918fef65bcdcc92c" />
+      <ComponentRef Id="C3f0cd01c0062c7a89f091b62" />
+      <ComponentRef Id="Cda8d1ada70b55950901fb630" />
+      <ComponentRef Id="C3b049f1a354bf522c1f3e0c7" />
+      <ComponentRef Id="C9fb0016401f91d192218370b" />
+      <ComponentRef Id="C4bfa9dacb0e0c803548494f3" />
+      <ComponentRef Id="Cbe1895666fcbc771ff79300f" />
+      <ComponentRef Id="C45d7f331ebcd0d7e9c1c9e31" />
+      <ComponentRef Id="C5fc2e9c7f514d43aa46246cf" />
+      <ComponentRef Id="Cc6366ce287f19af2daad1509" />
+      <ComponentRef Id="C9e43433628817cb8b580ce59" />
+      <ComponentRef Id="Cdb73f0861a5ac62d50297edd" />
+      <ComponentRef Id="Ca9881976dee52b3136d98aaf" />
+      <ComponentRef Id="Cae6a67868ff667183eceb2a6" />
+      <ComponentRef Id="Ce2838bca8c49687f2f7ceb68" />
+      <ComponentRef Id="C79a11997bdf572a77f281936" />
+      <ComponentRef Id="Ca6913a1e4a35732a0a00ff5e" />
+      <ComponentRef Id="C5d45e337802de6358a6c994f" />
+      <ComponentRef Id="C8eceb64e266ab5613c60003e" />
+      <ComponentRef Id="Cda092a56320e948be1824708" />
+      <ComponentRef Id="Cb1fcfd2e083524c54d70f41f" />
+      <ComponentRef Id="Cab5cbf6aede7689cf4aa7b81" />
+      <ComponentRef Id="C4ac2f3d229f7388bb8d53917" />
+      <ComponentRef Id="C9d16cce941da9f665413a43a" />
+      <ComponentRef Id="Cb248c4b713f48b0bec5bcf69" />
+      <ComponentRef Id="Cd40d77b3d4322bb6264d05a5" />
+      <ComponentRef Id="C5f25c7d2fec65cdd764a9666" />
+      <ComponentRef Id="Cb79fb89b49394a693d83cdea" />
+      <ComponentRef Id="C830953e3847e05eeda1bad65" />
+      <ComponentRef Id="C2841bdccf7f3f4311f25ea59" />
+      <ComponentRef Id="C81aa6bd5d4da8fc84bdf878a" />
+      <ComponentRef Id="Cacc5469555814bce31c42808" />
+      <ComponentRef Id="Cdcd159eaddc9ab5cf3b608b3" />
+      <ComponentRef Id="C69685c84f96c645dfaa36159" />
+      <ComponentRef Id="Cd79316b4fec82239654e94db" />
+      <ComponentRef Id="C961d6c15d2c3b644839ffb93" />
+      <ComponentRef Id="C4335ed908842cebdb7aeb7e0" />
+      <ComponentRef Id="C3b62311f785493d1e942b753" />
+      <ComponentRef Id="C282c7b501332fdc4ff0a6778" />
+      <ComponentRef Id="C9ad58849b214741ad3d4e019" />
+      <ComponentRef Id="C2c8b045d6b80e8f197b6e1c5" />
+      <ComponentRef Id="C456a64637cd26536226834d0" />
+      <ComponentRef Id="Cb8edce13063659cbb5555f26" />
+      <ComponentRef Id="C4c66d29a2943f5c364771f7f" />
+      <ComponentRef Id="Ca826f90e349623a0033ef1aa" />
+      <ComponentRef Id="C6fd0689dd807c4ccc0545efd" />
+      <ComponentRef Id="C718103b9f63fdbdff8a481ba" />
+      <ComponentRef Id="C598919f34c82c14c7a459f30" />
+      <ComponentRef Id="C225c94f7f0e2e78c1f728303" />
+      <ComponentRef Id="Cc6e1320651f6ae26cee1317a" />
+      <ComponentRef Id="C9d580202769d8d8ae5d2a503" />
+      <ComponentRef Id="C1db269521edcffbf68a8d329" />
+      <ComponentRef Id="C8425e53aa7e0ca481abf0dd1" />
+      <ComponentRef Id="C300b9d34786a408900436a66" />
+      <ComponentRef Id="C03068c1ee8b432c503393aee" />
+      <ComponentRef Id="C8584370571b10155bfd7cdb1" />
+      <ComponentRef Id="C2722433c33ff58fbe77f97b5" />
+      <ComponentRef Id="Ccce8594242a77103b285d920" />
+      <ComponentRef Id="C2ba78ffa6c094efb4e8556c8" />
+      <ComponentRef Id="C34a383a925ac44e6527b71ca" />
+      <ComponentRef Id="C7cb6ad8f5bd095f1e5f4cdc8" />
+      <ComponentRef Id="C065d9181251c8c6e07e54031" />
+      <ComponentRef Id="C2e00fd67756c9c9cb6fac927" />
+      <ComponentRef Id="C8edc9a9f237fcd039a723e16" />
+      <ComponentRef Id="C6e6a039b1f2fda99bef9ff97" />
+      <ComponentRef Id="C064ac5b625a19a83071177b8" />
+      <ComponentRef Id="C318b4a32217d9dacd4b62ef1" />
+      <ComponentRef Id="Cac35a2df890b4281603f0a9b" />
+      <ComponentRef Id="C1f0cdf4cec17502e0b3a45ab" />
+      <ComponentRef Id="C6f0e0d750c196a83454a662a" />
+      <ComponentRef Id="C17504da79a29633c0ed51b4c" />
+      <ComponentRef Id="Cc6198a74d2e35a4b8067ddbf" />
+      <ComponentRef Id="C519bd371300cda2dfc2e0d63" />
+      <ComponentRef Id="C2c6e07ed10d0087264915fe1" />
+      <ComponentRef Id="Ccc2e50b1bdfedce29a846c62" />
+      <ComponentRef Id="C97d2cf3ac1a84c02b0fad226" />
+      <ComponentRef Id="C0d9a00a9ee0809ed1f76c62a" />
+      <ComponentRef Id="Cf1c3e47c864ea68411a26483" />
+      <ComponentRef Id="C6233293e12a949bcb21f78a4" />
+      <ComponentRef Id="C848e3833d746260a6c71d5b3" />
+      <ComponentRef Id="C5ef51e0cb64c7968f436ff37" />
+      <ComponentRef Id="C21742a9e719060792de8cba4" />
+      <ComponentRef Id="Ca67a6a0496860202f19a8ef7" />
+      <ComponentRef Id="C351d5afeccb02ed72de8077e" />
+      <ComponentRef Id="C6f171bd3a17f67cb50d0c655" />
+      <ComponentRef Id="Cd3b304dc6a1a96be496e24e8" />
+      <ComponentRef Id="Cc6694757af51f64625b4b690" />
+      <ComponentRef Id="Cd3309b8579a1dceac85e8122" />
+      <ComponentRef Id="C5d9e2b9c0e2adfc8130cc216" />
+      <ComponentRef Id="C03f7cc2c46251d7fe76dc801" />
+      <ComponentRef Id="C52b2e8fb634f9f57be098eb9" />
+      <ComponentRef Id="C5117f0eb2fcb0790c03496be" />
+      <ComponentRef Id="Cd80ffc25ef8a64de07e3acd7" />
+      <ComponentRef Id="Cbd20d9ae398d9bd1f4312a69" />
+      <ComponentRef Id="Cab25ac2545301ffe0a0987ba" />
+      <ComponentRef Id="C0d134d57439ecabd389c0603" />
+      <ComponentRef Id="C268f92dd1ab0253822ba361d" />
+      <ComponentRef Id="C49e2267f20469c059ff7a493" />
+      <ComponentRef Id="Cd3ba62f8dea0f642867f67e7" />
+      <ComponentRef Id="C88b26a109926040bbfc10970" />
+      <ComponentRef Id="C5434fa05cf1bc52ea83e6602" />
+      <ComponentRef Id="C21167760da04f3b58ab4744b" />
+      <ComponentRef Id="Cfc3d6c9793ee210f2d60dc0d" />
+      <ComponentRef Id="C09b5cec08546ca163e824ff4" />
+      <ComponentRef Id="Ca177d83f583a83ac39ba7ab5" />
+      <ComponentRef Id="Cfe570ee75d8a4ba318b51019" />
+      <ComponentRef Id="Cd9168eb436af4396dcc35bbe" />
+      <ComponentRef Id="C4d7f077a1f433989de425041" />
+      <ComponentRef Id="C99332c06aaed387d03bb9fa0" />
+      <ComponentRef Id="C4cf2229ac6be5dd09d5a52ce" />
+      <ComponentRef Id="C7f384a4e2855b0076cbfd062" />
+      <ComponentRef Id="Cb27926938e0ac41f758a07d5" />
+      <ComponentRef Id="C149f34ae3456614686f545b1" />
+      <ComponentRef Id="C4e9e419289e1e4746379164a" />
+      <ComponentRef Id="C444483f13e69747de01295c9" />
+      <ComponentRef Id="C65e02c9d12371a09357e60e4" />
+      <ComponentRef Id="Ca4a2680c9cd5817b361b1404" />
+      <ComponentRef Id="Cb93ab8d6494daefc1871863a" />
+      <ComponentRef Id="C2af1cb4fbde7c89b19261c19" />
+      <ComponentRef Id="C21b20b9bb2e2011fe21a2658" />
+      <ComponentRef Id="C309c5b525b5e91c473ac71f2" />
+      <ComponentRef Id="C83dd239fd90877b7dfbabdca" />
+      <ComponentRef Id="C332495dc4b40d99ab3890296" />
+      <ComponentRef Id="C8c66df24863bb9736c4250c9" />
+      <ComponentRef Id="Cdefbb5ba5fdf2e5a68c6d916" />
+      <ComponentRef Id="Cbc5f2af83838747aa55c1b8e" />
+      <ComponentRef Id="C137265d3f5fce293dd2856f8" />
+      <ComponentRef Id="C40c15684035b909a22ed6d61" />
+      <ComponentRef Id="C0bd7b8e834d81aee2e99d5cc" />
+      <ComponentRef Id="Ca98b9c025b3ea75b6b3e88f9" />
+      <ComponentRef Id="Caf0e820130f1989e108dcd3c" />
+      <ComponentRef Id="C942cbb6b53de3758d29de394" />
+      <ComponentRef Id="C8fe93240fd0c40ccdab2b3d2" />
+      <ComponentRef Id="C244b09cefa9b49cf5113d4ac" />
+      <ComponentRef Id="C9ed31bdb672c667dfb1a76a1" />
+      <ComponentRef Id="Cdacac2ebf9792f0d23c0f922" />
+      <ComponentRef Id="C17c9bae10464e32c9ed330c8" />
+      <ComponentRef Id="Cccdd67d23a15d25a403572ab" />
+      <ComponentRef Id="C0fd35565e2a25e89819380ce" />
+      <ComponentRef Id="C4e74ca04636b582d01a30c8d" />
+      <ComponentRef Id="Cb5b43615ec68114eb7cdb3e1" />
+      <ComponentRef Id="Ce5d7c78a7126e69c7394aab7" />
+      <ComponentRef Id="C0cf2517a86df71ca706cdd7a" />
+      <ComponentRef Id="Cec7662a7e2cc5e83a8df9b37" />
+      <ComponentRef Id="Cd355737e7ec14d542ea20fe0" />
+      <ComponentRef Id="Cd60f4b29439af653cd8f9526" />
+      <ComponentRef Id="C732ce7a0a95b1a8fc5e029a7" />
+      <ComponentRef Id="C91b68497fd643d3ccdd7e034" />
+      <ComponentRef Id="C76d7a834ee067f83f4426574" />
+      <ComponentRef Id="C27c5febcc9ce93e8e5341f26" />
+      <ComponentRef Id="Ca22ff8a4090d3fe72bebdf3a" />
+      <ComponentRef Id="C2e35ab8ed8268d27b746bd8a" />
+      <ComponentRef Id="C3070a43a491456da11b25066" />
+      <ComponentRef Id="C0e6368bb36ffa10c28c75126" />
+      <ComponentRef Id="C482f00dbeadc4d2586cc54bc" />
+      <ComponentRef Id="C1434237c2bcf1b4ffd1500ab" />
+      <ComponentRef Id="C6a46191a3c2371efeecdc2d9" />
+      <ComponentRef Id="Cd12f15c57e6c4c92d1ab0db8" />
+      <ComponentRef Id="C8268dde06f12915be3fb33ff" />
+      <ComponentRef Id="C017fd6ace944fdf4697f299a" />
+      <ComponentRef Id="Ca562861605bf904f54fd3af0" />
+      <ComponentRef Id="Cd5296e31e0a2504071e23ef4" />
+      <ComponentRef Id="C925d489f3d8528cd73b66bfd" />
+      <ComponentRef Id="Cc11505cbe0ebfdb5dfe8a427" />
+      <ComponentRef Id="C0a1dd7ef3a8d2f2479003a46" />
+      <ComponentRef Id="C4953220abeecc6d6f39a7b25" />
+      <ComponentRef Id="PathComponent" />
+      <ComponentRef Id="StartMenuComponent" />
+      <ComponentRef Id="DesktopComponent" />
+      <ComponentRef Id="FontComponent" />
+    </Feature>
+  </Product>
+</Wix>

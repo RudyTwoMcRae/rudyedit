@@ -1,0 +1,17 @@
+RudyEdit 2.0.5 | Ubuntu 24.04.3 LTS
+Error log: /tmp/rudyedit-release-vypvehmk/config/RudyEdit-errors.log
+Config: /tmp/rudyedit-release-vypvehmk/config
+Toolchains are used only when you request build/run/debug:
+dotnet           not on PATH
+gcc              /usr/bin/gcc
+python3          /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+python           /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python
+cargo            not on PATH
+rustc            not on PATH
+gdb              not on PATH
+netcoredbg       not on PATH
+clangd           not on PATH
+rust-analyzer    not on PATH
+pylsp            not on PATH
+csharp-ls        not on PATH
+

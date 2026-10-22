@@ -1,0 +1,185 @@
+<KeyboardShortcuts>
+	<Binding>
+		<Name>Toggle File Manager Panel</Name>
+		<Keys>Shift+Space</Keys>
+		<Context>Global</Context>
+		<Description>Open or Close the File Manager Panel</Description>
+	</Binding>
+	<Binding>
+		<Name>Go To Next Panel</Name>
+		<Keys>Ctrl+k, p, Right Arrow</Keys>
+		<Context>Panel</Context>
+		<Description>Go to the next Panel</Description>
+	</Binding>
+	<Binding>
+		<Name>Go To Previous Panel</Name>
+		<Keys>Ctrl+k, p, Left Arrow</Keys>
+		<Context>Panel</Context>
+		<Description>Go to the previous Panel</Description>
+	</Binding>
+	<Binding>
+		<Name>Go To Next Tab</Name>
+		<Keys>Ctrl+Alt+Right Arrow</Keys>
+		<Context>Tab</Context>
+		<Description>Go to the next tab</Description>
+	</Binding>
+	<Binding>
+		<Name>Go To Previous Tab</Name>
+		<Keys>Ctrl+Alt+Left Arrow</Keys>
+		<Context>Tab</Context>
+		<Description>Go to the previous tab</Description>
+	</Binding>
+	<Binding>
+		<Name>Find</Name>
+		<Keys>Ctrl+k, f</Keys>
+		<Context>Global</Context>
+		<Description>Find Text</Description>
+	</Binding>
+	<Binding>
+		<Name>Find and Replace</Name>
+		<Keys>Ctrl+k, Shift+f</Keys>
+		<Context>Global</Context>
+		<Description>Find and replace all instances of text</Description>
+	</Binding>
+	<Binding>
+		<Name>Help</Name>
+		<Keys>F1</Keys>
+		<Context>Global</Context>
+		<Description>Open a dialog with every possible command given the current context</Description>
+	</Binding>
+	<Binding>
+		<Name>Help</Name>
+		<Keys>shift+F1</Keys>
+		<Context>Global</Context>
+		<Description>Open a dialog with every configured keyboard shortcut.  Include standard keybindings based on the current mode plus any keybindings configured in this file</Description>
+	</Binding>
+	<Binding>
+		<Name>Toggle Keys Mode</Name>
+		<Keys>F2</Keys>
+		<Context>Global</Context>
+		<Description>Toggle between VS Code and VIM modes</Description>
+	</Binding>
+	<Binding>
+		<Name>Toggle Developer Mode</Name>
+		<Keys>F3</Keys>
+		<Context>Global</Context>
+		<Description>Toggle between Text and Developer modes</Description>
+	</Binding>
+	<Binding>
+		<Name>Toggle The Console</Name>
+		<Keys>ctrl+k, c</Keys>
+		<Context>Global</Context>
+		<Description>Toggle The console on and off at the bottom of the screen</Description>
+	</Binding>
+	<Binding>
+		<Name>Open in Panel</Name>
+		<Keys>Enter</Keys>
+		<Context>File Manager</Context>
+		<Description>Open the selected file in the current panel</Description>
+	</Binding>
+	<Binding>
+		<Name>Vertical Split</Name>
+		<Keys>v</Keys>
+		<Context>File Manager</Context>
+		<Description>Open the selected file in a new vertical split</Description>
+	</Binding>
+	<Binding>
+		<Name>Horizontal Split</Name>
+		<Keys>h</Keys>
+		<Context>File Manager</Context>
+		<Description>Open the selected file in a new horizontal split</Description>
+	</Binding>
+	<Binding>
+		<Name>Tab</Name>
+		<Keys>t</Keys>
+		<Context>File Manager</Context>
+		<Description>Open the selected file in a new tab</Description>
+	</Binding>
+	<Binding>
+		<Name>Find</Name>
+		<Keys>Ctrl+f</Keys>
+		<Context>File Manager</Context>
+		<Description>Search for a file by name</Description>
+	</Binding>
+	<Binding>
+		<Name>New File</Name>
+		<Keys>n</Keys>
+		<Context>File Manager</Context>
+		<Description>Create a new file and give it a name</Description>
+	</Binding>
+	<Binding>
+		<Name>Copy</Name>
+		<Keys>y</Keys>
+		<Context>File Manager</Context>
+		<Description>Copy the selected file</Description>
+	</Binding>
+	<Binding>
+		<Name>Move</Name>
+		<Keys>d</Keys>
+		<Context>File Manager</Context>
+		<Description>Cut the selected file so it can be pasted elsewhere</Description>
+	</Binding>
+	<Binding>
+		<Name>Paste</Name>
+		<Keys>p</Keys>
+		<Context>File Manager</Context>
+		<Description>Paste the previously copied or cut file to it's new location</Description>
+	</Binding>
+	<Binding>
+		<Name>Load Folder</Name>
+		<Keys>l</Keys>
+		<Context>File Manager</Context>
+		<Description>Enter a new path to load a new project folder</Description>
+	</Binding>
+	<Binding>
+		<Name>New Folder</Name>
+		<Keys>f</Keys>
+		<Context>File Manager</Context>
+		<Description>Create a new folder under the curser</Description>
+	</Binding>
+	<Binding>
+		<Name>Close Tab</Name>
+		<Keys>Ctrl+Shift+w</Keys>
+		<Context>Global</Context>
+		<Description>Remove the current tab from its panel after checking unsaved changes.</Description>
+	</Binding>
+	<Binding>
+		<Name>Close Panel</Name>
+		<Keys>Ctrl+w</Keys>
+		<Context>Global</Context>
+		<Description>Remove the current panel after checking all its unsaved tabs.</Description>
+	</Binding>
+
+	<Binding>
+		<Name>Add Tags</Name>
+		<Keys>Ctrl+Alt+t</Keys>
+		<Context>Text</Context>
+		<Description>Focus the current file tag-entry bar; Enter adds tags.</Description>
+	</Binding>
+
+	<Binding>
+		<Name>Formatting Bar</Name>
+		<Keys>Ctrl+Alt+m</Keys>
+		<Context>Text</Context>
+		<Description>Focus formatting controls; arrows select, Enter activates.</Description>
+	</Binding>
+
+	<Binding>
+		<Name>Search Tags</Name>
+		<Keys>Ctrl+Alt+g</Keys>
+		<Context>Text</Context>
+		<Description>Focus File Manager tag search; Enter finds saved files matching all tags.</Description>
+	</Binding>
+	<Binding>
+        <Name>Toggle Tag Bar</Name>
+        <Keys>Ctrl+Shift+t</Keys>
+        <Context>Text</Context>
+        <Description>Show or hide the Text-mode current-file tag bar. Add Tags shows it and focuses entry.</Description>
+    </Binding>
+    <Binding>
+        <Name>Open Config Folder</Name>
+        <Keys>Ctrl+Alt+c</Keys>
+        <Context>Global</Context>
+        <Description>Show the configuration folder in RudyEdit File Manager and open it in Explorer or the system file manager.</Description>
+    </Binding>
+</KeyboardShortcuts>

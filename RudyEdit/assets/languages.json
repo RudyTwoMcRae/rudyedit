@@ -1,0 +1,14 @@
+{
+  "csharp": {"command": "csharp-ls", "args": []},
+  "c": {"command": "clangd", "args": ["--background-index"]},
+  "python": {"command": "pylsp", "args": []},
+  "rust": {"command": "rust-analyzer", "args": []},
+  "javascript": {"command": "typescript-language-server", "args": ["--stdio"]},
+  "react": {"command": "typescript-language-server", "args": ["--stdio"]},
+  "vue": {"command": "vue-language-server", "args": ["--stdio"]},
+  "html": {"command": "vscode-html-language-server", "args": ["--stdio"]},
+  "css": {"command": "vscode-css-language-server", "args": ["--stdio"]},
+  "php": {"command": "intelephense", "args": ["--stdio"]},
+  "prisma": {"command": "prisma-language-server", "args": ["--stdio"]},
+  "xml": {"command": "lemminx", "args": []}
+}

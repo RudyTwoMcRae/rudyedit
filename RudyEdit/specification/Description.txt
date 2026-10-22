@@ -1,0 +1,133 @@
+Create a console application written in C# and compiled for both Windows and Manjaro Linux called RudyEdit.
+Create an install file for the entire application that includes and will install all Nerd Fonts required, config files, and application files.  
+The installer should always update the installed application if it is already installed.
+The installer also needs to create a "Start Menu" entry and on Windows the option to create a Desktop shortcut as well.
+The application should be able to be uninstalled through the default package manager on Manjaro Linux and the Programs Settings on Windows.
+Once installed the application can be started in a console using the command "rudyedit" by itself or with eaither of the following 2 flags:
+	rudyedit -f [FILENAME] --> Opens the included file in RudyEdit
+	rudyedit -p [FOLDER PATH] --> Sets the supplied Folder as the "Working Path" and opens the folder in the File Manager upon opening RudyEdit
+
+The application will have 2 modes with 2 very different functions.
+Mode 1: Text Mode
+	A quick and easy way to create notes and text files.  This should be very similar to Microsoft Wordpad but in a console window.
+	Features of this mode include:
+		Text Markups
+			Bold
+			Italic
+			Underline
+			Font Size
+			Font Color
+			Font
+			Bullited Lists
+			Ordered Lists
+		Files can have tags for easy searching
+		Spell Checker
+		Check Spelling as the user types
+		Tabs
+		Panels
+	These files should follow the Markup Language specifications so it can be opened in any application that supports Markup such as Joplin.
+	
+Mode 2: Development Mode
+	This mode is used for creating applications and websites.  This should be able to replace Visual Studio Code/NeoVim but in a console window.
+	Features include:
+		Tabs
+		Panels
+		Syntax Highlighting
+		Code Auto-completion
+		Built in Build Tools
+		Built in Console
+		Error Checking
+		Determanes Programming Language based on file type of open file
+		Debug Mode to step through program 1 line at a time
+		Detailed Offline Help for all supported Programming Languages that open in a popup window in the console
+	Programming Languages Supported by Syntax Highlighting and Code Completion
+		C#
+		C
+		HTML
+		CSS
+		Javascript
+		PHP
+		React
+		VueJS
+		Python
+		Tailwind CSS
+		Prisma ORM
+		Code Igniter
+		NEXT JS
+		NUXT JS
+		Rust
+		XML
+	Build/Debug Programming Languages
+		C#
+		C
+		Python
+		Rust
+		
+The application will also have 2 Keybinding Modes as well that can be toggled by the user at any time.  These modes include:
+	VS Code
+	VIM
+	
+I have also included the following files to help with the definition of the application:
+	Menu.txt --> This is what the main menu should consist of. 
+		--> File Format: Menu Option
+							Sub Menu Option
+								Description of what the sub menu option should do when selected
+	Config.cs --> This is the default config file that can be edited by the end user.
+			  --> Anything in {} brackets are the only allowable values for that setting and is for you only and shouldn't be in the final config file but can be used to create a help file.
+			  --> Anything in () brackets are descriptions of what the setting should do and is for you and the help final only.  These should not be in the final config file.
+			  --> When editing this file in RudyEdit pressing F1 brings up pop-up with every command available listed with a description of the function and at least 1 example of it's usage.
+	KeyboardShortcuts.xml --> This is the default keybindings.  New keybindings can be entered by the end user.
+						  --> When editing this file in RudyEdit pressing F1 brings up pop-up with every command available listed with a description of the function and at least 1 example of it's usage.
+
+Current shortcut addendum — version 1.0.3
+Ctrl+Shift+W (Shift+Ctrl+W): close and remove the current tab. When other tabs exist, select a remaining tab and retain the panel. Prompt for unsaved changes; Cancel leaves the tab open.
+Ctrl+W: close the current panel and rearrange remaining panels, checking all unsaved tabs unique to that panel.
+Ctrl+Q: quit and return to the terminal after checking unsaved documents.
+These assignments apply in both Code and VIM keybinding modes. Closing the last tab leaves a blank document in its panel; closing the final panel leaves a blank editor.
+
+
+Version 2.0.0 — Text mode bars
+
+Formatting bar: Font and Size drop-downs, Bold, Italic, Underline, Text Color, Background Color, Bulleted/Ordered Lists, Spelling, Auto Spell, and Preview. Format opens every control on narrow terminals. Ctrl+Alt+M focuses formatting; arrows select and Enter activates. Font/size remain document markup; terminal cell fonts are host-controlled.
+
+Current-file tags: bottom tag list plus inline Add tags field. Ctrl+Alt+T focuses entry. Enter adds comma-separated tags; Escape returns to editing. Click the tag list to edit/view all tags. Draft entries belong to each tab. Tags are undoable, deduplicated without case, and saved to Tags.xml with Ctrl+S. Ctrl+Shift+T toggles the bar.
+
+File Manager: bottom Tag? field, Ctrl+Alt+G to focus; Enter searches saved Markdown/text files recursively in the displayed folder, matching all comma-separated tags without case. Empty query or × clears results. Search limit: 10,000 paths, 2 MB per file; symlinks/inaccessible files are skipped. All bars are Text-mode only.
+
+
+Version 2.0.1 — Tag visibility and external storage
+
+Ctrl+Shift+T toggles the current-file tag bar in Text mode in both Code and VIM keybinding modes; hiding it restores two document rows. Ctrl+Alt+T shows the bar and focuses tag entry. View → Toggle Tag Bar and the command palette provide the same action. ShowTagBar = true/false in Config.cs sets startup visibility. Hiding the bar preserves tags and unfinished entries. File Manager tag search remains available when this bar is hidden.
+
+Tag names are stored only in Tags.xml next to Config.cs and KeyboardShortcuts.xml (Windows: %APPDATA%\RudyEdit\Tags.xml; Linux: $XDG_CONFIG_HOME/RudyEdit/Tags.xml or ~/.config/RudyEdit/Tags.xml; RUDYEDIT_CONFIG_HOME overrides the folder). Ctrl+S saves both the file link and its XML tags; unsaved tag changes participate in Save/Discard/Cancel and undo/redo. The configuration file is created on first launch without replacing an existing registry.
+
+Each tagged file stores only an opaque <!-- rudyedit-id: UUID --> comment. RudyEdit removes that metadata from its editing view and reinserts it on save, so typing, selecting, copying, and previewing the document do not expose the code. Markdown renderers hide the comment; raw text tools can display it. Moving/renaming files retains their tags; Save As assigns an independent identifier. Removing all tags leaves an empty registry entry. Search resolves identifiers through Tags.xml and still finds legacy tag headers pending migration.
+
+Legacy leading <!-- tags: ... --> headers are staged for migration when opened: the editor displays the document body and its tags, and the next save moves names to XML and replaces the old header with the identifier. No unopened documents are rewritten. Back up Tags.xml with the documents; a file identifier by itself cannot reconstruct tag names on another machine. Corrupt XML and conflicting tag edits cause a save error instead of overwriting the registry. The registry uses <Tags Version="1"><File Id="UUID" Path="..."><Tag>name</Tag></File></Tags>; UUID is a real GUID and tag text is XML escaped. Tags.xml is validated before saving from RudyEdit.
+
+
+Version 2.0.3 — Error logging, configuration folder, and one Windows installer
+
+Ctrl+Alt+C (Open Config Folder in Help) shows the configuration directory in RudyEdit File Manager and requests Explorer on Windows or the desktop file manager through xdg-open on Linux. It works in Code/VIM and Text/Development modes; the in-app folder remains usable when no desktop opener is available. Existing user keybinding files receive the shortcut through the default catalog unless the global sequence has been customized. Both distributed XML keybinding files include it explicitly.
+
+RudyEdit-errors.log is created beside Config.cs, KeyboardShortcuts.xml, Tags.xml and languages.json. It records UTC timestamps, process IDs, context, exceptions/stacks and nested errors, startup/configuration/save/command failures, tool stderr and nonzero exits, compiler/LSP diagnostics, and debugger/protocol/background failures. Help → Error Log displays a searchable snapshot. The log rotates at 5 MiB with three backups; very long entries are marked/truncated at 65,536 characters. If the config folder is unwritable, the active log falls back to RudyEdit-<user>/RudyEdit-errors.log under the system temp directory. Fatal errors report the active path. Normal cancellations and cleanup races are excluded.
+
+Windows users install with the single self-contained RudyEdit-2.0.3-Windows-Setup.exe. No separate MSI or .NET runtime download is needed. It preserves the binder-and-pen icon, optional Desktop shortcut, Start Menu entry, PATH update, bundled runtime/font, and existing upgrade identity. Windows Installer's verbose installation log remains at %TEMP%\RudyEdit-install.log. The internal MSI is a build intermediate, not an additional user installer.
+
+Version 2.0.4 — Nerd Font and graphic icons
+
+Both installers include **FiraCode Nerd Font Mono**. Select that font in your terminal host so its Nerd Font glyphs render correctly. In Windows Terminal, open Settings → your profile → Appearance → Font face and choose **FiraCode Nerd Font Mono**. For Ghostty, set:
+
+```ini
+font-family = "FiraCode Nerd Font Mono"
+```
+
+Reload Ghostty's configuration; restart a terminal if the newly installed font is not listed. [Windows Terminal font setup](https://learn.microsoft.com/windows/terminal/tutorials/custom-prompt-setup) · [Ghostty configuration](https://ghostty.org/docs/config). Portable users must install `assets/fonts/FiraCodeNerdFontMono-Regular.ttf` themselves. Text → Font sets document markup; the terminal host controls the screen's font.
+
+Main menus, command lists, the command palette and Text-mode formatting controls now have graphic icons. The File Manager shows colored, distinct icons for languages, text/Markdown, data/configuration, images, archives, office documents, PDF, audio/video, fonts, and binaries, plus parent/open/ordinary folders and Git, GitHub, source, configuration and dependency folders. Tag-search results use the same icons. File names and extensions stay visible; icons do not add support for opening binary formats.
+
+**Help → Nerd Font & Icons** provides setup instructions and a complete icon legend. If the terminal cannot display the glyphs, **View → Toggle Graphic Icons** switches to plain file-type labels for this session. Set `UseNerdIcons = false;` in Config.cs for a persistent fallback; the default is `true`, including when older configuration files omit this setting. Existing configuration and keybindings are preserved. All keyboard/menu/mouse controls still work with either display style.
+
+Version 2.0.5 — Mandatory executable release tests
+
+Package the test scripts/runner with the application. After every build/publish, run the native executable test suite before creating installers. Test every command with outcome assertions, plus keyboard/mouse, document, settings, tags, logging, file operations, formatting, process/debugger/protocol and font regressions. A completed log starts with performed/passed/errors/blocked counts, lists all errors, then all named tests. Every command must have passing coverage; failures, platform blocks, missing/stale reports or changed payload files block all installer entry points. See tests/README.md.

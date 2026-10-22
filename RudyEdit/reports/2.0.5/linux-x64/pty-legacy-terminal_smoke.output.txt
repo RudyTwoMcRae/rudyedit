@@ -1,0 +1,2 @@
+{"result": "PASS", "checks": 16, "artifacts": "/tmp/rudyedit-terminal-u116iect"}
+

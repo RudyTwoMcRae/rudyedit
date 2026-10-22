@@ -1,0 +1,112 @@
+File
+	Open
+		Display the current folder path and allow the user to enter a filename or change the path.  
+		Then when they press Enter open the file in the main window.  If ctrl+v is pressed then open in a new vertical split.  
+		If ctrl+h is pressed then open the file in a new horizontal split.  If ctrl+t is pressed then open the file in a new tab
+	Open Folder
+		Open a folder in the File Manager Pane
+	Save
+		Save the current file
+	Save All
+		Save all open files
+	Save As
+		Open a save as dialog for the current file
+	Load
+		Open a file dialog and select a new home/working folder.  This folder will be loaded into the FileManager as well
+
+	Close Tab — Ctrl+Shift+W
+		Remove the current tab from its panel, prompting to Save, Discard or Cancel if needed. Select a remaining tab and keep the panel open.
+
+View
+	Close Panel — Ctrl+W
+		Close the current panel after checking all unsaved tabs, then rearrange remaining panels.
+
+Mode
+	VS Code
+		Switches keyboard shortcuts to the default VS Code keybindings
+	VIM
+		Switches keyboard shortcuts to VIM keybindings
+	-
+	Text
+		Switch to Text Edit Mode
+	Development
+		Switch to Development Mode
+
+Text
+	Bold
+		Bold highlighted text or future text
+	Italic
+		Italic text
+	Underline
+		Underline text
+	Font
+		List all available Nerd Fonts and change any highlighted text to that font.  Use that font going forward in that document.
+	Font Size
+		Increase or decrease the size if text in pts
+	-
+	Text Color
+		Display a color picker.  When a color is selected change the highlighted and future text to that color
+	Background Color
+		Display a color picker.  When a color is selected change the background to the selected color
+		
+Build ***Only show when in Development Mode***
+	Build Project
+		Compiles the entire program being coded when in Development Mode
+	Debug
+		Enter debug mode that allows the user to run the program 1 line at a time
+	
+Help
+	Show Available Commands
+		Display a list of all available commands with they're keybindings and a short description of that command
+	Keybindings
+		Open the Keybindings XML File
+	Config
+		Open the Config File
+	Language Manual
+		Show a searchable Offline help manual for the language of the currently open file
+
+Version 2.0.0 — Text mode bars
+
+Formatting bar: Font and Size drop-downs, Bold, Italic, Underline, Text Color, Background Color, Bulleted/Ordered Lists, Spelling, Auto Spell, and Preview. Format opens every control on narrow terminals. Ctrl+Alt+M focuses formatting; arrows select and Enter activates. Font/size remain document markup; terminal cell fonts are host-controlled.
+
+Current-file tags: bottom tag list plus inline Add tags field. Ctrl+Alt+T focuses entry. Enter adds comma-separated tags; Escape returns to editing. Click the tag list to edit/view all tags. Draft entries belong to each tab. Tags are undoable, deduplicated without case, and saved to Tags.xml with Ctrl+S. Ctrl+Shift+T toggles the bar.
+
+File Manager: bottom Tag? field, Ctrl+Alt+G to focus; Enter searches saved Markdown/text files recursively in the displayed folder, matching all comma-separated tags without case. Empty query or × clears results. Search limit: 10,000 paths, 2 MB per file; symlinks/inaccessible files are skipped. All bars are Text-mode only.
+
+
+Version 2.0.1 — Tag visibility and external storage
+
+Ctrl+Shift+T toggles the current-file tag bar in Text mode in both Code and VIM keybinding modes; hiding it restores two document rows. Ctrl+Alt+T shows the bar and focuses tag entry. View → Toggle Tag Bar and the command palette provide the same action. ShowTagBar = true/false in Config.cs sets startup visibility. Hiding the bar preserves tags and unfinished entries. File Manager tag search remains available when this bar is hidden.
+
+Tag names are stored only in Tags.xml next to Config.cs and KeyboardShortcuts.xml (Windows: %APPDATA%\RudyEdit\Tags.xml; Linux: $XDG_CONFIG_HOME/RudyEdit/Tags.xml or ~/.config/RudyEdit/Tags.xml; RUDYEDIT_CONFIG_HOME overrides the folder). Ctrl+S saves both the file link and its XML tags; unsaved tag changes participate in Save/Discard/Cancel and undo/redo. The configuration file is created on first launch without replacing an existing registry.
+
+Each tagged file stores only an opaque <!-- rudyedit-id: UUID --> comment. RudyEdit removes that metadata from its editing view and reinserts it on save, so typing, selecting, copying, and previewing the document do not expose the code. Markdown renderers hide the comment; raw text tools can display it. Moving/renaming files retains their tags; Save As assigns an independent identifier. Removing all tags leaves an empty registry entry. Search resolves identifiers through Tags.xml and still finds legacy tag headers pending migration.
+
+Legacy leading <!-- tags: ... --> headers are staged for migration when opened: the editor displays the document body and its tags, and the next save moves names to XML and replaces the old header with the identifier. No unopened documents are rewritten. Back up Tags.xml with the documents; a file identifier by itself cannot reconstruct tag names on another machine. Corrupt XML and conflicting tag edits cause a save error instead of overwriting the registry. The registry uses <Tags Version="1"><File Id="UUID" Path="..."><Tag>name</Tag></File></Tags>; UUID is a real GUID and tag text is XML escaped. Tags.xml is validated before saving from RudyEdit.
+
+
+Version 2.0.3 — Error logging, configuration folder, and one Windows installer
+
+Ctrl+Alt+C (Open Config Folder in Help) shows the configuration directory in RudyEdit File Manager and requests Explorer on Windows or the desktop file manager through xdg-open on Linux. It works in Code/VIM and Text/Development modes; the in-app folder remains usable when no desktop opener is available. Existing user keybinding files receive the shortcut through the default catalog unless the global sequence has been customized. Both distributed XML keybinding files include it explicitly.
+
+RudyEdit-errors.log is created beside Config.cs, KeyboardShortcuts.xml, Tags.xml and languages.json. It records UTC timestamps, process IDs, context, exceptions/stacks and nested errors, startup/configuration/save/command failures, tool stderr and nonzero exits, compiler/LSP diagnostics, and debugger/protocol/background failures. Help → Error Log displays a searchable snapshot. The log rotates at 5 MiB with three backups; very long entries are marked/truncated at 65,536 characters. If the config folder is unwritable, the active log falls back to RudyEdit-<user>/RudyEdit-errors.log under the system temp directory. Fatal errors report the active path. Normal cancellations and cleanup races are excluded.
+
+Windows users install with the single self-contained RudyEdit-2.0.3-Windows-Setup.exe. No separate MSI or .NET runtime download is needed. It preserves the binder-and-pen icon, optional Desktop shortcut, Start Menu entry, PATH update, bundled runtime/font, and existing upgrade identity. Windows Installer's verbose installation log remains at %TEMP%\RudyEdit-install.log. The internal MSI is a build intermediate, not an additional user installer.
+
+Version 2.0.4 — Nerd Font and graphic icons
+
+Both installers include **FiraCode Nerd Font Mono**. Select that font in your terminal host so its Nerd Font glyphs render correctly. In Windows Terminal, open Settings → your profile → Appearance → Font face and choose **FiraCode Nerd Font Mono**. For Ghostty, set:
+
+```ini
+font-family = "FiraCode Nerd Font Mono"
+```
+
+Reload Ghostty's configuration; restart a terminal if the newly installed font is not listed. [Windows Terminal font setup](https://learn.microsoft.com/windows/terminal/tutorials/custom-prompt-setup) · [Ghostty configuration](https://ghostty.org/docs/config). Portable users must install `assets/fonts/FiraCodeNerdFontMono-Regular.ttf` themselves. Text → Font sets document markup; the terminal host controls the screen's font.
+
+Main menus, command lists, the command palette and Text-mode formatting controls now have graphic icons. The File Manager shows colored, distinct icons for languages, text/Markdown, data/configuration, images, archives, office documents, PDF, audio/video, fonts, and binaries, plus parent/open/ordinary folders and Git, GitHub, source, configuration and dependency folders. Tag-search results use the same icons. File names and extensions stay visible; icons do not add support for opening binary formats.
+
+**Help → Nerd Font & Icons** provides setup instructions and a complete icon legend. If the terminal cannot display the glyphs, **View → Toggle Graphic Icons** switches to plain file-type labels for this session. Set `UseNerdIcons = false;` in Config.cs for a persistent fallback; the default is `true`, including when older configuration files omit this setting. Existing configuration and keybindings are preserved. All keyboard/menu/mouse controls still work with either display style.
+
+Version 2.0.5 — Mandatory executable release tests
+
+Package the test scripts/runner with the application. After every build/publish, run the native executable test suite before creating installers. Test every command with outcome assertions, plus keyboard/mouse, document, settings, tags, logging, file operations, formatting, process/debugger/protocol and font regressions. A completed log starts with performed/passed/errors/blocked counts, lists all errors, then all named tests. Every command must have passing coverage; failures, platform blocks, missing/stale reports or changed payload files block all installer entry points. See tests/README.md.

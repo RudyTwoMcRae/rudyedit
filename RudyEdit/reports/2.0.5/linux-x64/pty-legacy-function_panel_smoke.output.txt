@@ -1,0 +1,2 @@
+PASS 57 function-key/panel-close checks (legacy)
+

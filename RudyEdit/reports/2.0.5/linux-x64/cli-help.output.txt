@@ -1,0 +1,12 @@
+RudyEdit 2.0.5 — terminal text and code editor
+Usage: rudyedit [-f FILE] [-p FOLDER]
+       rudyedit [FILE]
+       rudyedit --doctor
+       rudyedit --self-test [--report FILE]
+
+Alt+F/E/M/T/V/B/H menus • F10 menu • F1 help • F2 Code/VIM • F3 Text/Development
+Ctrl+S save • Ctrl+Shift+W close tab • Ctrl+W close panel • Ctrl+Q quit • Ctrl+Space commands
+Ctrl+Alt+C opens the configuration folder
+Configuration: /tmp/rudyedit-release-vypvehmk/config
+Error log: /tmp/rudyedit-release-vypvehmk/config/RudyEdit-errors.log
+

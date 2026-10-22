@@ -1,0 +1,16 @@
+
+test_changed_binary_blocks (__main__.GateTests.test_changed_binary_blocks) ... ok
+test_changed_script_blocks (__main__.GateTests.test_changed_script_blocks) ... ok
+test_empty_results_blocks (__main__.GateTests.test_empty_results_blocks) ... ok
+test_failed_case_with_success_flag_blocks (__main__.GateTests.test_failed_case_with_success_flag_blocks) ... ok
+test_failure_blocks (__main__.GateTests.test_failure_blocks) ... ok
+test_foreign_platform_receipt_blocks (__main__.GateTests.test_foreign_platform_receipt_blocks) ... ok
+test_missing_native_suite_blocks (__main__.GateTests.test_missing_native_suite_blocks) ... ok
+test_missing_report_blocks (__main__.GateTests.test_missing_report_blocks) ... ok
+test_uncovered_function_blocks (__main__.GateTests.test_uncovered_function_blocks) ... ok
+test_valid_exact_payload_accepted (__main__.GateTests.test_valid_exact_payload_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+OK

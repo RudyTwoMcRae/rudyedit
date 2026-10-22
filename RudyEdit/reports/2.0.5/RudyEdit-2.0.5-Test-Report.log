@@ -1,0 +1,1005 @@
+Tests performed: 981
+Passed: 981
+Errors: 0
+Blocked: 2
+Result: NOT ALL TARGETS RELEASE-READY
+
+TARGET RESULTS
+linux-x64: PASS; {"performed": 981, "passed": 981, "errors": 0, "blocked": 0}; completed UTC 2026-10-21T17:41:16.076169+00:00
+win-x64: BLOCKED / FAIL; {"performed": 0, "passed": 0, "errors": 0, "blocked": 2}; completed UTC 2026-10-21T17:38:48.184746+00:00
+
+ERRORS FOUND
+[BLOCKED] win-x64 / native-executable-platform
+win-x64 executable cannot run natively on Linux. Run these packaged scripts on the target OS. No installer is allowed for this payload yet.
+
+[BLOCKED] win-x64 / required-release-suites
+Required suites did not pass: catalog, cli-doctor, cli-help, cli-invalid, cli-version, font-audit, gate-self-tests, managed, native-windows, windows-icons
+
+
+ALL TESTS PERFORMED (named cases/checkpoints; may contain multiple assertions)
+0001. [PASS] linux-x64 / release / cli-version
+0002. [PASS] linux-x64 / release / cli-help
+0003. [PASS] linux-x64 / release / cli-doctor
+0004. [PASS] linux-x64 / release / cli-invalid
+0005. [PASS] linux-x64 / release / catalog
+0006. [PASS] linux-x64 / release / managed
+0007. [PASS] linux-x64 / managed/executable / Published executable runs tests against its own loaded application assembly
+0008. [PASS] linux-x64 / managed/executable / Windows stream regression: Ctrl+Q/S and F1 become single commands, not escape text
+0009. [PASS] linux-x64 / managed/executable / Windows F1-F24 and Ctrl/Alt/Shift with both modifier sides and lock states
+0010. [PASS] linux-x64 / managed/executable / Windows Ctrl A-Z, arrows, digits, punctuation and modified text suppression
+0011. [PASS] linux-x64 / managed/executable / Windows records: repeats, key-up/modifiers ignored, UTF-16, fragmented escapes and paste
+0012. [PASS] linux-x64 / managed/executable / Terminal setup keeps Windows in native mode, handles Ctrl+C/mouse, and restores output
+0013. [PASS] linux-x64 / managed/executable / CSI decoder rejects malformed numbers, release events and unsupported functional keys
+0014. [PASS] linux-x64 / managed/executable / Failed build/run launch cannot poison Active, Stop or Quit
+0015. [PASS] linux-x64 / managed/executable / Windows editor commands, save and quit through native-code
+0016. [PASS] linux-x64 / managed/executable / Windows quit saves unsaved work through native-code
+0017. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in menu through native-code
+0018. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in help through native-code
+0019. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in files through native-code
+0020. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in console through native-code
+0021. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in chord through native-code
+0022. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in save-as through native-code
+0023. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in open through native-code
+0024. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in quit-save-as through native-code
+0025. [PASS] linux-x64 / managed/executable / Windows editor commands, save and quit through native-vim
+0026. [PASS] linux-x64 / managed/executable / Windows quit saves unsaved work through native-vim
+0027. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in menu through native-vim
+0028. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in help through native-vim
+0029. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in files through native-vim
+0030. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in console through native-vim
+0031. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in chord through native-vim
+0032. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in save-as through native-vim
+0033. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in open through native-vim
+0034. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in quit-save-as through native-vim
+0035. [PASS] linux-x64 / managed/executable / Windows editor commands, save and quit through csi-code
+0036. [PASS] linux-x64 / managed/executable / Windows quit saves unsaved work through csi-code
+0037. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in menu through csi-code
+0038. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in help through csi-code
+0039. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in files through csi-code
+0040. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in console through csi-code
+0041. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in chord through csi-code
+0042. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in save-as through csi-code
+0043. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in open through csi-code
+0044. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in quit-save-as through csi-code
+0045. [PASS] linux-x64 / managed/executable / Windows editor commands, save and quit through csi-vim
+0046. [PASS] linux-x64 / managed/executable / Windows quit saves unsaved work through csi-vim
+0047. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in menu through csi-vim
+0048. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in help through csi-vim
+0049. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in files through csi-vim
+0050. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in console through csi-vim
+0051. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in chord through csi-vim
+0052. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in save-as through csi-vim
+0053. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in open through csi-vim
+0054. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in quit-save-as through csi-vim
+0055. [PASS] linux-x64 / managed/executable / Windows editor commands, save and quit through legacy-code
+0056. [PASS] linux-x64 / managed/executable / Windows quit saves unsaved work through legacy-code
+0057. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in menu through legacy-code
+0058. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in help through legacy-code
+0059. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in files through legacy-code
+0060. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in console through legacy-code
+0061. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in chord through legacy-code
+0062. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in save-as through legacy-code
+0063. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in open through legacy-code
+0064. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in quit-save-as through legacy-code
+0065. [PASS] linux-x64 / managed/executable / Windows editor commands, save and quit through legacy-vim
+0066. [PASS] linux-x64 / managed/executable / Windows quit saves unsaved work through legacy-vim
+0067. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in menu through legacy-vim
+0068. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in help through legacy-vim
+0069. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in files through legacy-vim
+0070. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in console through legacy-vim
+0071. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in chord through legacy-vim
+0072. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in save-as through legacy-vim
+0073. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in open through legacy-vim
+0074. [PASS] linux-x64 / managed/executable / Windows safe quit/cancel in quit-save-as through legacy-vim
+0075. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, native, VIM=False, vertical=False
+0076. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, native, VIM=False, vertical=True
+0077. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, native, VIM=True, vertical=False
+0078. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, native, VIM=True, vertical=True
+0079. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, csi, VIM=False, vertical=False
+0080. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, csi, VIM=False, vertical=True
+0081. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, csi, VIM=True, vertical=False
+0082. [PASS] linux-x64 / managed/executable / Remove panel via ctrl+w, csi, VIM=True, vertical=True
+0083. [PASS] linux-x64 / managed/executable / Open config folder shortcut: native, VIM=False
+0084. [PASS] linux-x64 / managed/executable / Open config folder shortcut: native, VIM=True
+0085. [PASS] linux-x64 / managed/executable / Open config folder shortcut: legacy, VIM=False
+0086. [PASS] linux-x64 / managed/executable / Open config folder shortcut: legacy, VIM=True
+0087. [PASS] linux-x64 / managed/executable / Open config folder shortcut: csi, VIM=False
+0088. [PASS] linux-x64 / managed/executable / Open config folder shortcut: csi, VIM=True
+0089. [PASS] linux-x64 / managed/executable / Editor command failures are recorded in the persistent error log
+0090. [PASS] linux-x64 / managed/executable / Config fallback preserves the exception in the error log
+0091. [PASS] linux-x64 / managed/executable / Tab and panel defaults upgrade both legacy shortcuts
+0092. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=False
+0093. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=True
+0094. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=False
+0095. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=True
+0096. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=False
+0097. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=True
+0098. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=False
+0099. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=True
+0100. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=False
+0101. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=True
+0102. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=False
+0103. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=True
+0104. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=False
+0105. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=True
+0106. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=False
+0107. [PASS] linux-x64 / managed/executable / Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=True
+0108. [PASS] linux-x64 / managed/executable / Existing XML is migrated accurately and idempotently without changing custom bindings
+0109. [PASS] linux-x64 / managed/executable / Windows INPUT_RECORD raw binary layout matches Win32 offsets
+0110. [PASS] linux-x64 / managed/executable / Tag metadata deduplicates, sanitizes and preserves cursor/selection with undo
+0111. [PASS] linux-x64 / managed/executable / Text bars add/save/search/clear tags and format via keyboard and mouse Code
+0112. [PASS] linux-x64 / managed/executable / Text bars add/save/search/clear tags and format via keyboard and mouse VIM
+0113. [PASS] linux-x64 / managed/executable / Tag search matches all tags case insensitively with upper-case extensions
+0114. [PASS] linux-x64 / managed/executable / Every Nerd UI icon occupies one private-use cell
+0115. [PASS] linux-x64 / managed/executable / File icons classify languages, data, media and unknown extensions without reading files
+0116. [PASS] linux-x64 / managed/executable / Special filename and folder icons take precedence over extensions
+0117. [PASS] linux-x64 / managed/executable / Graphic icon settings default on and validate explicit boolean fallback
+0118. [PASS] linux-x64 / managed/executable / Graphic menu clicks, file icons, plain fallback and font help Code
+0119. [PASS] linux-x64 / managed/executable / Graphic menu clicks, file icons, plain fallback and font help VIM
+0120. [PASS] linux-x64 / managed/executable / Formatting icon keyboard access fits terminal width 20
+0121. [PASS] linux-x64 / managed/executable / Formatting icon keyboard access fits terminal width 40
+0122. [PASS] linux-x64 / managed/executable / Formatting icon keyboard access fits terminal width 80
+0123. [PASS] linux-x64 / managed/executable / Formatting icon keyboard access fits terminal width 120
+0124. [PASS] linux-x64 / managed/executable / Tag registry round trip: names only in XML, hidden id, UTF-8 CRLF BOM, editor text intact
+0125. [PASS] linux-x64 / managed/executable / Tag-only unsaved changes discard without changing Tags.xml
+0126. [PASS] linux-x64 / managed/executable / Legacy header migrates on save without stripping examples or body blank lines
+0127. [PASS] linux-x64 / managed/executable / Identifier survives external rename; Save As creates independent tags
+0128. [PASS] linux-x64 / managed/executable / Registry merges independent saves and refuses stale edits on the same id
+0129. [PASS] linux-x64 / managed/executable / Malformed registry is preserved and cannot partially save a tagged document
+0130. [PASS] linux-x64 / managed/executable / Failed document replacement rolls the XML transaction back
+0131. [PASS] linux-x64 / managed/executable / The registry cannot tag itself or be replaced by a tagged document
+0132. [PASS] linux-x64 / managed/executable / Tags.xml validation rejects duplicate IDs and DTDs; tag names are XML escaped
+0133. [PASS] linux-x64 / managed/executable / Error log records UTC time, context, stack and nested exception
+0134. [PASS] linux-x64 / managed/executable / Concurrent error records are complete without lost entries
+0135. [PASS] linux-x64 / managed/executable / Error log rotation keeps three backups and a bounded current file
+0136. [PASS] linux-x64 / managed/executable / Unwritable configuration path logs to the temporary fallback
+0137. [PASS] linux-x64 / managed/executable / Tool stderr, stdout diagnostics and nonzero exit are persisted
+0138. [PASS] linux-x64 / managed/executable / Malformed asynchronous protocol messages are logged immediately
+0139. [PASS] linux-x64 / managed/executable / Python debugger stderr and exception events are persisted
+0140. [PASS] linux-x64 / managed/executable / Configuration folder launcher preserves paths as a single non-shell argument
+0141. [PASS] linux-x64 / managed/executable / [command:new] verified outcome via keybinding / Code
+0142. [PASS] linux-x64 / managed/executable / [command:new] verified outcome via keybinding / VIM
+0143. [PASS] linux-x64 / managed/executable / [command:open] verified outcome via keybinding / Code
+0144. [PASS] linux-x64 / managed/executable / [command:open] verified outcome via keybinding / VIM
+0145. [PASS] linux-x64 / managed/executable / [command:folder] verified outcome via keybinding / Code
+0146. [PASS] linux-x64 / managed/executable / [command:folder] verified outcome via keybinding / VIM
+0147. [PASS] linux-x64 / managed/executable / [command:save] verified outcome via keybinding / Code
+0148. [PASS] linux-x64 / managed/executable / [command:save] verified outcome via keybinding / VIM
+0149. [PASS] linux-x64 / managed/executable / [command:save-all] verified outcome via keybinding / Code
+0150. [PASS] linux-x64 / managed/executable / [command:save-all] verified outcome via keybinding / VIM
+0151. [PASS] linux-x64 / managed/executable / [command:save-as] verified outcome via keybinding / Code
+0152. [PASS] linux-x64 / managed/executable / [command:save-as] verified outcome via keybinding / VIM
+0153. [PASS] linux-x64 / managed/executable / [command:close-tab] verified outcome via keybinding / Code
+0154. [PASS] linux-x64 / managed/executable / [command:close-tab] verified outcome via keybinding / VIM
+0155. [PASS] linux-x64 / managed/executable / [command:close-other-tabs] verified outcome via keybinding / Code
+0156. [PASS] linux-x64 / managed/executable / [command:close-other-tabs] verified outcome via keybinding / VIM
+0157. [PASS] linux-x64 / managed/executable / [command:quit] verified outcome via keybinding / Code
+0158. [PASS] linux-x64 / managed/executable / [command:quit] verified outcome via keybinding / VIM
+0159. [PASS] linux-x64 / managed/executable / [command:keys-code] verified outcome via keybinding / Code
+0160. [PASS] linux-x64 / managed/executable / [command:keys-code] verified outcome via keybinding / VIM
+0161. [PASS] linux-x64 / managed/executable / [command:keys-vim] verified outcome via keybinding / Code
+0162. [PASS] linux-x64 / managed/executable / [command:keys-vim] verified outcome via keybinding / VIM
+0163. [PASS] linux-x64 / managed/executable / [command:toggle-keys] verified outcome via keybinding / Code
+0164. [PASS] linux-x64 / managed/executable / [command:toggle-keys] verified outcome via keybinding / VIM
+0165. [PASS] linux-x64 / managed/executable / [command:text-mode] verified outcome via keybinding / Code
+0166. [PASS] linux-x64 / managed/executable / [command:text-mode] verified outcome via keybinding / VIM
+0167. [PASS] linux-x64 / managed/executable / [command:dev-mode] verified outcome via keybinding / Code
+0168. [PASS] linux-x64 / managed/executable / [command:dev-mode] verified outcome via keybinding / VIM
+0169. [PASS] linux-x64 / managed/executable / [command:toggle-mode] verified outcome via keybinding / Code
+0170. [PASS] linux-x64 / managed/executable / [command:toggle-mode] verified outcome via keybinding / VIM
+0171. [PASS] linux-x64 / managed/executable / [command:bold] verified outcome via keybinding / Code
+0172. [PASS] linux-x64 / managed/executable / [command:bold] verified outcome via keybinding / VIM
+0173. [PASS] linux-x64 / managed/executable / [command:italic] verified outcome via keybinding / Code
+0174. [PASS] linux-x64 / managed/executable / [command:italic] verified outcome via keybinding / VIM
+0175. [PASS] linux-x64 / managed/executable / [command:underline] verified outcome via keybinding / Code
+0176. [PASS] linux-x64 / managed/executable / [command:underline] verified outcome via keybinding / VIM
+0177. [PASS] linux-x64 / managed/executable / [command:font] verified outcome via keybinding / Code
+0178. [PASS] linux-x64 / managed/executable / [command:font] verified outcome via keybinding / VIM
+0179. [PASS] linux-x64 / managed/executable / [command:font-size] verified outcome via keybinding / Code
+0180. [PASS] linux-x64 / managed/executable / [command:font-size] verified outcome via keybinding / VIM
+0181. [PASS] linux-x64 / managed/executable / [command:foreground] verified outcome via keybinding / Code
+0182. [PASS] linux-x64 / managed/executable / [command:foreground] verified outcome via keybinding / VIM
+0183. [PASS] linux-x64 / managed/executable / [command:background] verified outcome via keybinding / Code
+0184. [PASS] linux-x64 / managed/executable / [command:background] verified outcome via keybinding / VIM
+0185. [PASS] linux-x64 / managed/executable / [command:bullets] verified outcome via keybinding / Code
+0186. [PASS] linux-x64 / managed/executable / [command:bullets] verified outcome via keybinding / VIM
+0187. [PASS] linux-x64 / managed/executable / [command:ordered] verified outcome via keybinding / Code
+0188. [PASS] linux-x64 / managed/executable / [command:ordered] verified outcome via keybinding / VIM
+0189. [PASS] linux-x64 / managed/executable / [command:toggle-tag-bar] verified outcome via keybinding / Code
+0190. [PASS] linux-x64 / managed/executable / [command:toggle-tag-bar] verified outcome via keybinding / VIM
+0191. [PASS] linux-x64 / managed/executable / [command:tag-entry] verified outcome via keybinding / Code
+0192. [PASS] linux-x64 / managed/executable / [command:tag-entry] verified outcome via keybinding / VIM
+0193. [PASS] linux-x64 / managed/executable / [command:format-bar] verified outcome via keybinding / Code
+0194. [PASS] linux-x64 / managed/executable / [command:format-bar] verified outcome via keybinding / VIM
+0195. [PASS] linux-x64 / managed/executable / [command:tags] verified outcome via keybinding / Code
+0196. [PASS] linux-x64 / managed/executable / [command:tags] verified outcome via keybinding / VIM
+0197. [PASS] linux-x64 / managed/executable / [command:search-tags] verified outcome via keybinding / Code
+0198. [PASS] linux-x64 / managed/executable / [command:search-tags] verified outcome via keybinding / VIM
+0199. [PASS] linux-x64 / managed/executable / [command:spell] verified outcome via keybinding / Code
+0200. [PASS] linux-x64 / managed/executable / [command:spell] verified outcome via keybinding / VIM
+0201. [PASS] linux-x64 / managed/executable / [command:toggle-spell] verified outcome via keybinding / Code
+0202. [PASS] linux-x64 / managed/executable / [command:toggle-spell] verified outcome via keybinding / VIM
+0203. [PASS] linux-x64 / managed/executable / [command:preview] verified outcome via keybinding / Code
+0204. [PASS] linux-x64 / managed/executable / [command:preview] verified outcome via keybinding / VIM
+0205. [PASS] linux-x64 / managed/executable / [command:undo] verified outcome via keybinding / Code
+0206. [PASS] linux-x64 / managed/executable / [command:undo] verified outcome via keybinding / VIM
+0207. [PASS] linux-x64 / managed/executable / [command:redo] verified outcome via keybinding / Code
+0208. [PASS] linux-x64 / managed/executable / [command:redo] verified outcome via keybinding / VIM
+0209. [PASS] linux-x64 / managed/executable / [command:copy] verified outcome via keybinding / Code
+0210. [PASS] linux-x64 / managed/executable / [command:copy] verified outcome via keybinding / VIM
+0211. [PASS] linux-x64 / managed/executable / [command:cut] verified outcome via keybinding / Code
+0212. [PASS] linux-x64 / managed/executable / [command:cut] verified outcome via keybinding / VIM
+0213. [PASS] linux-x64 / managed/executable / [command:paste] verified outcome via keybinding / Code
+0214. [PASS] linux-x64 / managed/executable / [command:paste] verified outcome via keybinding / VIM
+0215. [PASS] linux-x64 / managed/executable / [command:select-all] verified outcome via keybinding / Code
+0216. [PASS] linux-x64 / managed/executable / [command:select-all] verified outcome via keybinding / VIM
+0217. [PASS] linux-x64 / managed/executable / [command:find] verified outcome via keybinding / Code
+0218. [PASS] linux-x64 / managed/executable / [command:find] verified outcome via keybinding / VIM
+0219. [PASS] linux-x64 / managed/executable / [command:find-next] verified outcome via keybinding / Code
+0220. [PASS] linux-x64 / managed/executable / [command:find-next] verified outcome via keybinding / VIM
+0221. [PASS] linux-x64 / managed/executable / [command:replace] verified outcome via keybinding / Code
+0222. [PASS] linux-x64 / managed/executable / [command:replace] verified outcome via keybinding / VIM
+0223. [PASS] linux-x64 / managed/executable / [command:goto] verified outcome via keybinding / Code
+0224. [PASS] linux-x64 / managed/executable / [command:goto] verified outcome via keybinding / VIM
+0225. [PASS] linux-x64 / managed/executable / [command:complete] verified outcome via keybinding / Code
+0226. [PASS] linux-x64 / managed/executable / [command:complete] verified outcome via keybinding / VIM
+0227. [PASS] linux-x64 / managed/executable / [command:build] verified outcome via keybinding / Code
+0228. [PASS] linux-x64 / managed/executable / [command:build] verified outcome via keybinding / VIM
+0229. [PASS] linux-x64 / managed/executable / [command:run] verified outcome via keybinding / Code
+0230. [PASS] linux-x64 / managed/executable / [command:run] verified outcome via keybinding / VIM
+0231. [PASS] linux-x64 / managed/executable / [command:debug] verified outcome via keybinding / Code
+0232. [PASS] linux-x64 / managed/executable / [command:debug] verified outcome via keybinding / VIM
+0233. [PASS] linux-x64 / managed/executable / [command:step-over] verified outcome via keybinding / Code
+0234. [PASS] linux-x64 / managed/executable / [command:step-over] verified outcome via keybinding / VIM
+0235. [PASS] linux-x64 / managed/executable / [command:step-in] verified outcome via keybinding / Code
+0236. [PASS] linux-x64 / managed/executable / [command:step-in] verified outcome via keybinding / VIM
+0237. [PASS] linux-x64 / managed/executable / [command:step-out] verified outcome via keybinding / Code
+0238. [PASS] linux-x64 / managed/executable / [command:step-out] verified outcome via keybinding / VIM
+0239. [PASS] linux-x64 / managed/executable / [command:breakpoint] verified outcome via keybinding / Code
+0240. [PASS] linux-x64 / managed/executable / [command:breakpoint] verified outcome via keybinding / VIM
+0241. [PASS] linux-x64 / managed/executable / [command:variables] verified outcome via keybinding / Code
+0242. [PASS] linux-x64 / managed/executable / [command:variables] verified outcome via keybinding / VIM
+0243. [PASS] linux-x64 / managed/executable / [command:stop] verified outcome via keybinding / Code
+0244. [PASS] linux-x64 / managed/executable / [command:stop] verified outcome via keybinding / VIM
+0245. [PASS] linux-x64 / managed/executable / [command:diagnostics] verified outcome via keybinding / Code
+0246. [PASS] linux-x64 / managed/executable / [command:diagnostics] verified outcome via keybinding / VIM
+0247. [PASS] linux-x64 / managed/executable / [command:lsp] verified outcome via keybinding / Code
+0248. [PASS] linux-x64 / managed/executable / [command:lsp] verified outcome via keybinding / VIM
+0249. [PASS] linux-x64 / managed/executable / [command:terminal] verified outcome via keybinding / Code
+0250. [PASS] linux-x64 / managed/executable / [command:terminal] verified outcome via keybinding / VIM
+0251. [PASS] linux-x64 / managed/executable / [command:console] verified outcome via keybinding / Code
+0252. [PASS] linux-x64 / managed/executable / [command:console] verified outcome via keybinding / VIM
+0253. [PASS] linux-x64 / managed/executable / [command:files] verified outcome via keybinding / Code
+0254. [PASS] linux-x64 / managed/executable / [command:files] verified outcome via keybinding / VIM
+0255. [PASS] linux-x64 / managed/executable / [command:vertical] verified outcome via keybinding / Code
+0256. [PASS] linux-x64 / managed/executable / [command:vertical] verified outcome via keybinding / VIM
+0257. [PASS] linux-x64 / managed/executable / [command:horizontal] verified outcome via keybinding / Code
+0258. [PASS] linux-x64 / managed/executable / [command:horizontal] verified outcome via keybinding / VIM
+0259. [PASS] linux-x64 / managed/executable / [command:close-pane] verified outcome via keybinding / Code
+0260. [PASS] linux-x64 / managed/executable / [command:close-pane] verified outcome via keybinding / VIM
+0261. [PASS] linux-x64 / managed/executable / [command:close-other-panes] verified outcome via keybinding / Code
+0262. [PASS] linux-x64 / managed/executable / [command:close-other-panes] verified outcome via keybinding / VIM
+0263. [PASS] linux-x64 / managed/executable / [command:next-pane] verified outcome via keybinding / Code
+0264. [PASS] linux-x64 / managed/executable / [command:next-pane] verified outcome via keybinding / VIM
+0265. [PASS] linux-x64 / managed/executable / [command:previous-pane] verified outcome via keybinding / Code
+0266. [PASS] linux-x64 / managed/executable / [command:previous-pane] verified outcome via keybinding / VIM
+0267. [PASS] linux-x64 / managed/executable / [command:next-tab] verified outcome via keybinding / Code
+0268. [PASS] linux-x64 / managed/executable / [command:next-tab] verified outcome via keybinding / VIM
+0269. [PASS] linux-x64 / managed/executable / [command:previous-tab] verified outcome via keybinding / Code
+0270. [PASS] linux-x64 / managed/executable / [command:previous-tab] verified outcome via keybinding / VIM
+0271. [PASS] linux-x64 / managed/executable / [command:toggle-icons] verified outcome via keybinding / Code
+0272. [PASS] linux-x64 / managed/executable / [command:toggle-icons] verified outcome via keybinding / VIM
+0273. [PASS] linux-x64 / managed/executable / [command:font-icons] verified outcome via keybinding / Code
+0274. [PASS] linux-x64 / managed/executable / [command:font-icons] verified outcome via keybinding / VIM
+0275. [PASS] linux-x64 / managed/executable / [command:help] verified outcome via keybinding / Code
+0276. [PASS] linux-x64 / managed/executable / [command:help] verified outcome via keybinding / VIM
+0277. [PASS] linux-x64 / managed/executable / [command:shortcuts] verified outcome via keybinding / Code
+0278. [PASS] linux-x64 / managed/executable / [command:shortcuts] verified outcome via keybinding / VIM
+0279. [PASS] linux-x64 / managed/executable / [command:error-log] verified outcome via keybinding / Code
+0280. [PASS] linux-x64 / managed/executable / [command:error-log] verified outcome via keybinding / VIM
+0281. [PASS] linux-x64 / managed/executable / [command:manual] verified outcome via keybinding / Code
+0282. [PASS] linux-x64 / managed/executable / [command:manual] verified outcome via keybinding / VIM
+0283. [PASS] linux-x64 / managed/executable / [command:edit-config] verified outcome via keybinding / Code
+0284. [PASS] linux-x64 / managed/executable / [command:edit-config] verified outcome via keybinding / VIM
+0285. [PASS] linux-x64 / managed/executable / [command:edit-keys] verified outcome via keybinding / Code
+0286. [PASS] linux-x64 / managed/executable / [command:edit-keys] verified outcome via keybinding / VIM
+0287. [PASS] linux-x64 / managed/executable / [command:config-folder] verified outcome via keybinding / Code
+0288. [PASS] linux-x64 / managed/executable / [command:config-folder] verified outcome via keybinding / VIM
+0289. [PASS] linux-x64 / managed/executable / [command:palette] verified outcome via keybinding / Code
+0290. [PASS] linux-x64 / managed/executable / [command:palette] verified outcome via keybinding / VIM
+0291. [PASS] linux-x64 / managed/executable / [command:fm-open] verified outcome via keybinding / Code
+0292. [PASS] linux-x64 / managed/executable / [command:fm-open] verified outcome via keybinding / VIM
+0293. [PASS] linux-x64 / managed/executable / [command:fm-tab] verified outcome via keybinding / Code
+0294. [PASS] linux-x64 / managed/executable / [command:fm-tab] verified outcome via keybinding / VIM
+0295. [PASS] linux-x64 / managed/executable / [command:fm-find] verified outcome via keybinding / Code
+0296. [PASS] linux-x64 / managed/executable / [command:fm-find] verified outcome via keybinding / VIM
+0297. [PASS] linux-x64 / managed/executable / [command:fm-new] verified outcome via keybinding / Code
+0298. [PASS] linux-x64 / managed/executable / [command:fm-new] verified outcome via keybinding / VIM
+0299. [PASS] linux-x64 / managed/executable / [command:fm-folder] verified outcome via keybinding / Code
+0300. [PASS] linux-x64 / managed/executable / [command:fm-folder] verified outcome via keybinding / VIM
+0301. [PASS] linux-x64 / managed/executable / [command:fm-copy] verified outcome via keybinding / Code
+0302. [PASS] linux-x64 / managed/executable / [command:fm-copy] verified outcome via keybinding / VIM
+0303. [PASS] linux-x64 / managed/executable / [command:fm-move] verified outcome via keybinding / Code
+0304. [PASS] linux-x64 / managed/executable / [command:fm-move] verified outcome via keybinding / VIM
+0305. [PASS] linux-x64 / managed/executable / [command:fm-paste] verified outcome via keybinding / Code
+0306. [PASS] linux-x64 / managed/executable / [command:fm-paste] verified outcome via keybinding / VIM
+0307. [PASS] linux-x64 / managed/executable / Every command in the executable catalog has a verified outcome test
+0308. [PASS] linux-x64 / managed/executable / empty document coordinates
+0309. [PASS] linux-x64 / managed/executable / selection replacement and undo redo
+0310. [PASS] linux-x64 / managed/executable / UTF-8 CRLF BOM round trip and dirty state
+0311. [PASS] linux-x64 / managed/executable / surrogate and combining character deletion
+0312. [PASS] linux-x64 / managed/executable / line navigation preserves valid positions
+0313. [PASS] linux-x64 / managed/executable / Markdown wrappers place future text inside
+0314. [PASS] linux-x64 / managed/executable / ordered and bulleted lists
+0315. [PASS] linux-x64 / managed/executable / find wraps and selects
+0316. [PASS] linux-x64 / managed/executable / external edits cannot be silently overwritten
+0317. [PASS] linux-x64 / managed/executable / Save As protects existing destination
+0318. [PASS] linux-x64 / managed/executable / reject binary and invalid UTF8
+0319. [PASS] linux-x64 / managed/executable / settings defaults and branch parser
+0320. [PASS] linux-x64 / managed/executable / invalid settings are rejected
+0321. [PASS] linux-x64 / managed/executable / provided XML chords and scoped actions
+0322. [PASS] linux-x64 / managed/executable / XML unknown and duplicate commands rejected
+0323. [PASS] linux-x64 / managed/executable / language detection and keyword completion
+0324. [PASS] linux-x64 / managed/executable / English dictionary and suggestions
+0325. [PASS] linux-x64 / managed/executable / key decoding modifiers and enhanced ShiftSpace
+0326. [PASS] linux-x64 / managed/executable / Windows arrow events use the editor's canonical names with all modifiers
+0327. [PASS] linux-x64 / managed/executable / Windows quit and menu events match global shortcuts
+0328. [PASS] linux-x64 / managed/executable / Ghostty Kitty flag 1 menu and quit sequences including lock modifiers
+0329. [PASS] linux-x64 / managed/executable / function keys accept omitted Kitty parameters as well as legacy encodings
+0330. [PASS] linux-x64 / managed/executable / Close Tab default is explicit in XML and available to existing installations
+0331. [PASS] linux-x64 / managed/executable / render control text cannot inject escape sequences
+0332. [PASS] linux-x64 / managed/executable / SGR mouse coordinates, drag, release, shift and wheel
+0333. [PASS] linux-x64 / managed/executable / Windows input records preserve keys, mouse actions and viewport offsets
+0334. [PASS] linux-x64 / managed/executable / mouse hit testing maps terminal cells to complete graphemes and tabs
+0335. [PASS] linux-x64 / managed/executable / default tab bindings use Ctrl Alt arrows
+0336. [PASS] linux-x64 / managed/executable / pane splitting and removal
+0337. [PASS] linux-x64 / managed/executable / file copy, move, and overwrite guard
+0338. [PASS] linux-x64 / managed/executable / directory self-copy blocked
+0339. [PASS] linux-x64 / managed/executable / build plans and nearest project discovery
+0340. [PASS] linux-x64 / managed/executable / compiler diagnostic parsing
+0341. [PASS] linux-x64 / managed/executable / real process execution and standard input
+0342. [PASS] linux-x64 / managed/executable / real Python line debugging, breakpoints, locals
+0343. [PASS] linux-x64 / managed/executable / LSP framing, UTF-16 completion edits and live diagnostics
+0344. [PASS] linux-x64 / managed/executable / DAP request responses, asynchronous stop and stack frame
+0345. [PASS] linux-x64 / managed/executable / offline manuals and font included
+0346. [PASS] linux-x64 / release / every-command-verified
+0347. [PASS] linux-x64 / release / gate-self-tests
+0348. [PASS] linux-x64 / release / font-audit
+0349. [PASS] linux-x64 / release / pty-legacy-keyboard_smoke
+0350. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0351. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:5
+0352. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:4
+0353. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 1:4
+0354. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 1:5
+0355. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:5
+0356. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:4
+0357. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Development |
+0358. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu File
+0359. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Edit
+0360. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Mode
+0361. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Text
+0362. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu View
+0363. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Build
+0364. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Help
+0365. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu interrupts chord
+0366. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0367. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0368. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cancel quit
+0369. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Save As
+0370. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0371. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Save As
+0372. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0373. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0374. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM NORMAL
+0375. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:5
+0376. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:4
+0377. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 1:4
+0378. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 1:5
+0379. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:5
+0380. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:4
+0381. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM INSERT
+0382. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:3
+0383. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM VISUAL
+0384. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cursor 2:2
+0385. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Development |
+0386. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu File
+0387. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Edit
+0388. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Mode
+0389. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Text
+0390. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu View
+0391. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Build
+0392. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu Help
+0393. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu interrupts chord
+0394. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0395. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0396. [PASS] linux-x64 / pty-legacy-keyboard_smoke / cancel quit
+0397. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Save As
+0398. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0399. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Save As
+0400. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0401. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0402. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0403. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0404. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0405. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0406. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0407. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0408. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0409. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0410. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0411. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0412. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0413. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0414. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Save As
+0415. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu interrupts Save As
+0416. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0417. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0418. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0419. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM NORMAL
+0420. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0421. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0422. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0423. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM NORMAL
+0424. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0425. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0426. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0427. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM NORMAL
+0428. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0429. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0430. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0431. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM NORMAL
+0432. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0433. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0434. [PASS] linux-x64 / pty-legacy-keyboard_smoke / startup
+0435. [PASS] linux-x64 / pty-legacy-keyboard_smoke / VIM NORMAL
+0436. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Save As
+0437. [PASS] linux-x64 / pty-legacy-keyboard_smoke / menu interrupts Save As
+0438. [PASS] linux-x64 / pty-legacy-keyboard_smoke / Unsaved:
+0439. [PASS] linux-x64 / pty-legacy-keyboard_smoke / exit
+0440. [PASS] linux-x64 / release / pty-legacy-function_panel_smoke
+0441. [PASS] linux-x64 / pty-legacy-function_panel_smoke / startup
+0442. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0443. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0444. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0445. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0446. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0447. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0448. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0449. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0450. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0451. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0452. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0453. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0454. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0455. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0456. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0457. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0458. [PASS] linux-x64 / pty-legacy-function_panel_smoke / two panels
+0459. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Unsaved:
+0460. [PASS] linux-x64 / pty-legacy-function_panel_smoke / cancel panel close
+0461. [PASS] linux-x64 / pty-legacy-function_panel_smoke / right buffer
+0462. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Unsaved:
+0463. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Save As
+0464. [PASS] linux-x64 / pty-legacy-function_panel_smoke / saved panel tab
+0465. [PASS] linux-x64 / pty-legacy-function_panel_smoke / only current panel closed
+0466. [PASS] linux-x64 / pty-legacy-function_panel_smoke / left buffer
+0467. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Unsaved:
+0468. [PASS] linux-x64 / pty-legacy-function_panel_smoke / last panel reset
+0469. [PASS] linux-x64 / pty-legacy-function_panel_smoke / exit
+0470. [PASS] linux-x64 / pty-legacy-function_panel_smoke / startup
+0471. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0472. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0473. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0474. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0475. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0476. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0477. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0478. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0479. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0480. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0481. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0482. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0483. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0484. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0485. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Context help
+0486. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Text | Code
+0487. [PASS] linux-x64 / pty-legacy-function_panel_smoke / two panels
+0488. [PASS] linux-x64 / pty-legacy-function_panel_smoke / VIM NORMAL
+0489. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Unsaved:
+0490. [PASS] linux-x64 / pty-legacy-function_panel_smoke / cancel panel close
+0491. [PASS] linux-x64 / pty-legacy-function_panel_smoke / right buffer
+0492. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Unsaved:
+0493. [PASS] linux-x64 / pty-legacy-function_panel_smoke / only current panel closed
+0494. [PASS] linux-x64 / pty-legacy-function_panel_smoke / left buffer
+0495. [PASS] linux-x64 / pty-legacy-function_panel_smoke / Unsaved:
+0496. [PASS] linux-x64 / pty-legacy-function_panel_smoke / last panel reset
+0497. [PASS] linux-x64 / pty-legacy-function_panel_smoke / exit
+0498. [PASS] linux-x64 / release / pty-legacy-mouse_smoke
+0499. [PASS] linux-x64 / pty-legacy-mouse_smoke / startup
+0500. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked File
+0501. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Edit
+0502. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Mode
+0503. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Text
+0504. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked View
+0505. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Help
+0506. [PASS] linux-x64 / pty-legacy-mouse_smoke / popup mouse close
+0507. [PASS] linux-x64 / pty-legacy-mouse_smoke / Development |
+0508. [PASS] linux-x64 / pty-legacy-mouse_smoke / Build menu click
+0509. [PASS] linux-x64 / pty-legacy-mouse_smoke / first tab
+0510. [PASS] linux-x64 / pty-legacy-mouse_smoke / second tab
+0511. [PASS] linux-x64 / pty-legacy-mouse_smoke / first tab
+0512. [PASS] linux-x64 / pty-legacy-mouse_smoke / second tab
+0513. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:1
+0514. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:6
+0515. [PASS] linux-x64 / pty-legacy-mouse_smoke / alphathird line
+0516. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 2:4
+0517. [PASS] linux-x64 / pty-legacy-mouse_smoke / alpha012third line
+0518. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:3
+0519. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:4
+0520. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:1
+0521. [PASS] linux-x64 / pty-legacy-mouse_smoke / wheel down
+0522. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:1
+0523. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 4:1
+0524. [PASS] linux-x64 / pty-legacy-mouse_smoke / wheel up
+0525. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 2:1
+0526. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 2:1
+0527. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked pane closed
+0528. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0529. [PASS] linux-x64 / pty-legacy-mouse_smoke / quit canceled by mouse
+0530. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0531. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0532. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0533. [PASS] linux-x64 / pty-legacy-mouse_smoke / exit
+0534. [PASS] linux-x64 / pty-legacy-mouse_smoke / startup
+0535. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked File
+0536. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Edit
+0537. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Mode
+0538. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Text
+0539. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked View
+0540. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked Help
+0541. [PASS] linux-x64 / pty-legacy-mouse_smoke / popup mouse close
+0542. [PASS] linux-x64 / pty-legacy-mouse_smoke / Development |
+0543. [PASS] linux-x64 / pty-legacy-mouse_smoke / Build menu click
+0544. [PASS] linux-x64 / pty-legacy-mouse_smoke / first tab
+0545. [PASS] linux-x64 / pty-legacy-mouse_smoke / second tab
+0546. [PASS] linux-x64 / pty-legacy-mouse_smoke / first tab
+0547. [PASS] linux-x64 / pty-legacy-mouse_smoke / second tab
+0548. [PASS] linux-x64 / pty-legacy-mouse_smoke / VIM NORMAL
+0549. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:1
+0550. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:6
+0551. [PASS] linux-x64 / pty-legacy-mouse_smoke / alphathird line
+0552. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 2:4
+0553. [PASS] linux-x64 / pty-legacy-mouse_smoke / alpha012third line
+0554. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:3
+0555. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:4
+0556. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:1
+0557. [PASS] linux-x64 / pty-legacy-mouse_smoke / wheel down
+0558. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 1:1
+0559. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 4:1
+0560. [PASS] linux-x64 / pty-legacy-mouse_smoke / wheel up
+0561. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 2:1
+0562. [PASS] linux-x64 / pty-legacy-mouse_smoke / cursor 2:1
+0563. [PASS] linux-x64 / pty-legacy-mouse_smoke / clicked pane closed
+0564. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0565. [PASS] linux-x64 / pty-legacy-mouse_smoke / quit canceled by mouse
+0566. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0567. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0568. [PASS] linux-x64 / pty-legacy-mouse_smoke / Unsaved:
+0569. [PASS] linux-x64 / pty-legacy-mouse_smoke / exit
+0570. [PASS] linux-x64 / release / pty-legacy-text_bars_smoke
+0571. [PASS] linux-x64 / pty-legacy-text_bars_smoke / startup
+0572. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Add tags:
+0573. [PASS] linux-x64 / pty-legacy-text_bars_smoke / tag bar hidden
+0574. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Add tags:
+0575. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Tags: work, notes
+0576. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Tags — comma-separated
+0577. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Font size
+0578. [PASS] linux-x64 / pty-legacy-text_bars_smoke / font-size:18pt
+0579. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Tags: work, notes, project
+0580. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Save As
+0581. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Saved 
+0582. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Tag?
+0583. [PASS] linux-x64 / pty-legacy-text_bars_smoke / 1 files match all tags
+0584. [PASS] linux-x64 / pty-legacy-text_bars_smoke / 0 files match all tags
+0585. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Tag filter cleared.
+0586. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Development |
+0587. [PASS] linux-x64 / pty-legacy-text_bars_smoke / Add tags:
+0588. [PASS] linux-x64 / pty-legacy-text_bars_smoke / exit
+0589. [PASS] linux-x64 / release / pty-legacy-icons_smoke
+0590. [PASS] linux-x64 / pty-legacy-icons_smoke / startup
+0591. [PASS] linux-x64 / pty-legacy-icons_smoke /  code.cs
+0592. [PASS] linux-x64 / pty-legacy-icons_smoke /  script.py
+0593. [PASS] linux-x64 / pty-legacy-icons_smoke /  data.json
+0594. [PASS] linux-x64 / pty-legacy-icons_smoke /  image.png
+0595. [PASS] linux-x64 / pty-legacy-icons_smoke /  notes.md
+0596. [PASS] linux-x64 / pty-legacy-icons_smoke /  unknown.xyz
+0597. [PASS] linux-x64 / pty-legacy-icons_smoke /  .git
+0598. [PASS] linux-x64 / pty-legacy-icons_smoke /  node_modules
+0599. [PASS] linux-x64 / pty-legacy-icons_smoke /  src
+0600. [PASS] linux-x64 / pty-legacy-icons_smoke /  nested.txt
+0601. [PASS] linux-x64 / pty-legacy-icons_smoke /  script.py
+0602. [PASS] linux-x64 / pty-legacy-icons_smoke / contents of script.py
+0603. [PASS] linux-x64 / pty-legacy-icons_smoke /  File 
+0604. [PASS] linux-x64 / pty-legacy-icons_smoke /  Save
+0605. [PASS] linux-x64 / pty-legacy-icons_smoke /  Edit 
+0606. [PASS] linux-x64 / pty-legacy-icons_smoke /  View 
+0607. [PASS] linux-x64 / pty-legacy-icons_smoke /  Help 
+0608. [PASS] linux-x64 / pty-legacy-icons_smoke / **contents of script.py**
+0609. [PASS] linux-x64 / pty-legacy-icons_smoke /  code.cs
+0610. [PASS] linux-x64 / pty-legacy-icons_smoke / [PY] script.py
+0611. [PASS] linux-x64 / pty-legacy-icons_smoke / FiraCode Nerd Font Mono
+0612. [PASS] linux-x64 / pty-legacy-icons_smoke /  script.py
+0613. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0614. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0615. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0616. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0617. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0618. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0619. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0620. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0621. [PASS] linux-x64 / pty-legacy-icons_smoke / exit
+0622. [PASS] linux-x64 / pty-legacy-icons_smoke / startup
+0623. [PASS] linux-x64 / pty-legacy-icons_smoke /  code.cs
+0624. [PASS] linux-x64 / pty-legacy-icons_smoke /  script.py
+0625. [PASS] linux-x64 / pty-legacy-icons_smoke /  data.json
+0626. [PASS] linux-x64 / pty-legacy-icons_smoke /  image.png
+0627. [PASS] linux-x64 / pty-legacy-icons_smoke /  notes.md
+0628. [PASS] linux-x64 / pty-legacy-icons_smoke /  unknown.xyz
+0629. [PASS] linux-x64 / pty-legacy-icons_smoke /  .git
+0630. [PASS] linux-x64 / pty-legacy-icons_smoke /  node_modules
+0631. [PASS] linux-x64 / pty-legacy-icons_smoke /  src
+0632. [PASS] linux-x64 / pty-legacy-icons_smoke /  nested.txt
+0633. [PASS] linux-x64 / pty-legacy-icons_smoke /  script.py
+0634. [PASS] linux-x64 / pty-legacy-icons_smoke / contents of script.py
+0635. [PASS] linux-x64 / pty-legacy-icons_smoke /  File 
+0636. [PASS] linux-x64 / pty-legacy-icons_smoke /  Save
+0637. [PASS] linux-x64 / pty-legacy-icons_smoke /  Edit 
+0638. [PASS] linux-x64 / pty-legacy-icons_smoke /  View 
+0639. [PASS] linux-x64 / pty-legacy-icons_smoke /  Help 
+0640. [PASS] linux-x64 / pty-legacy-icons_smoke / **contents of script.py**
+0641. [PASS] linux-x64 / pty-legacy-icons_smoke /  code.cs
+0642. [PASS] linux-x64 / pty-legacy-icons_smoke / [PY] script.py
+0643. [PASS] linux-x64 / pty-legacy-icons_smoke / FiraCode Nerd Font Mono
+0644. [PASS] linux-x64 / pty-legacy-icons_smoke /  script.py
+0645. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0646. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0647. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0648. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0649. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0650. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0651. [PASS] linux-x64 / pty-legacy-icons_smoke / Format
+0652. [PASS] linux-x64 / pty-legacy-icons_smoke / Font size
+0653. [PASS] linux-x64 / pty-legacy-icons_smoke / exit
+0654. [PASS] linux-x64 / release / pty-legacy-config_folder_smoke
+0655. [PASS] linux-x64 / pty-legacy-config_folder_smoke / startup
+0656. [PASS] linux-x64 / pty-legacy-config_folder_smoke / Configuration folder:
+0657. [PASS] linux-x64 / pty-legacy-config_folder_smoke / Config.cs
+0658. [PASS] linux-x64 / pty-legacy-config_folder_smoke / RudyEdit-errors.log
+0659. [PASS] linux-x64 / pty-legacy-config_folder_smoke / folder opener receives exact config path
+0660. [PASS] linux-x64 / pty-legacy-config_folder_smoke / desktop opener failure is logged
+0661. [PASS] linux-x64 / pty-legacy-config_folder_smoke / Error log —
+0662. [PASS] linux-x64 / pty-legacy-config_folder_smoke / config-folder-opener-fixture-error
+0663. [PASS] linux-x64 / pty-legacy-config_folder_smoke / exit
+0664. [PASS] linux-x64 / release / pty-legacy-terminal_smoke
+0665. [PASS] linux-x64 / release / pty-kitty-keyboard_smoke
+0666. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0667. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:5
+0668. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:4
+0669. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 1:4
+0670. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 1:5
+0671. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:5
+0672. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:4
+0673. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Development |
+0674. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu File
+0675. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Edit
+0676. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Mode
+0677. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Text
+0678. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu View
+0679. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Build
+0680. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Help
+0681. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu interrupts chord
+0682. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0683. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0684. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cancel quit
+0685. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Save As
+0686. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0687. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Save As
+0688. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0689. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0690. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM NORMAL
+0691. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:5
+0692. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:4
+0693. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 1:4
+0694. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 1:5
+0695. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:5
+0696. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:4
+0697. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM INSERT
+0698. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:3
+0699. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM VISUAL
+0700. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cursor 2:2
+0701. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Development |
+0702. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu File
+0703. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Edit
+0704. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Mode
+0705. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Text
+0706. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu View
+0707. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Build
+0708. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu Help
+0709. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu interrupts chord
+0710. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0711. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0712. [PASS] linux-x64 / pty-kitty-keyboard_smoke / cancel quit
+0713. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Save As
+0714. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0715. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Save As
+0716. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0717. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0718. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0719. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0720. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0721. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0722. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0723. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0724. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0725. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0726. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0727. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0728. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0729. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0730. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Save As
+0731. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu interrupts Save As
+0732. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0733. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0734. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0735. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM NORMAL
+0736. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0737. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0738. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0739. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM NORMAL
+0740. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0741. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0742. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0743. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM NORMAL
+0744. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0745. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0746. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0747. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM NORMAL
+0748. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0749. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0750. [PASS] linux-x64 / pty-kitty-keyboard_smoke / startup
+0751. [PASS] linux-x64 / pty-kitty-keyboard_smoke / VIM NORMAL
+0752. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Save As
+0753. [PASS] linux-x64 / pty-kitty-keyboard_smoke / menu interrupts Save As
+0754. [PASS] linux-x64 / pty-kitty-keyboard_smoke / Unsaved:
+0755. [PASS] linux-x64 / pty-kitty-keyboard_smoke / exit
+0756. [PASS] linux-x64 / release / pty-kitty-function_panel_smoke
+0757. [PASS] linux-x64 / pty-kitty-function_panel_smoke / startup
+0758. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0759. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0760. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0761. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0762. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0763. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0764. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0765. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0766. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0767. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0768. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0769. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0770. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0771. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0772. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0773. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0774. [PASS] linux-x64 / pty-kitty-function_panel_smoke / two panels
+0775. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Unsaved:
+0776. [PASS] linux-x64 / pty-kitty-function_panel_smoke / cancel panel close
+0777. [PASS] linux-x64 / pty-kitty-function_panel_smoke / right buffer
+0778. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Unsaved:
+0779. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Save As
+0780. [PASS] linux-x64 / pty-kitty-function_panel_smoke / saved panel tab
+0781. [PASS] linux-x64 / pty-kitty-function_panel_smoke / only current panel closed
+0782. [PASS] linux-x64 / pty-kitty-function_panel_smoke / left buffer
+0783. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Unsaved:
+0784. [PASS] linux-x64 / pty-kitty-function_panel_smoke / last panel reset
+0785. [PASS] linux-x64 / pty-kitty-function_panel_smoke / exit
+0786. [PASS] linux-x64 / pty-kitty-function_panel_smoke / startup
+0787. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0788. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0789. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0790. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0791. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0792. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0793. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0794. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0795. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0796. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0797. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0798. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0799. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0800. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0801. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Context help
+0802. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Text | Code
+0803. [PASS] linux-x64 / pty-kitty-function_panel_smoke / two panels
+0804. [PASS] linux-x64 / pty-kitty-function_panel_smoke / VIM NORMAL
+0805. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Unsaved:
+0806. [PASS] linux-x64 / pty-kitty-function_panel_smoke / cancel panel close
+0807. [PASS] linux-x64 / pty-kitty-function_panel_smoke / right buffer
+0808. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Unsaved:
+0809. [PASS] linux-x64 / pty-kitty-function_panel_smoke / only current panel closed
+0810. [PASS] linux-x64 / pty-kitty-function_panel_smoke / left buffer
+0811. [PASS] linux-x64 / pty-kitty-function_panel_smoke / Unsaved:
+0812. [PASS] linux-x64 / pty-kitty-function_panel_smoke / last panel reset
+0813. [PASS] linux-x64 / pty-kitty-function_panel_smoke / exit
+0814. [PASS] linux-x64 / release / pty-kitty-mouse_smoke
+0815. [PASS] linux-x64 / pty-kitty-mouse_smoke / startup
+0816. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked File
+0817. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Edit
+0818. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Mode
+0819. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Text
+0820. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked View
+0821. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Help
+0822. [PASS] linux-x64 / pty-kitty-mouse_smoke / popup mouse close
+0823. [PASS] linux-x64 / pty-kitty-mouse_smoke / Development |
+0824. [PASS] linux-x64 / pty-kitty-mouse_smoke / Build menu click
+0825. [PASS] linux-x64 / pty-kitty-mouse_smoke / first tab
+0826. [PASS] linux-x64 / pty-kitty-mouse_smoke / second tab
+0827. [PASS] linux-x64 / pty-kitty-mouse_smoke / first tab
+0828. [PASS] linux-x64 / pty-kitty-mouse_smoke / second tab
+0829. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:1
+0830. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:6
+0831. [PASS] linux-x64 / pty-kitty-mouse_smoke / alphathird line
+0832. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 2:4
+0833. [PASS] linux-x64 / pty-kitty-mouse_smoke / alpha012third line
+0834. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:3
+0835. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:4
+0836. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:1
+0837. [PASS] linux-x64 / pty-kitty-mouse_smoke / wheel down
+0838. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:1
+0839. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 4:1
+0840. [PASS] linux-x64 / pty-kitty-mouse_smoke / wheel up
+0841. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 2:1
+0842. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 2:1
+0843. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked pane closed
+0844. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0845. [PASS] linux-x64 / pty-kitty-mouse_smoke / quit canceled by mouse
+0846. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0847. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0848. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0849. [PASS] linux-x64 / pty-kitty-mouse_smoke / exit
+0850. [PASS] linux-x64 / pty-kitty-mouse_smoke / startup
+0851. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked File
+0852. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Edit
+0853. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Mode
+0854. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Text
+0855. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked View
+0856. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked Help
+0857. [PASS] linux-x64 / pty-kitty-mouse_smoke / popup mouse close
+0858. [PASS] linux-x64 / pty-kitty-mouse_smoke / Development |
+0859. [PASS] linux-x64 / pty-kitty-mouse_smoke / Build menu click
+0860. [PASS] linux-x64 / pty-kitty-mouse_smoke / first tab
+0861. [PASS] linux-x64 / pty-kitty-mouse_smoke / second tab
+0862. [PASS] linux-x64 / pty-kitty-mouse_smoke / first tab
+0863. [PASS] linux-x64 / pty-kitty-mouse_smoke / second tab
+0864. [PASS] linux-x64 / pty-kitty-mouse_smoke / VIM NORMAL
+0865. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:1
+0866. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:6
+0867. [PASS] linux-x64 / pty-kitty-mouse_smoke / alphathird line
+0868. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 2:4
+0869. [PASS] linux-x64 / pty-kitty-mouse_smoke / alpha012third line
+0870. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:3
+0871. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:4
+0872. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:1
+0873. [PASS] linux-x64 / pty-kitty-mouse_smoke / wheel down
+0874. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 1:1
+0875. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 4:1
+0876. [PASS] linux-x64 / pty-kitty-mouse_smoke / wheel up
+0877. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 2:1
+0878. [PASS] linux-x64 / pty-kitty-mouse_smoke / cursor 2:1
+0879. [PASS] linux-x64 / pty-kitty-mouse_smoke / clicked pane closed
+0880. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0881. [PASS] linux-x64 / pty-kitty-mouse_smoke / quit canceled by mouse
+0882. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0883. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0884. [PASS] linux-x64 / pty-kitty-mouse_smoke / Unsaved:
+0885. [PASS] linux-x64 / pty-kitty-mouse_smoke / exit
+0886. [PASS] linux-x64 / release / pty-kitty-text_bars_smoke
+0887. [PASS] linux-x64 / pty-kitty-text_bars_smoke / startup
+0888. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Add tags:
+0889. [PASS] linux-x64 / pty-kitty-text_bars_smoke / tag bar hidden
+0890. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Add tags:
+0891. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Tags: work, notes
+0892. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Tags — comma-separated
+0893. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Font size
+0894. [PASS] linux-x64 / pty-kitty-text_bars_smoke / font-size:18pt
+0895. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Tags: work, notes, project
+0896. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Save As
+0897. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Saved 
+0898. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Tag?
+0899. [PASS] linux-x64 / pty-kitty-text_bars_smoke / 1 files match all tags
+0900. [PASS] linux-x64 / pty-kitty-text_bars_smoke / 0 files match all tags
+0901. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Tag filter cleared.
+0902. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Development |
+0903. [PASS] linux-x64 / pty-kitty-text_bars_smoke / Add tags:
+0904. [PASS] linux-x64 / pty-kitty-text_bars_smoke / exit
+0905. [PASS] linux-x64 / release / pty-kitty-icons_smoke
+0906. [PASS] linux-x64 / pty-kitty-icons_smoke / startup
+0907. [PASS] linux-x64 / pty-kitty-icons_smoke /  code.cs
+0908. [PASS] linux-x64 / pty-kitty-icons_smoke /  script.py
+0909. [PASS] linux-x64 / pty-kitty-icons_smoke /  data.json
+0910. [PASS] linux-x64 / pty-kitty-icons_smoke /  image.png
+0911. [PASS] linux-x64 / pty-kitty-icons_smoke /  notes.md
+0912. [PASS] linux-x64 / pty-kitty-icons_smoke /  unknown.xyz
+0913. [PASS] linux-x64 / pty-kitty-icons_smoke /  .git
+0914. [PASS] linux-x64 / pty-kitty-icons_smoke /  node_modules
+0915. [PASS] linux-x64 / pty-kitty-icons_smoke /  src
+0916. [PASS] linux-x64 / pty-kitty-icons_smoke /  nested.txt
+0917. [PASS] linux-x64 / pty-kitty-icons_smoke /  script.py
+0918. [PASS] linux-x64 / pty-kitty-icons_smoke / contents of script.py
+0919. [PASS] linux-x64 / pty-kitty-icons_smoke /  File 
+0920. [PASS] linux-x64 / pty-kitty-icons_smoke /  Save
+0921. [PASS] linux-x64 / pty-kitty-icons_smoke /  Edit 
+0922. [PASS] linux-x64 / pty-kitty-icons_smoke /  View 
+0923. [PASS] linux-x64 / pty-kitty-icons_smoke /  Help 
+0924. [PASS] linux-x64 / pty-kitty-icons_smoke / **contents of script.py**
+0925. [PASS] linux-x64 / pty-kitty-icons_smoke /  code.cs
+0926. [PASS] linux-x64 / pty-kitty-icons_smoke / [PY] script.py
+0927. [PASS] linux-x64 / pty-kitty-icons_smoke / FiraCode Nerd Font Mono
+0928. [PASS] linux-x64 / pty-kitty-icons_smoke /  script.py
+0929. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0930. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0931. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0932. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0933. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0934. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0935. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0936. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0937. [PASS] linux-x64 / pty-kitty-icons_smoke / exit
+0938. [PASS] linux-x64 / pty-kitty-icons_smoke / startup
+0939. [PASS] linux-x64 / pty-kitty-icons_smoke /  code.cs
+0940. [PASS] linux-x64 / pty-kitty-icons_smoke /  script.py
+0941. [PASS] linux-x64 / pty-kitty-icons_smoke /  data.json
+0942. [PASS] linux-x64 / pty-kitty-icons_smoke /  image.png
+0943. [PASS] linux-x64 / pty-kitty-icons_smoke /  notes.md
+0944. [PASS] linux-x64 / pty-kitty-icons_smoke /  unknown.xyz
+0945. [PASS] linux-x64 / pty-kitty-icons_smoke /  .git
+0946. [PASS] linux-x64 / pty-kitty-icons_smoke /  node_modules
+0947. [PASS] linux-x64 / pty-kitty-icons_smoke /  src
+0948. [PASS] linux-x64 / pty-kitty-icons_smoke /  nested.txt
+0949. [PASS] linux-x64 / pty-kitty-icons_smoke /  script.py
+0950. [PASS] linux-x64 / pty-kitty-icons_smoke / contents of script.py
+0951. [PASS] linux-x64 / pty-kitty-icons_smoke /  File 
+0952. [PASS] linux-x64 / pty-kitty-icons_smoke /  Save
+0953. [PASS] linux-x64 / pty-kitty-icons_smoke /  Edit 
+0954. [PASS] linux-x64 / pty-kitty-icons_smoke /  View 
+0955. [PASS] linux-x64 / pty-kitty-icons_smoke /  Help 
+0956. [PASS] linux-x64 / pty-kitty-icons_smoke / **contents of script.py**
+0957. [PASS] linux-x64 / pty-kitty-icons_smoke /  code.cs
+0958. [PASS] linux-x64 / pty-kitty-icons_smoke / [PY] script.py
+0959. [PASS] linux-x64 / pty-kitty-icons_smoke / FiraCode Nerd Font Mono
+0960. [PASS] linux-x64 / pty-kitty-icons_smoke /  script.py
+0961. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0962. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0963. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0964. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0965. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0966. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0967. [PASS] linux-x64 / pty-kitty-icons_smoke / Format
+0968. [PASS] linux-x64 / pty-kitty-icons_smoke / Font size
+0969. [PASS] linux-x64 / pty-kitty-icons_smoke / exit
+0970. [PASS] linux-x64 / release / pty-kitty-config_folder_smoke
+0971. [PASS] linux-x64 / pty-kitty-config_folder_smoke / startup
+0972. [PASS] linux-x64 / pty-kitty-config_folder_smoke / Configuration folder:
+0973. [PASS] linux-x64 / pty-kitty-config_folder_smoke / Config.cs
+0974. [PASS] linux-x64 / pty-kitty-config_folder_smoke / RudyEdit-errors.log
+0975. [PASS] linux-x64 / pty-kitty-config_folder_smoke / folder opener receives exact config path
+0976. [PASS] linux-x64 / pty-kitty-config_folder_smoke / desktop opener failure is logged
+0977. [PASS] linux-x64 / pty-kitty-config_folder_smoke / Error log —
+0978. [PASS] linux-x64 / pty-kitty-config_folder_smoke / config-folder-opener-fixture-error
+0979. [PASS] linux-x64 / pty-kitty-config_folder_smoke / exit
+0980. [PASS] linux-x64 / release / pty-kitty-terminal_smoke
+0981. [PASS] linux-x64 / release / tested-payload-unchanged
+0982. [BLOCKED] win-x64 / release / native-executable-platform
+0983. [BLOCKED] win-x64 / release / required-release-suites
+
+A blocked Windows native run is not a product-test pass. No Windows installer may be created until its native report passes.
+External protocol fixtures do not certify all optional third-party toolchains or GUI terminal/font implementations.

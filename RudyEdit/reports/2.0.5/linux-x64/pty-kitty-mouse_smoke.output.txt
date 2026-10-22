@@ -1,0 +1,2 @@
+PASS 71 mouse/menu/tab checks (kitty)
+

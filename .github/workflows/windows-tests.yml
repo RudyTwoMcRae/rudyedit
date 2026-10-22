@@ -1,0 +1,83 @@
+name: Windows executable tests
+
+on:
+  push:
+    paths:
+      - 'RudyEdit/**'
+      - '.github/workflows/windows-tests.yml'
+      - '.gitattributes'
+  pull_request:
+    paths:
+      - 'RudyEdit/**'
+      - '.github/workflows/windows-tests.yml'
+      - '.gitattributes'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-tests:
+    name: Build and test native Windows executable
+    runs-on: windows-2022
+    timeout-minutes: 35
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: RudyEdit
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+      DOTNET_NOLOGO: '1'
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Install Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          architecture: x64
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
+        with:
+          dotnet-version: '10.0.100'
+      - name: Build, publish, stage diagnostics and run all required Windows tests
+        run: ./tools/build.ps1 -Rid win-x64
+      - name: Verify the tested payload before publishing it
+        run: python tests/release_gate.py dist/win-x64
+      - name: Write test totals to the Actions summary
+        if: always()
+        run: |
+          $report = 'dist/win-x64/tests/results/release-tests.log'
+          '## Windows executable test results' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          if (Test-Path $report) {
+            '```text' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            Get-Content $report -TotalCount 16 | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            '```' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          } else {
+            'The build or setup failed before the executable could produce a report. See the job logs.' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          }
+      - name: Retain full logs and JSON results, including failed tests
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows-test-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: RudyEdit/dist/win-x64/tests/results/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Retain the complete passed Windows payload for later packaging
+        if: success()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows-tested-payload-${{ github.run_id }}-${{ github.run_attempt }}
+          path: RudyEdit/dist/win-x64/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

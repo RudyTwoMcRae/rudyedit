@@ -1,0 +1,6480 @@
+{
+  "schema": 1,
+  "summary": {
+    "performed": 981,
+    "passed": 981,
+    "errors": 0,
+    "blocked": 2
+  },
+  "targets": [
+    {
+      "schema": 1,
+      "started_utc": "2026-10-21T17:38:23.064991+00:00",
+      "completed_utc": "2026-10-21T17:41:16.076169+00:00",
+      "version": "RudyEdit 2.0.5",
+      "rid": "linux-x64",
+      "host": "Linux-6.18.55-x86_64-with-glibc2.39",
+      "executable": "rudyedit",
+      "payload_sha256": "fccc205cd73c805eabfef392601a5711aa35333295aad20cb91e7bb070e1766d",
+      "final_payload_sha256": "fccc205cd73c805eabfef392601a5711aa35333295aad20cb91e7bb070e1766d",
+      "suites": [
+        "cli-version",
+        "cli-help",
+        "cli-doctor",
+        "cli-invalid",
+        "catalog",
+        "managed",
+        "gate-self-tests",
+        "font-audit",
+        "pty-legacy-keyboard_smoke",
+        "pty-legacy-function_panel_smoke",
+        "pty-legacy-mouse_smoke",
+        "pty-legacy-text_bars_smoke",
+        "pty-legacy-icons_smoke",
+        "pty-legacy-config_folder_smoke",
+        "pty-legacy-terminal_smoke",
+        "pty-kitty-keyboard_smoke",
+        "pty-kitty-function_panel_smoke",
+        "pty-kitty-mouse_smoke",
+        "pty-kitty-text_bars_smoke",
+        "pty-kitty-icons_smoke",
+        "pty-kitty-config_folder_smoke",
+        "pty-kitty-terminal_smoke"
+      ],
+      "command_catalog": [
+        "new",
+        "open",
+        "folder",
+        "save",
+        "save-all",
+        "save-as",
+        "close-tab",
+        "close-other-tabs",
+        "quit",
+        "keys-code",
+        "keys-vim",
+        "text-mode",
+        "dev-mode",
+        "toggle-keys",
+        "toggle-mode",
+        "bold",
+        "italic",
+        "underline",
+        "font",
+        "font-size",
+        "foreground",
+        "background",
+        "bullets",
+        "ordered",
+        "toggle-tag-bar",
+        "tag-entry",
+        "format-bar",
+        "tags",
+        "search-tags",
+        "spell",
+        "toggle-spell",
+        "preview",
+        "undo",
+        "redo",
+        "copy",
+        "cut",
+        "paste",
+        "select-all",
+        "find",
+        "find-next",
+        "replace",
+        "goto",
+        "complete",
+        "build",
+        "run",
+        "debug",
+        "step-over",
+        "step-in",
+        "step-out",
+        "breakpoint",
+        "variables",
+        "stop",
+        "diagnostics",
+        "lsp",
+        "terminal",
+        "console",
+        "files",
+        "vertical",
+        "horizontal",
+        "close-pane",
+        "close-other-panes",
+        "next-pane",
+        "previous-pane",
+        "next-tab",
+        "previous-tab",
+        "toggle-icons",
+        "font-icons",
+        "help",
+        "shortcuts",
+        "edit-keys",
+        "config-folder",
+        "error-log",
+        "edit-config",
+        "manual",
+        "palette",
+        "fm-open",
+        "fm-tab",
+        "fm-find",
+        "fm-new",
+        "fm-copy",
+        "fm-move",
+        "fm-paste",
+        "fm-folder"
+      ],
+      "command_coverage": [
+        "background",
+        "bold",
+        "breakpoint",
+        "build",
+        "bullets",
+        "close-other-panes",
+        "close-other-tabs",
+        "close-pane",
+        "close-tab",
+        "complete",
+        "config-folder",
+        "console",
+        "copy",
+        "cut",
+        "debug",
+        "dev-mode",
+        "diagnostics",
+        "edit-config",
+        "edit-keys",
+        "error-log",
+        "files",
+        "find",
+        "find-next",
+        "fm-copy",
+        "fm-find",
+        "fm-folder",
+        "fm-move",
+        "fm-new",
+        "fm-open",
+        "fm-paste",
+        "fm-tab",
+        "folder",
+        "font",
+        "font-icons",
+        "font-size",
+        "foreground",
+        "format-bar",
+        "goto",
+        "help",
+        "horizontal",
+        "italic",
+        "keys-code",
+        "keys-vim",
+        "lsp",
+        "manual",
+        "new",
+        "next-pane",
+        "next-tab",
+        "open",
+        "ordered",
+        "palette",
+        "paste",
+        "preview",
+        "previous-pane",
+        "previous-tab",
+        "quit",
+        "redo",
+        "replace",
+        "run",
+        "save",
+        "save-all",
+        "save-as",
+        "search-tags",
+        "select-all",
+        "shortcuts",
+        "spell",
+        "step-in",
+        "step-out",
+        "step-over",
+        "stop",
+        "tag-entry",
+        "tags",
+        "terminal",
+        "text-mode",
+        "toggle-icons",
+        "toggle-keys",
+        "toggle-mode",
+        "toggle-spell",
+        "toggle-tag-bar",
+        "underline",
+        "undo",
+        "variables",
+        "vertical"
+      ],
+      "summary": {
+        "performed": 981,
+        "passed": 981,
+        "errors": 0,
+        "blocked": 0
+      },
+      "passed": true,
+      "results": [
+        {
+          "name": "cli-version",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 32
+        },
+        {
+          "name": "cli-help",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 32
+        },
+        {
+          "name": "cli-doctor",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 35
+        },
+        {
+          "name": "cli-invalid",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "name": "catalog",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 70
+        },
+        {
+          "name": "managed",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 62131
+        },
+        {
+          "name": "Published executable runs tests against its own loaded application assembly",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 7,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows stream regression: Ctrl+Q/S and F1 become single commands, not escape text",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 16,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows F1-F24 and Ctrl/Alt/Shift with both modifier sides and lock states",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 6,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows Ctrl A-Z, arrows, digits, punctuation and modified text suppression",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows records: repeats, key-up/modifiers ignored, UTF-16, fragmented escapes and paste",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Terminal setup keeps Windows in native mode, handles Ctrl+C/mouse, and restores output",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "CSI decoder rejects malformed numbers, release events and unsupported functional keys",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 59,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Failed build/run launch cannot poison Active, Stop or Quit",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 43,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows editor commands, save and quit through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 471,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit saves unsaved work through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 334,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in menu through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 246,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in help through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 246,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in files through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 166,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in console through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 156,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in chord through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 152,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in save-as through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 229,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in open through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 180,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in quit-save-as through native-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 168,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows editor commands, save and quit through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 275,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit saves unsaved work through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 216,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in menu through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 206,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in help through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 178,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in files through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 146,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in console through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 206,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in chord through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 136,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in save-as through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 232,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in open through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 165,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in quit-save-as through native-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 157,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows editor commands, save and quit through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 256,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit saves unsaved work through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 206,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in menu through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 172,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in help through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 206,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in files through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 168,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in console through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 147,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in chord through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 213,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in save-as through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 135,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in open through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 165,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in quit-save-as through csi-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 205,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows editor commands, save and quit through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 222,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit saves unsaved work through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 250,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in menu through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 142,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in help through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 212,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in files through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 164,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in console through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 214,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in chord through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 152,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in save-as through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 214,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in open through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 167,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in quit-save-as through csi-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 249,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows editor commands, save and quit through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 258,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit saves unsaved work through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 203,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in menu through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 174,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in help through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 144,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in files through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 175,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in console through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 141,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in chord through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 141,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in save-as through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 207,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in open through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 138,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in quit-save-as through legacy-code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 214,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows editor commands, save and quit through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 424,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit saves unsaved work through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 282,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in menu through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 206,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in help through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 174,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in files through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 273,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in console through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 272,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in chord through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 311,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in save-as through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 161,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in open through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 251,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows safe quit/cancel in quit-save-as through legacy-vim",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 202,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, native, VIM=False, vertical=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 327,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, native, VIM=False, vertical=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 377,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, native, VIM=True, vertical=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 385,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, native, VIM=True, vertical=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 275,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, csi, VIM=False, vertical=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 256,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, csi, VIM=False, vertical=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 224,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, csi, VIM=True, vertical=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 285,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Remove panel via ctrl+w, csi, VIM=True, vertical=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 188,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Open config folder shortcut: native, VIM=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 151,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Open config folder shortcut: native, VIM=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 196,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Open config folder shortcut: legacy, VIM=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 127,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Open config folder shortcut: legacy, VIM=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 180,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Open config folder shortcut: csi, VIM=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 133,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Open config folder shortcut: csi, VIM=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 166,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Editor command failures are recorded in the persistent error log",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 180,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Config fallback preserves the exception in the error log",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 128,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tab and panel defaults upgrade both legacy shortcuts",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 352,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=False, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 310,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 294,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=False, vertical=True, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 227,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 319,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=False, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 287,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 283,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: native, VIM=True, vertical=True, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 298,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 302,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=False, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 238,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 327,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=False, vertical=True, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 377,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 352,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=False, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 244,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=False",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 258,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close active tab, preserve panels and other tabs: csi, VIM=True, vertical=True, save=True",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 321,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Existing XML is migrated accurately and idempotently without changing custom bindings",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 3,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows INPUT_RECORD raw binary layout matches Win32 offsets",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tag metadata deduplicates, sanitizes and preserves cursor/selection with undo",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Text bars add/save/search/clear tags and format via keyboard and mouse Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 406,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Text bars add/save/search/clear tags and format via keyboard and mouse VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 517,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tag search matches all tags case insensitively with upper-case extensions",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Every Nerd UI icon occupies one private-use cell",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 2,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "File icons classify languages, data, media and unknown extensions without reading files",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Special filename and folder icons take precedence over extensions",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Graphic icon settings default on and validate explicit boolean fallback",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Graphic menu clicks, file icons, plain fallback and font help Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 412,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Graphic menu clicks, file icons, plain fallback and font help VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 379,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Formatting icon keyboard access fits terminal width 20",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 344,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Formatting icon keyboard access fits terminal width 40",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 398,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Formatting icon keyboard access fits terminal width 80",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 379,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Formatting icon keyboard access fits terminal width 120",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 410,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tag registry round trip: names only in XML, hidden id, UTF-8 CRLF BOM, editor text intact",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 5,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tag-only unsaved changes discard without changing Tags.xml",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Legacy header migrates on save without stripping examples or body blank lines",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 2,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Identifier survives external rename; Save As creates independent tags",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 6,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Registry merges independent saves and refuses stale edits on the same id",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 4,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Malformed registry is preserved and cannot partially save a tagged document",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 2,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Failed document replacement rolls the XML transaction back",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "The registry cannot tag itself or be replaced by a tagged document",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tags.xml validation rejects duplicate IDs and DTDs; tag names are XML escaped",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Error log records UTC time, context, stack and nested exception",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Concurrent error records are complete without lost entries",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 13,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Error log rotation keeps three backups and a bounded current file",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 33,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Unwritable configuration path logs to the temporary fallback",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Tool stderr, stdout diagnostics and nonzero exit are persisted",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 39,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Malformed asynchronous protocol messages are logged immediately",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 22,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Python debugger stderr and exception events are persisted",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 116,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Configuration folder launcher preserves paths as a single non-shell argument",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:new] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 298,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:new] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 214,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:open] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 256,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:open] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 281,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:folder] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 155,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:folder] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 281,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:save] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 184,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:save] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 294,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:save-all] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 183,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:save-all] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 213,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:save-as] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 289,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:save-as] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 173,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-tab] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 247,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-tab] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 228,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-other-tabs] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 221,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-other-tabs] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 311,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:quit] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 202,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:quit] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 193,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:keys-code] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 179,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:keys-code] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 274,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:keys-vim] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 210,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:keys-vim] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 230,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-keys] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 295,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-keys] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 208,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:text-mode] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 254,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:text-mode] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 280,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:dev-mode] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 192,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:dev-mode] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 228,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-mode] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 302,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-mode] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 218,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:bold] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 245,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:bold] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 229,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:italic] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 273,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:italic] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 281,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:underline] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 215,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:underline] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 285,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:font] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 230,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:font] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 255,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:font-size] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 194,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:font-size] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 243,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:foreground] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 193,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:foreground] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 239,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:background] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 197,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:background] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 200,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:bullets] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 229,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:bullets] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 153,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:ordered] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 187,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:ordered] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 218,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-tag-bar] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 151,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-tag-bar] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 184,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:tag-entry] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 216,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:tag-entry] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 183,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:format-bar] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 247,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:format-bar] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 188,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:tags] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 231,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:tags] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 169,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:search-tags] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 194,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:search-tags] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 211,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:spell] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 203,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:spell] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 229,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-spell] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 176,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-spell] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 246,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:preview] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 237,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:preview] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 187,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:undo] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 251,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:undo] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 218,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:redo] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 191,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:redo] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 242,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:copy] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 169,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:copy] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 230,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:cut] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 247,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:cut] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 165,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:paste] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 192,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:paste] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 213,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:select-all] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 161,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:select-all] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 196,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:find] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 169,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:find] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 218,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:find-next] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 264,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:find-next] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 187,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:replace] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 235,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:replace] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 154,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:goto] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 225,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:goto] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 189,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:complete] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 251,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:complete] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 180,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:build] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 270,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:build] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 311,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:run] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 211,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:run] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 277,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:debug] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 261,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:debug] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 246,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:step-over] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 336,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:step-over] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 345,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:step-in] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 348,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:step-in] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 362,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:step-out] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 411,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:step-out] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 416,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:breakpoint] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 236,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:breakpoint] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 222,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:variables] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 395,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:variables] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 371,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:stop] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 318,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:stop] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 280,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:diagnostics] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 238,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:diagnostics] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 234,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:lsp] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 342,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:lsp] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 208,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:terminal] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 238,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:terminal] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 195,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:console] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 210,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:console] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 189,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:files] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 215,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:files] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 161,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:vertical] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 257,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:vertical] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 168,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:horizontal] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 181,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:horizontal] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 232,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-pane] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 150,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-pane] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 193,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-other-panes] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 221,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:close-other-panes] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 175,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:next-pane] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 235,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:next-pane] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 185,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:previous-pane] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 171,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:previous-pane] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 247,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:next-tab] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 184,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:next-tab] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 217,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:previous-tab] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 164,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:previous-tab] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 229,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-icons] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 164,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:toggle-icons] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 178,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:font-icons] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 234,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:font-icons] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 158,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:help] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 262,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:help] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 193,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:shortcuts] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 207,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:shortcuts] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 159,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:error-log] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 178,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:error-log] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 184,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:manual] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 204,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:manual] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 157,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:edit-config] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 221,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:edit-config] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 168,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:edit-keys] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 164,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:edit-keys] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 205,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:config-folder] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 167,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:config-folder] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 195,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:palette] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 237,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:palette] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 159,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-open] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 233,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-open] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 221,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-tab] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 172,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-tab] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 209,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-find] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 166,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-find] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 199,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-new] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 240,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-new] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 155,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-folder] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 207,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-folder] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 136,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-copy] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 241,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-copy] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 201,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-move] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 270,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-move] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 189,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-paste] verified outcome via keybinding / Code",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 205,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "[command:fm-paste] verified outcome via keybinding / VIM",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 224,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Every command in the executable catalog has a verified outcome test",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "empty document coordinates",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "selection replacement and undo redo",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "UTF-8 CRLF BOM round trip and dirty state",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 2,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "surrogate and combining character deletion",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "line navigation preserves valid positions",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Markdown wrappers place future text inside",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "ordered and bulleted lists",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "find wraps and selects",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "external edits cannot be silently overwritten",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Save As protects existing destination",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "reject binary and invalid UTF8",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "settings defaults and branch parser",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "invalid settings are rejected",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "provided XML chords and scoped actions",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "XML unknown and duplicate commands rejected",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "language detection and keyword completion",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "English dictionary and suggestions",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 149,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "key decoding modifiers and enhanced ShiftSpace",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows arrow events use the editor's canonical names with all modifiers",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows quit and menu events match global shortcuts",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Ghostty Kitty flag 1 menu and quit sequences including lock modifiers",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "function keys accept omitted Kitty parameters as well as legacy encodings",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Close Tab default is explicit in XML and available to existing installations",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "render control text cannot inject escape sequences",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "SGR mouse coordinates, drag, release, shift and wheel",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "Windows input records preserve keys, mouse actions and viewport offsets",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "mouse hit testing maps terminal cells to complete graphemes and tabs",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "default tab bindings use Ctrl Alt arrows",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "pane splitting and removal",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "file copy, move, and overwrite guard",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "directory self-copy blocked",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "build plans and nearest project discovery",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "compiler diagnostic parsing",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "real process execution and standard input",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 16,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "real Python line debugging, breakpoints, locals",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 124,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "LSP framing, UTF-16 completion edits and live diagnostics",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 21,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "DAP request responses, asynchronous stop and stack frame",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 21,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "offline manuals and font included",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 0,
+          "layer": "managed/executable"
+        },
+        {
+          "name": "every-command-verified",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "name": "gate-self-tests",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 67
+        },
+        {
+          "name": "font-audit",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 34
+        },
+        {
+          "name": "pty-legacy-keyboard_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 12941
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Build",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts chord",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cancel quit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM INSERT",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:3",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM VISUAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:2",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Build",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts chord",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "cancel quit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-keyboard_smoke"
+        },
+        {
+          "name": "pty-legacy-function_panel_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 7823
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "two panels",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "cancel panel close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "right buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "saved panel tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "only current panel closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "left buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "last panel reset",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "two panels",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "cancel panel close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "right buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "only current panel closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "left buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "last panel reset",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-function_panel_smoke"
+        },
+        {
+          "name": "pty-legacy-mouse_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 11533
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "popup mouse close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Build menu click",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:6",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "alphathird line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "alpha012third line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:3",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "wheel down",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 4:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "wheel up",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked pane closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "quit canceled by mouse",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "popup mouse close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Build menu click",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:6",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "alphathird line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "alpha012third line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:3",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "wheel down",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 4:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "wheel up",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "clicked pane closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "quit canceled by mouse",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-mouse_smoke"
+        },
+        {
+          "name": "pty-legacy-text_bars_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 2328
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Add tags:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "tag bar hidden",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Add tags:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Tags: work, notes",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Tags — comma-separated",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "font-size:18pt",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Tags: work, notes, project",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Saved ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Tag?",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "1 files match all tags",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "0 files match all tags",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Tag filter cleared.",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "Add tags:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-text_bars_smoke"
+        },
+        {
+          "name": "pty-legacy-icons_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 12394
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " data.json",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " image.png",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " notes.md",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " unknown.xyz",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " .git",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " node_modules",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " src",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " nested.txt",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "contents of script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " File ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " Save",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " Edit ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " View ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " Help ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "**contents of script.py**",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "[PY] script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "FiraCode Nerd Font Mono",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " data.json",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " image.png",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " notes.md",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " unknown.xyz",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " .git",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " node_modules",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " src",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " nested.txt",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "contents of script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " File ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " Save",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " Edit ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " View ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " Help ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "**contents of script.py**",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "[PY] script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "FiraCode Nerd Font Mono",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-icons_smoke"
+        },
+        {
+          "name": "pty-legacy-config_folder_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1059
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "Configuration folder:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "Config.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "RudyEdit-errors.log",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "folder opener receives exact config path",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "desktop opener failure is logged",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "Error log —",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "config-folder-opener-fixture-error",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-legacy-config_folder_smoke"
+        },
+        {
+          "name": "pty-legacy-terminal_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 7197
+        },
+        {
+          "name": "pty-kitty-keyboard_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 12853
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Build",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts chord",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cancel quit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 1:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:5",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM INSERT",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:3",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM VISUAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cursor 2:2",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Build",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts chord",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "cancel quit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "menu interrupts Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-keyboard_smoke"
+        },
+        {
+          "name": "pty-kitty-function_panel_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 7853
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "two panels",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "cancel panel close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "right buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "saved panel tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "only current panel closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "left buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "last panel reset",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Context help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Text | Code",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "two panels",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "cancel panel close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "right buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "only current panel closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "left buffer",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "last panel reset",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-function_panel_smoke"
+        },
+        {
+          "name": "pty-kitty-mouse_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 11327
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "popup mouse close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Build menu click",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:6",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "alphathird line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "alpha012third line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:3",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "wheel down",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 4:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "wheel up",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked pane closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "quit canceled by mouse",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked File",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Edit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Mode",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Text",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked View",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked Help",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "popup mouse close",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Build menu click",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "first tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "second tab",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "VIM NORMAL",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:6",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "alphathird line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "alpha012third line",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:3",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:4",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "wheel down",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 1:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 4:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "wheel up",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "cursor 2:1",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "clicked pane closed",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "quit canceled by mouse",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "Unsaved:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-mouse_smoke"
+        },
+        {
+          "name": "pty-kitty-text_bars_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 2357
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Add tags:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "tag bar hidden",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Add tags:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Tags: work, notes",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Tags — comma-separated",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "font-size:18pt",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Tags: work, notes, project",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Save As",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Saved ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Tag?",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "1 files match all tags",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "0 files match all tags",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Tag filter cleared.",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Development |",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "Add tags:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-text_bars_smoke"
+        },
+        {
+          "name": "pty-kitty-icons_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 12411
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " data.json",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " image.png",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " notes.md",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " unknown.xyz",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " .git",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " node_modules",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " src",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " nested.txt",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "contents of script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " File ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " Save",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " Edit ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " View ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " Help ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "**contents of script.py**",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "[PY] script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "FiraCode Nerd Font Mono",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " data.json",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " image.png",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " notes.md",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " unknown.xyz",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " .git",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " node_modules",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " src",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " nested.txt",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "contents of script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " File ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " Save",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " Edit ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " View ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " Help ",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "**contents of script.py**",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " code.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "[PY] script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "FiraCode Nerd Font Mono",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": " script.py",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Format",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "Font size",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-icons_smoke"
+        },
+        {
+          "name": "pty-kitty-config_folder_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 1054
+        },
+        {
+          "name": "startup",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "Configuration folder:",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "Config.cs",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "RudyEdit-errors.log",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "folder opener receives exact config path",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "desktop opener failure is logged",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "Error log —",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "config-folder-opener-fixture-error",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "exit",
+          "status": "PASS",
+          "error": "",
+          "layer": "pty-kitty-config_folder_smoke"
+        },
+        {
+          "name": "pty-kitty-terminal_smoke",
+          "status": "PASS",
+          "error": "",
+          "duration_ms": 7242
+        },
+        {
+          "name": "tested-payload-unchanged",
+          "status": "PASS",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "schema": 1,
+      "started_utc": "2026-10-21T17:38:48.012045+00:00",
+      "completed_utc": "2026-10-21T17:38:48.184746+00:00",
+      "version": "unknown",
+      "rid": "win-x64",
+      "host": "Linux-6.18.55-x86_64-with-glibc2.39",
+      "executable": "rudyedit.exe",
+      "payload_sha256": "a1513a374bfba02a497c7a84af49f6fd815007491e78d5adc67bed7807acc2b0",
+      "final_payload_sha256": "a1513a374bfba02a497c7a84af49f6fd815007491e78d5adc67bed7807acc2b0",
+      "suites": [],
+      "command_catalog": [],
+      "command_coverage": [],
+      "summary": {
+        "performed": 0,
+        "passed": 0,
+        "errors": 0,
+        "blocked": 2
+      },
+      "passed": false,
+      "results": [
+        {
+          "name": "native-executable-platform",
+          "status": "BLOCKED",
+          "error": "win-x64 executable cannot run natively on Linux. Run these packaged scripts on the target OS. No installer is allowed for this payload yet."
+        },
+        {
+          "name": "required-release-suites",
+          "status": "BLOCKED",
+          "error": "Required suites did not pass: catalog, cli-doctor, cli-help, cli-invalid, cli-version, font-audit, gate-self-tests, managed, native-windows, windows-icons"
+        }
+      ]
+    }
+  ]
+}

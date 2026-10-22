@@ -1,0 +1,28 @@
+Tests performed: 0
+Passed: 0
+Errors: 0
+Blocked: 2
+Result: FAIL / NOT RELEASE-READY
+
+Version: unknown
+Target: win-x64
+Host: Linux-6.18.55-x86_64-with-glibc2.39
+Started UTC: 2026-10-21T17:38:48.012045+00:00
+Completed UTC: 2026-10-21T17:38:48.184746+00:00
+Payload SHA-256: a1513a374bfba02a497c7a84af49f6fd815007491e78d5adc67bed7807acc2b0
+
+ERRORS FOUND
+[BLOCKED] native-executable-platform
+win-x64 executable cannot run natively on Linux. Run these packaged scripts on the target OS. No installer is allowed for this payload yet.
+
+[BLOCKED] required-release-suites
+Required suites did not pass: catalog, cli-doctor, cli-help, cli-invalid, cli-version, font-audit, gate-self-tests, managed, native-windows, windows-icons
+
+
+ALL TESTS PERFORMED (named cases/checkpoints; each may contain multiple assertions)
+0001. [BLOCKED] release / native-executable-platform
+0002. [BLOCKED] release / required-release-suites
+
+Scope: managed cases execute inside the published app; terminal suites exercise actual terminal I/O.
+External LSP/DAP fixtures validate protocol behavior; they do not certify every third-party server/debugger.
+Expected negative-test errors use temporary app logs and are not reported as product failures.
