@@ -1,4 +1,4 @@
-name: Windows executable tests
+name: Windows tests and Setup
 
 on:
   push:
@@ -18,13 +18,15 @@ permissions:
 
 concurrency:
   group: windows-tests-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   windows-tests:
     name: Build and test native Windows executable
     runs-on: windows-2022
     timeout-minutes: 35
+    outputs:
+      payload-ready: ${{ steps.payload.outputs.ready }}
     defaults:
       run:
         shell: pwsh
@@ -48,11 +50,17 @@ jobs:
         uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
         with:
           dotnet-version: '10.0.100'
-      - name: Build, publish, stage diagnostics and run all required Windows tests
+      - name: Build, publish and run required Windows tests
+        id: build
+        continue-on-error: true
         run: ./tools/build.ps1 -Rid win-x64
-      - name: Verify the tested payload before publishing it
-        run: python tests/release_gate.py dist/win-x64
-      - name: Write test totals to the Actions summary
+      - name: Verify completed native attempt and unchanged payload for packaging
+        id: payload
+        run: |
+          python tests/release_gate.py dist/win-x64 --allow-test-failures
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          'ready=true' | Out-File $env:GITHUB_OUTPUT -Append -Encoding utf8
+      - name: Write test totals and failures to Actions summary
         if: always()
         run: |
           $report = 'dist/win-x64/tests/results/release-tests.log'
@@ -61,19 +69,24 @@ jobs:
             '```text' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
             Get-Content $report -TotalCount 16 | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
             '```' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            $data = Get-Content 'dist/win-x64/tests/results/release-tests.json' -Raw | ConvertFrom-Json
+            $data.results | Where-Object { $_.status -ne 'PASS' } | ForEach-Object {
+              "- [$($_.status)] $($_.name): see attached full report for details." | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            }
+            'Setup packaging proceeds even if tests fail. A failed report is NOT RELEASE-READY.' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
           } else {
-            'The build or setup failed before the executable could produce a report. See the job logs.' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            'Build/setup failed before producing a report. See job logs.' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
           }
-      - name: Retain full logs and JSON results, including failed tests
+      - name: Retain full logs and JSON results, including failures
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: windows-test-results-${{ github.run_id }}-${{ github.run_attempt }}
           path: RudyEdit/dist/win-x64/tests/results/
           if-no-files-found: warn
-          retention-days: 30
-      - name: Retain the complete passed Windows payload for later packaging
-        if: success()
+          retention-days: 90
+      - name: Retain exact tested payload including failed reports
+        if: steps.payload.outputs.ready == 'true'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: windows-tested-payload-${{ github.run_id }}-${{ github.run_attempt }}
@@ -81,3 +94,73 @@ jobs:
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 30
+      - name: Preserve failing test status after retaining packaging inputs
+        if: always()
+        run: |
+          python tests/release_gate.py dist/win-x64
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          if ('${{ steps.build.outcome }}' -ne 'success') { exit 1 }
+
+  windows-setup:
+    name: Package and publish single Windows Setup EXE
+    needs: windows-tests
+    if: always() && !cancelled() && needs.windows-tests.outputs.payload-ready == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: RudyEdit
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out matching source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Download exact native-tested payload
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        with:
+          name: windows-tested-payload-${{ github.run_id }}-${{ github.run_attempt }}
+          path: RudyEdit/dist/win-x64
+      - name: Install MSI and NSIS tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y msitools wixl nsis
+      - name: Build and validate internal MSI, then embed it in Setup
+        run: |
+          python3 tests/release_gate.py dist/win-x64 --allow-test-failures
+          python3 tools/verify_icons.py dist/win-x64/rudyedit.exe
+          python3 packaging/windows/build_msi.py
+          makensis packaging/windows/setup.nsi
+          python3 tools/verify_icons.py dist/RudyEdit-*-Windows-Setup.exe
+          python3 tests/release_gate.py dist/win-x64 --allow-test-failures
+      - name: Prepare downloadable reports, checksums and release notes
+        run: python3 tools/windows_release_notes.py
+      - name: Retain Setup, detailed reports and checksum
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows-setup-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            RudyEdit/dist/*-Windows-Setup.exe
+            RudyEdit/dist/SHA256SUMS.txt
+            RudyEdit/dist/release-notes.md
+            RudyEdit/dist/win-x64/tests/results/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish Setup and full reports as a GitHub release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="windows-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          flags=()
+          if ! python3 -c "import json; import sys; sys.exit(0 if json.load(open('dist/win-x64/tests/results/release-tests.json'))['passed'] else 1)"; then
+            flags+=(--prerelease)
+          fi
+          gh release create "$tag" dist/*-Windows-Setup.exe dist/SHA256SUMS.txt dist/win-x64/tests/results/* \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "RudyEdit Windows Setup (${GITHUB_RUN_ID}, attempt ${GITHUB_RUN_ATTEMPT})" \
+            --notes-file dist/release-notes.md "${flags[@]}"

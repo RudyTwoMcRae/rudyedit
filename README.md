@@ -10,9 +10,12 @@ license notice remains at RudyEdit/LICENSE.
 source pushes, pull requests and manual Actions dispatch. The workflow builds
 and tests the actual self-contained Windows executable on a native Windows
 runner. It retains complete test logs even when tests fail and uploads the
-complete Windows payload only after the required tests and release gate pass.
+complete Windows payload after verifying the completed native test attempt and
+its byte fingerprint. A second job builds the internal MSI and single Setup EXE
+even when tests fail. Main-branch builds publish Setup, checksums and full reports
+as a GitHub release (a prerelease when tests fail). Test failures still fail the
+Windows test job and overall workflow. Untested/stale payloads cannot be packaged.
 
-The workflow creates no installer before testing. The passed payload contains
-the receipt needed by the MSI/Setup packaging gates. A Windows Server runner
-checks the native console APIs and scripted editor behavior; Windows 11 terminal
-appearance and an interactive installer still need their own platform checks.
+A Windows Server runner checks native console APIs and scripted editor behavior;
+interactive Windows 11 installation, upgrade, uninstall and terminal appearance
+require separate validation.

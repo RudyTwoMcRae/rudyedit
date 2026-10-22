@@ -26,7 +26,7 @@ makensis packaging/windows/setup.nsi
 
 **Windows revision 3 (keyboard fixes):** Both Windows installers include canonical arrow-key handling, Alt menu accelerators, and global Ctrl+Q with unsaved-change protection and terminal restoration. The revision 2 MSI correction is retained. The source ZIP includes the Windows key-decoding and terminal interaction regression tests.
 
-The build script uses wixl and then imports the font, PATH, and optional Desktop condition tables with msitools, because wixl does not support all corresponding WiX elements. Keep this postprocessing step when rebuilding; the generated .wxs alone omits these features. The MSI installs under Program Files, appends the install folder to system PATH, installs the font into FontsFolder, and creates a Start Menu entry. The NSIS wrapper invokes that same MSI, offers an optional Desktop shortcut, and writes a verbose log to `%TEMP%\RudyEdit-install.log`. The only public Windows artifact is `RudyEdit-2.0.4-Windows-Setup.exe`, which embeds all installation files and requires no companion download. The MSI is a build intermediate at `dist/windows-internal/RudyEdit.msi` and is consumed by Setup; do not publish it as a second installer.
+The build script uses wixl and then imports the font, PATH, and optional Desktop condition tables with msitools, because wixl does not support all corresponding WiX elements. Keep this postprocessing step when rebuilding; the generated .wxs alone omits these features. The MSI installs under Program Files, appends the install folder to system PATH, installs the font into FontsFolder, and creates a Start Menu entry. The NSIS wrapper invokes that same MSI, offers an optional Desktop shortcut, and writes a verbose log to `%TEMP%\RudyEdit-install.log`. The only public Windows artifact is `RudyEdit-2.0.5-Windows-Setup.exe`, which embeds all installation files and requires no companion download. The MSI is a build intermediate at `dist/windows-internal/RudyEdit.msi` and is consumed by Setup; do not publish it as a second installer.
 
 The MSI UpgradeCode is permanently `D4984166-4052-47D1-90B0-8F5C320B086C`. File component GUIDs are deterministic by relative path. For a later release, increment the version in the csproj, generator, setup script, package generator, build scripts, and output names; retain UpgradeCode. MajorUpgrade removes earlier products. Same-version reinstall is allowed; lower-version installers are blocked. Per-user config is outside the MSI and survives upgrades/uninstall.
 
@@ -97,7 +97,7 @@ Ctrl+Alt+C (Open Config Folder in Help) shows the configuration directory in Rud
 
 RudyEdit-errors.log is created beside Config.cs, KeyboardShortcuts.xml, Tags.xml and languages.json. It records UTC timestamps, process IDs, context, exceptions/stacks and nested errors, startup/configuration/save/command failures, tool stderr and nonzero exits, compiler/LSP diagnostics, and debugger/protocol/background failures. Help → Error Log displays a searchable snapshot. The log rotates at 5 MiB with three backups; very long entries are marked/truncated at 65,536 characters. If the config folder is unwritable, the active log falls back to RudyEdit-<user>/RudyEdit-errors.log under the system temp directory. Fatal errors report the active path. Normal cancellations and cleanup races are excluded.
 
-Windows users install with the single self-contained RudyEdit-2.0.4-Windows-Setup.exe. No separate MSI or .NET runtime download is needed. It preserves the binder-and-pen icon, optional Desktop shortcut, Start Menu entry, PATH update, bundled runtime/font, and existing upgrade identity. Windows Installer's verbose installation log remains at %TEMP%\RudyEdit-install.log. The internal MSI is a build intermediate, not an additional user installer.
+Windows users install with the single self-contained RudyEdit-2.0.5-Windows-Setup.exe. No separate MSI or .NET runtime download is needed. It preserves the binder-and-pen icon, optional Desktop shortcut, Start Menu entry, PATH update, bundled runtime/font, and existing upgrade identity. Windows Installer's verbose installation log remains at %TEMP%\RudyEdit-install.log. The internal MSI is a build intermediate, not an additional user installer.
 
 ## Version 2.0.4 — Nerd Font UI
 
@@ -116,10 +116,24 @@ python3 tests/release_gate.py dist/linux-x64
 python3 packaging/manjaro/package.py
 ```
 
-Windows uses `dist/win-x64/rudyedit.exe`. Run the test script on Windows with Python 3 before invoking the MSI builder or NSIS. `tools/build.sh` defaults to Linux and stops before packaging if any test fails/blocks. `tools/build.ps1` defaults to Windows and also stops before packaging commands if tests fail/block. Both can publish a foreign target, but that target must then be tested on a native host. The runner writes `tests/results/release-tests.log` and `.json` inside the publish directory by default. For installed apps, select a writable report path or use the packaged convenience scripts.
+Windows uses `dist/win-x64/rudyedit.exe`. Per the October 22, 2026 instruction,
+Windows packaging proceeds after a completed native test attempt even if tests
+fail or block. `tools/build.ps1` retains the nonzero test exit code; CI captures it,
+verifies the completed attempt and exact bytes, uploads the payload, and builds
+the internal MSI and single Setup EXE on Ubuntu. It then publishes reports and
+Setup as a GitHub release. Failed-test builds are marked prerelease and the
+Windows test job remains failed. No test result is rewritten.
 
-MSI/pacman builders and NSIS verify the native report again before writing output. NSIS uses python3 by default; on Windows use `/DPYTHON=python` when Python is registered as `python`. No skip-test switch is provided. A payload hash includes the executable, runtime, assets, test DLL and scripts; changing any file invalidates the result. Reports and Python caches are excluded. You may copy a fully tested Windows publish tree including its receipt to a Linux packaging host; the receipt is checked against its bytes without pretending the Windows EXE ran on Linux.
+Windows MSI and NSIS use `release_gate.py --allow-test-failures`, which requires
+a completed Windows-host report, every required suite attempted, consistent
+reported totals and matching initial/final payload hashes. Missing or changed
+payloads still stop packaging. The strict gate and Linux/pacman still require a
+full pass. Use `python3 packaging/windows/build_msi.py` followed by
+`makensis packaging/windows/setup.nsi` on a host with msitools/wixl/NSIS after
+copying the exact native-tested publish tree. Reports and scripts are installed
+with the app. Reports and Python caches are excluded from the fingerprint.
 
-Package the same tested tree. Its scripts and completed reports are installed with the app. The managed runner is copied after publication by `tools/stage_release_tests.py`; no test framework or SDK is needed on the end-user machine. Python and the Linux PTY test-only dependencies are still required to rerun diagnostics. A source ZIP includes test sources and build tooling.
-
-For this revision, native Windows execution is unavailable on the Linux build host. A blocked Windows report and Windows validation ZIP are provided instead of creating an installer without the required pass. Build the installer only after running the validation ZIP's tests successfully on Windows and returning/copying the passing publish-tree receipt.
+The workflow publishes only the Setup EXE, reports, raw logs and checksum; the
+internal MSI is not a second public installer. The existing Font table correction
+and permanent UpgradeCode remain in place. Native automated tests run on Windows
+Server 2022; interactive Windows 11 installation/upgrade/uninstall is separate.

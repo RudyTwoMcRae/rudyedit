@@ -2,7 +2,7 @@ Unicode true
 !ifndef PYTHON
 !define PYTHON "python3"
 !endif
-!system '${PYTHON} "../../tests/release_gate.py" "../../dist/win-x64"' = 0
+!system '${PYTHON} "../../tests/release_gate.py" "../../dist/win-x64" --allow-test-failures' = 0
 !include "MUI2.nsh"
 Name "RudyEdit 2.0.5"
 OutFile "../../dist/RudyEdit-2.0.5-Windows-Setup.exe"

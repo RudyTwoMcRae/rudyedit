@@ -56,4 +56,37 @@ class GateTests(unittest.TestCase):
         self.data['results']=[]
         with self.assertRaisesRegex(RuntimeError,'Incomplete'):self.accept()
 
+class WindowsPackagingPolicyTests(unittest.TestCase):
+    def setUp(self):
+        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
+        self.root=Path(self.temp.name);(self.root/'rudyedit.exe').write_bytes(b'windows-fixture')
+        self.report=self.root/'tests/results/release-tests.json';self.report.parent.mkdir(parents=True)
+        self.rows=[dict(name=name,status='FAIL' if name=='managed' else 'PASS') for name in sorted(required_suites('win-x64'))]
+        self.rows.append(dict(name='required-release-suites',status='BLOCKED'))
+        self.data=dict(schema=1,rid='win-x64',host='Windows-fixture',completed_utc='2026-10-22T00:00:00+00:00',
+                       results=self.rows,passed=False,summary=dict(performed=len(self.rows)-1,passed=len(self.rows)-2,errors=1,blocked=1),
+                       payload_sha256=fingerprint(self.root),final_payload_sha256=fingerprint(self.root))
+    def check_policy(self):
+        self.report.write_text(json.dumps(self.data))
+        with contextlib.redirect_stdout(io.StringIO()):check(self.root,allow_test_failures=True)
+    def test_completed_failure_packages_without_marking_pass(self):
+        self.check_policy();self.assertFalse(json.loads(self.report.read_text())['passed'])
+    def test_changed_binary_still_blocks(self):
+        (self.root/'rudyedit.exe').write_bytes(b'changed')
+        with self.assertRaisesRegex(RuntimeError,'changed'):self.check_policy()
+    def test_missing_report_still_blocks(self):
+        with self.assertRaisesRegex(RuntimeError,'Missing'):check(self.root,allow_test_failures=True)
+    def test_non_native_report_still_blocks(self):
+        self.data['host']='Linux-fixture'
+        with self.assertRaisesRegex(RuntimeError,'native Windows'):self.check_policy()
+    def test_missing_suite_attempt_still_blocks(self):
+        self.rows[:]=[row for row in self.rows if row['name']!='native-windows']
+        with self.assertRaisesRegex(RuntimeError,'attempts'):self.check_policy()
+    def test_forged_pass_still_blocks(self):
+        self.data['passed']=True
+        with self.assertRaisesRegex(RuntimeError,'disagree'):self.check_policy()
+    def test_inaccurate_totals_still_block(self):
+        self.data['summary']['errors']=0
+        with self.assertRaisesRegex(RuntimeError,'disagree'):self.check_policy()
+
 if __name__=='__main__':unittest.main(verbosity=2)

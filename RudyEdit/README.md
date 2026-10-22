@@ -161,8 +161,9 @@ The application includes `tests/release_runner.py`, a managed test DLL launched 
 
 The report starts with performed/passed/error/blocked totals, then all errors, then all named tests/checkpoints. Its JSON companion records the executable's command catalog, coverage, platform, UTC times and payload SHA-256. All 83 current commands have outcome tests in both Code and VIM modes. The gate fails when a newly added command has no passing test. Existing document, keyboard, mouse, tags, configuration, logging, font, process and protocol regressions remain part of the suite.
 
-Every revision must build → publish → stage diagnostics → run tests against the native executable → pass the exact-payload gate → create installers. Both build scripts and all installer entry points enforce this sequence. Failed, missing, blocked or stale results stop packaging. Windows must pass on Windows and Linux on Linux. Version 2.0.5's Linux-host report cannot authorize a Windows installer; the Windows validation ZIP contains the executable and scripts for its native run. See `tests/README.md` and `packaging/README.md` for commands and test-scope limits.
-
-## GitHub Windows tests
-
-The GitHub repository stores this project under `RudyEdit/`, with `.github/workflows/windows-tests.yml` at the repository root. The workflow builds and tests the native Windows executable on pushes and pull requests, retains full logs on failure, and uploads the complete tested payload only after a pass. See `docs/GITHUB_ACTIONS.md`. Uploading the workflow requires repository/workflow write access; preparing the files alone does not enable Actions.
+Every revision builds, publishes, stages diagnostics and runs native executable
+tests. Windows Setup is then built regardless of failed/blocked tests, as requested
+October 22, 2026. Completed native attempts and unchanged payload hashes are still
+required. Full failure reports ship with Setup and remain attached to the release;
+failed tests retain a failing workflow status. Linux/pacman still requires a full
+pass. See tests/README.md and packaging/README.md for policy and scope.

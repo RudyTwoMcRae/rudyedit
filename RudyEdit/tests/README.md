@@ -69,13 +69,15 @@ in negative tests are checked in temporary app logs, not counted as failures.
 `tools/build.sh` defaults to linux-x64; `tools/build.ps1` defaults to win-x64.
 Both build → publish → stage tests → run against that native executable → gate.
 Use separate native hosts for the two targets. No skip-test switch is provided.
-Direct MSI/pacman builders and the NSIS script repeat the gate. It requires a
-successful report at `tests/results/release-tests.json` under the publish folder
-for the exact bytes being packaged. Changing any payload file requires retesting.
-Reports themselves and Python bytecode caches are excluded from the hash.
+Windows MSI and NSIS entry points verify the completed native attempt with
+`release_gate.py --allow-test-failures`. This Windows-only policy permits failed
+or blocked tests while retaining their actual totals, details and failure status.
+It still rejects missing native suite attempts, inconsistent reports and changed
+payloads. The strict gate (without the flag) and Linux/pacman require a full pass.
+Reports and Python bytecode caches are excluded from the payload hash.
 
-A Windows native test run is required before a Windows installer can be built.
-A Linux pass cannot authorize a Windows installer. Copy the tested publish tree,
-including its JSON receipt, to a packaging host if msitools/NSIS are on Linux.
-The gate can check that receipt without executing the foreign binary. This is a
-build-quality guard, not a cryptographic signature from an independent lab.
+The workflow retains the payload and packages it on Ubuntu using msitools/NSIS;
+this verifies the Windows receipt without executing the foreign binary. It
+publishes one Setup EXE with full reports and a SHA-256 checksum. Failed-test
+builds are prereleases and retain a failing Windows test job. Reports also ship
+inside the installer. No test is disabled or relabeled to allow packaging.
